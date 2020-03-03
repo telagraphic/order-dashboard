@@ -9,9 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csv-writer": "^1.5.0",
     "express": "^4.17.1",
     "handlebars-intl": "^1.1.2",
     "hbs": "^4.0.4",
-    "mongoose": "^5.6.4"
+    "jsonexport": "^2.4.1",
+    "mongoose": "^5.6.4",
+    "node-dir": "^0.1.17",
+    "query-selector-shadow-dom": "^0.4.2"
   }
 }

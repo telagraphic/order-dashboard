@@ -1,5 +1,6 @@
-# connecting to: mongodb://127.0.0.1:27017
+# MONGO
 
+# connecting to: mongodb://127.0.0.1:27017
 
 # create database
 use dbname
