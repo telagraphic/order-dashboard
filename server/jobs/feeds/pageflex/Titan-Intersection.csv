@@ -1,0 +1,600 @@
+Client,ID,Order Status,User,Time,Date
+Titan-Intersection,O‑INT‑00092589,In Process,hsneale,9:54:45 AM,3/4/2020
+Titan-Intersection,O‑INT‑00092587,In Process,hsneale,11:43:31 AM,2/26/2020
+Titan-Intersection,O‑INT‑00092585,In Process,hsneale,9:00:23 AM,2/21/2020
+Titan-Intersection,O‑INT‑00092583,In Process,hsneale,1:37:45 PM,2/20/2020
+Titan-Intersection,O‑INT‑00092581,In Process,hsneale,3:50:12 PM,2/19/2020
+Titan-Intersection,O‑INT‑00092579,In Process,hsneale,12:32:48 PM,2/6/2020
+Titan-Intersection,O‑INT‑00092577,In Process,hsneale,3:46:32 PM,2/5/2020
+Titan-Intersection,O‑INT‑00092575,In Process,hsneale,8:47:44 AM,2/5/2020
+Titan-Intersection,O‑INT‑00092573,In Process,hsneale,12:16:46 PM,2/4/2020
+Titan-Intersection,O‑INT‑00092571,In Process,hsneale,3:43:08 PM,2/3/2020
+Titan-Intersection,O‑INT‑00092569,In Process,hsneale,8:50:28 AM,1/31/2020
+Titan-Intersection,O‑INT‑00092567,In Process,hsneale,9:16:33 AM,1/30/2020
+Titan-Intersection,O‑INT‑00092565,In Process,hsneale,9:15:28 AM,1/30/2020
+Titan-Intersection,O‑INT‑00092562,In Process,hsneale,8:55:29 AM,1/23/2020
+Titan-Intersection,O‑INT‑00092559,In Process,hsneale,10:03:07 AM,1/22/2020
+Titan-Intersection,O‑INT‑00092557,In Process,hsneale,10:56:34 AM,1/17/2020
+Titan-Intersection,O‑INT‑00092555,In Process,hsneale,12:45:28 PM,1/16/2020
+Titan-Intersection,O‑INT‑00092553,In Process,hsneale,11:12:14 AM,1/6/2020
+Titan-Intersection,O‑INT‑00092550,In Process,rob.maurizio@intersection.com,12:02:58 PM,12/17/2019
+Titan-Intersection,O‑INT‑00092547,In Process,kelly.king,9:57:46 AM,12/12/2019
+Titan-Intersection,O‑INT‑00092545,In Process,kelly.king,11:56:49 AM,12/10/2019
+Titan-Intersection,O‑INT‑00092543,In Process,kelly.king,11:54:12 AM,12/10/2019
+Titan-Intersection,O‑INT‑00092541,In Process,kelly.king,10:05:19 AM,12/9/2019
+Titan-Intersection,O‑INT‑00092539,In Process,kelly.king,9:07:26 AM,12/5/2019
+Titan-Intersection,O‑INT‑00092537,In Process,kelly.king,9:05:56 AM,12/5/2019
+Titan-Intersection,O‑INT‑00092534,In Process,kelly.king,1:47:39 PM,12/2/2019
+Titan-Intersection,O‑INT‑00092532,In Process,kelly.king,8:54:37 AM,11/20/2019
+Titan-Intersection,O‑INT‑00092530,In Process,kelly.king,1:41:54 PM,11/18/2019
+Titan-Intersection,O‑INT‑00092528,In Process,kelly.king,3:02:55 PM,11/15/2019
+Titan-Intersection,O‑INT‑00092526,In Process,kelly.king,3:25:52 PM,11/14/2019
+Titan-Intersection,O‑INT‑00092524,In Process,kelly.king,1:34:59 PM,11/13/2019
+Titan-Intersection,O‑INT‑00092522,In Process,kelly.king,3:47:07 PM,11/11/2019
+Titan-Intersection,O‑INT‑00092520,In Process,kelly.king,8:53:07 AM,11/11/2019
+Titan-Intersection,O‑INT‑00092518,In Process,kelly.king,2:18:25 PM,11/7/2019
+Titan-Intersection,O‑INT‑00092516,In Process,kelly.king,11:31:30 AM,10/18/2019
+Titan-Intersection,O‑INT‑00092514,In Process,kelly.king,10:37:02 AM,10/16/2019
+Titan-Intersection,O‑INT‑00092512,In Process,kelly.king,10:33:26 AM,10/16/2019
+Titan-Intersection,O‑INT‑00082512,In Process,ksmith,1:57:50 PM,10/8/2019
+Titan-Intersection,O‑INT‑00082510,In Process,kelly.king,1:02:11 PM,10/4/2019
+Titan-Intersection,O‑INT‑00082508,In Process,kelly.king,10:52:54 AM,10/4/2019
+Titan-Intersection,O‑INT‑00082506,In Process,kelly.king,10:41:23 AM,10/4/2019
+Titan-Intersection,O‑INT‑00082504,In Process,kelly.king,9:00:22 AM,10/4/2019
+Titan-Intersection,O‑INT‑00082502,In Process,kelly.king,8:54:26 AM,10/4/2019
+Titan-Intersection,O‑INT‑00082498,In Process,ksmith,9:53:56 AM,10/2/2019
+Titan-Intersection,O‑INT‑00082496,In Process,rob.maurizio@intersection.com,9:48:41 AM,10/2/2019
+Titan-Intersection,O‑INT‑00082491,In Process,DanCohenIXN,12:27:39 PM,9/24/2019
+Titan-Intersection,O‑INT‑00082489,In Process,kpesile,1:46:25 PM,9/20/2019
+Titan-Intersection,O‑INT‑00082487,In Process,DanCohenIXN,4:01:23 PM,9/16/2019
+Titan-Intersection,O‑INT‑00082485,In Process,rob.maurizio@intersection.com,5:26:58 PM,9/10/2019
+Titan-Intersection,O‑INT‑00082483,In Process,DanCohenIXN,9:59:02 AM,9/10/2019
+Titan-Intersection,O‑INT‑00082480,In Process,ksmith,3:33:23 PM,9/4/2019
+Titan-Intersection,O‑INT‑00082478,In Process,rob.maurizio@intersection.com,3:25:35 PM,9/4/2019
+Titan-Intersection,O‑INT‑00082472,In Process,lmorgan,11:41:42 AM,8/28/2019
+Titan-Intersection,O‑INT‑00082470,In Process,lmorgan,10:17:34 AM,8/27/2019
+Titan-Intersection,O‑INT‑00082468,In Process,lmorgan,1:49:14 PM,8/20/2019
+Titan-Intersection,O‑INT‑00082463,In Process,lmorgan,12:20:11 PM,8/14/2019
+Titan-Intersection,O‑INT‑00082461,In Process,lmorgan,1:56:57 PM,8/13/2019
+Titan-Intersection,O‑INT‑00082459,In Process,lmorgan,1:34:52 PM,8/2/2019
+Titan-Intersection,O‑INT‑00082457,In Process,lmorgan,11:17:59 AM,8/1/2019
+Titan-Intersection,O‑INT‑00082455,In Process,lmorgan,11:30:51 AM,7/23/2019
+Titan-Intersection,O‑INT‑00082453,In Process,lmorgan,1:34:09 PM,7/22/2019
+Titan-Intersection,O‑INT‑00082451,In Process,lmorgan,1:01:26 PM,7/18/2019
+Titan-Intersection,O‑INT‑00082449,In Process,lmorgan,2:56:39 PM,7/15/2019
+Titan-Intersection,O‑INT‑00082447,In Process,lmorgan,12:01:12 PM,7/10/2019
+Titan-Intersection,O‑INT‑00082443,In Process,lmorgan,1:39:40 PM,7/2/2019
+Titan-Intersection,O‑INT‑00082441,In Process,lmorgan,12:51:19 PM,7/1/2019
+Titan-Intersection,O‑INT‑00082439,In Process,lmorgan,11:51:38 AM,7/1/2019
+Titan-Intersection,O‑INT‑00082437,In Process,lmorgan,9:27:35 AM,6/28/2019
+Titan-Intersection,O‑INT‑00082432,In Process,lmorgan,12:48:39 PM,6/21/2019
+Titan-Intersection,O‑INT‑00082430,In Process,lmorgan,12:33:29 PM,6/20/2019
+Titan-Intersection,O‑INT‑00082428,In Process,lmorgan,10:14:04 AM,6/14/2019
+Titan-Intersection,O‑INT‑00082426,In Process,lmorgan,1:41:48 PM,6/11/2019
+Titan-Intersection,O‑INT‑00082424,In Process,lmorgan,12:26:13 PM,6/11/2019
+Titan-Intersection,O‑INT‑00082422,In Process,lmorgan,11:18:44 AM,6/10/2019
+Titan-Intersection,O‑INT‑00082420,In Process,lmorgan,12:57:46 PM,6/7/2019
+Titan-Intersection,O‑INT‑00082418,In Process,lmorgan,1:22:17 PM,6/6/2019
+Titan-Intersection,O‑INT‑00082416,In Process,lmorgan,8:13:40 PM,6/4/2019
+Titan-Intersection,O‑INT‑00082414,In Process,lmorgan,4:15:36 PM,6/3/2019
+Titan-Intersection,O‑INT‑00082410,In Process,lmorgan,3:26:27 PM,6/3/2019
+Titan-Intersection,O‑INT‑00082408,In Process,lmorgan,12:43:31 PM,5/31/2019
+Titan-Intersection,O‑INT‑00082406,In Process,lmorgan,9:40:54 AM,5/31/2019
+Titan-Intersection,O‑INT‑00082404,In Process,lmorgan,11:49:19 AM,5/30/2019
+Titan-Intersection,O‑INT‑00082402,In Process,lmorgan,12:58:05 PM,5/29/2019
+Titan-Intersection,O‑INT‑00082400,In Process,lmorgan,5:14:29 PM,5/28/2019
+Titan-Intersection,O‑INT‑00082398,In Process,lmorgan,3:43:42 PM,5/23/2019
+Titan-Intersection,O‑INT‑00082396,In Process,lmorgan,10:22:38 AM,5/22/2019
+Titan-Intersection,O‑INT‑00082394,In Process,lmorgan,10:33:41 AM,5/20/2019
+Titan-Intersection,O‑INT‑00082392,In Process,Clayton,12:14:56 PM,5/19/2019
+Titan-Intersection,O‑INT‑00082388,In Process,lmorgan,4:42:18 PM,5/17/2019
+Titan-Intersection,O‑INT‑00082386,In Process,lmorgan,2:46:23 PM,5/16/2019
+Titan-Intersection,O‑INT‑00082384,In Process,lmorgan,12:44:12 PM,5/14/2019
+Titan-Intersection,O‑INT‑00082382,In Process,lmorgan,2:07:20 PM,4/26/2019
+Titan-Intersection,O‑INT‑00082380,In Process,lmorgan,1:04:27 PM,4/19/2019
+Titan-Intersection,O‑INT‑00082376,In Process,lmorgan,11:16:32 AM,4/11/2019
+Titan-Intersection,O‑INT‑00082374,In Process,ksmith,10:02:38 AM,4/11/2019
+Titan-Intersection,O‑INT‑00082369,In Process,lmorgan,4:34:31 PM,4/4/2019
+Titan-Intersection,O‑INT‑00082364,In Process,lmorgan,11:46:15 AM,4/3/2019
+Titan-Intersection,O‑INT‑00082362,In Process,lmorgan,11:05:02 AM,4/3/2019
+Titan-Intersection,O‑INT‑00082360,In Process,lmorgan,2:54:57 PM,4/1/2019
+Titan-Intersection,O‑INT‑00082358,In Process,lmorgan,12:25:20 PM,4/1/2019
+Titan-Intersection,O‑INT‑00082356,In Process,lmorgan,4:07:20 AM,3/29/2019
+Titan-Intersection,O‑INT‑00082353,In Process,lmorgan,11:18:16 AM,3/22/2019
+Titan-Intersection,O‑INT‑00082351,In Process,lmorgan,12:51:39 PM,3/20/2019
+Titan-Intersection,O‑INT‑00082349,In Process,lmorgan,11:18:43 AM,3/20/2019
+Titan-Intersection,O‑INT‑00082347,In Process,lmorgan,3:23:05 PM,3/14/2019
+Titan-Intersection,O‑INT‑00082343,In Process,lmorgan,5:17:24 PM,3/8/2019
+Titan-Intersection,O‑INT‑00082341,In Process,lmorgan,11:45:18 AM,3/8/2019
+Titan-Intersection,O‑INT‑00082339,In Process,lmorgan,2:57:32 PM,3/7/2019
+Titan-Intersection,O‑INT‑00082337,In Process,lmorgan,4:46:44 PM,3/1/2019
+Titan-Intersection,O‑INT‑00082335,In Process,lmorgan,2:29:15 PM,3/1/2019
+Titan-Intersection,O‑INT‑00082333,In Process,lmorgan,6:26:19 PM,2/28/2019
+Titan-Intersection,O‑INT‑00082331,In Process,lmorgan,5:16:02 PM,2/27/2019
+Titan-Intersection,O‑INT‑00082329,In Process,lmorgan,2:01:38 PM,2/27/2019
+Titan-Intersection,O‑INT‑00082327,In Process,lmorgan,1:44:56 PM,2/27/2019
+Titan-Intersection,O‑INT‑00082325,In Process,lmorgan,1:32:22 PM,2/27/2019
+Titan-Intersection,O‑INT‑00082323,In Process,lmorgan,5:54:37 PM,2/21/2019
+Titan-Intersection,O‑INT‑00082321,In Process,lmorgan,5:50:38 PM,2/19/2019
+Titan-Intersection,O‑INT‑00082316,In Process,lmorgan,5:34:51 PM,2/13/2019
+Titan-Intersection,O‑INT‑00082314,In Process,lmorgan,4:23:51 PM,2/7/2019
+Titan-Intersection,O‑INT‑00082312,In Process,lmorgan,3:20:04 PM,2/7/2019
+Titan-Intersection,O‑INT‑00082310,In Process,lmorgan,2:40:13 PM,2/7/2019
+Titan-Intersection,O‑INT‑00082308,In Process,lmorgan,4:41:18 PM,2/5/2019
+Titan-Intersection,O‑INT‑00082305,In Process,lmorgan,1:37:42 PM,2/5/2019
+Titan-Intersection,O‑INT‑00082301,In Process,lmorgan,2:20:45 PM,1/31/2019
+Titan-Intersection,O‑INT‑00082299,In Process,lmorgan,2:38:43 PM,1/17/2019
+Titan-Intersection,O‑INT‑00082297,In Process,lmorgan,3:27:53 PM,1/16/2019
+Titan-Intersection,O‑INT‑00082295,In Process,lmorgan,11:27:36 AM,1/15/2019
+Titan-Intersection,O‑INT‑00082293,In Process,lmorgan,11:22:13 AM,1/14/2019
+Titan-Intersection,O‑INT‑00082291,In Process,lmorgan,12:38:03 PM,1/10/2019
+Titan-Intersection,O‑INT‑00082289,In Process,lmorgan,10:27:02 AM,1/8/2019
+Titan-Intersection,O‑INT‑00082287,In Process,lmorgan,5:02:31 PM,1/2/2019
+Titan-Intersection,O‑INT‑00082285,In Process,lmorgan,1:07:51 PM,1/2/2019
+Titan-Intersection,O‑INT‑00082280,In Process,lmorgan,12:56:50 PM,1/2/2019
+Titan-Intersection,O‑INT‑00082278,In Process,lmorgan,12:47:50 PM,1/2/2019
+Titan-Intersection,O‑INT‑00082276,In Process,lmorgan,10:50:21 AM,1/2/2019
+Titan-Intersection,O‑INT‑00082274,In Process,lmorgan,4:53:08 PM,12/18/2018
+Titan-Intersection,O‑INT‑00082272,In Process,lmorgan,4:49:33 PM,12/18/2018
+Titan-Intersection,O‑INT‑00082270,In Process,lmorgan,11:20:13 AM,12/13/2018
+Titan-Intersection,O‑INT‑00082268,In Process,lmorgan,11:21:35 AM,12/6/2018
+Titan-Intersection,O‑INT‑00082266,In Process,lmorgan,11:14:23 AM,12/6/2018
+Titan-Intersection,O‑INT‑00082264,In Process,lmorgan,5:29:56 PM,11/29/2018
+Titan-Intersection,O‑INT‑00082257,In Process,lmorgan,4:55:23 PM,11/27/2018
+Titan-Intersection,O‑INT‑00082255,In Process,lmorgan,5:10:53 PM,11/15/2018
+Titan-Intersection,O‑INT‑00082253,In Process,ksmith,12:40:10 PM,11/8/2018
+Titan-Intersection,O‑INT‑00082251,In Process,lmorgan,11:29:18 AM,11/8/2018
+Titan-Intersection,O‑INT‑00082248,In Process,lmorgan,4:34:49 PM,11/7/2018
+Titan-Intersection,O‑INT‑00082244,In Process,lmorgan,6:19:38 AM,11/7/2018
+Titan-Intersection,O‑INT‑00082242,In Process,lmorgan,4:48:24 PM,11/5/2018
+Titan-Intersection,O‑INT‑00082240,In Process,lmorgan,11:20:12 AM,11/5/2018
+Titan-Intersection,O‑INT‑00082238,In Process,lmorgan,4:33:02 PM,11/2/2018
+Titan-Intersection,O‑INT‑00082236,In Process,lmorgan,3:57:11 PM,11/2/2018
+Titan-Intersection,O‑INT‑00082234,In Process,lmorgan,3:18:51 PM,11/2/2018
+Titan-Intersection,O‑INT‑00082232,In Process,lmorgan,2:55:45 PM,11/1/2018
+Titan-Intersection,O‑INT‑00082230,In Process,lmorgan,12:08:25 PM,11/1/2018
+Titan-Intersection,O‑INT‑00082228,In Process,lmorgan,11:23:41 AM,10/30/2018
+Titan-Intersection,O‑INT‑00082226,In Process,lmorgan,3:35:48 PM,10/25/2018
+Titan-Intersection,O‑INT‑00082222,In Process,lmorgan,1:41:11 PM,10/24/2018
+Titan-Intersection,O‑INT‑00082220,In Process,lmorgan,9:52:35 AM,10/22/2018
+Titan-Intersection,O‑INT‑00082217,In Process,lmorgan,12:24:34 PM,10/15/2018
+Titan-Intersection,O‑INT‑00082215,In Process,lmorgan,3:49:08 PM,10/12/2018
+Titan-Intersection,O‑INT‑00082213,In Process,lmorgan,12:44:33 PM,10/9/2018
+Titan-Intersection,O‑INT‑00082211,In Process,ksmith,1:44:55 PM,10/1/2018
+Titan-Intersection,O‑INT‑00082207,In Process,lmorgan,6:14:57 PM,9/24/2018
+Titan-Intersection,O‑INT‑00082205,In Process,lmorgan,3:36:32 PM,9/12/2018
+Titan-Intersection,O‑INT‑00082203,In Process,lmorgan,11:34:54 AM,9/5/2018
+Titan-Intersection,O‑INT‑00082201,In Process,lmorgan,12:17:34 PM,8/31/2018
+Titan-Intersection,O‑INT‑00082199,In Process,lmorgan,4:15:10 PM,8/23/2018
+Titan-Intersection,O‑INT‑00082197,In Process,lmorgan,7:32:54 PM,8/20/2018
+Titan-Intersection,O‑INT‑00082195,In Process,lmorgan,3:44:14 PM,8/20/2018
+Titan-Intersection,O‑INT‑00082193,In Process,lmorgan,3:42:59 PM,8/17/2018
+Titan-Intersection,O‑INT‑00082191,In Process,lmorgan,1:29:36 PM,8/16/2018
+Titan-Intersection,O‑INT‑00082189,In Process,lmorgan,5:55:10 PM,8/8/2018
+Titan-Intersection,O‑INT‑00082186,In Process,lmorgan,4:51:51 PM,8/8/2018
+Titan-Intersection,O‑INT‑00082184,In Process,lmorgan,6:03:54 PM,8/7/2018
+Titan-Intersection,O‑INT‑00082182,In Process,lmorgan,2:20:33 PM,8/7/2018
+Titan-Intersection,O‑INT‑00082180,In Process,lmorgan,6:23:22 PM,8/6/2018
+Titan-Intersection,O‑INT‑00082178,In Process,lmorgan,1:28:43 PM,7/25/2018
+Titan-Intersection,O‑INT‑00082176,In Process,lmorgan,12:14:31 PM,7/24/2018
+Titan-Intersection,O‑INT‑00082174,In Process,lmorgan,2:13:18 PM,7/20/2018
+Titan-Intersection,O‑INT‑00082172,In Process,lmorgan,4:15:41 PM,7/19/2018
+Titan-Intersection,O‑INT‑00082170,In Process,lmorgan,2:45:35 PM,7/19/2018
+Titan-Intersection,O‑INT‑00082168,In Process,lmorgan,5:52:42 PM,7/18/2018
+Titan-Intersection,O‑INT‑00082166,In Process,lmorgan,5:26:27 PM,7/18/2018
+Titan-Intersection,O‑INT‑00082164,In Process,lmorgan,3:56:46 PM,7/9/2018
+Titan-Intersection,O‑INT‑00082162,In Process,lmorgan,1:31:47 PM,6/26/2018
+Titan-Intersection,O‑INT‑00082160,Completed,lmorgan,10:05:25 AM,6/5/2018
+Titan-Intersection,O‑INT‑00082158,Completed,lmorgan,12:49:20 PM,6/4/2018
+Titan-Intersection,O‑INT‑00082156,Completed,lmorgan,10:43:47 AM,5/23/2018
+Titan-Intersection,O‑INT‑00082154,Completed,lmorgan,4:51:31 PM,5/22/2018
+Titan-Intersection,O‑INT‑00082152,Completed,lmorgan,4:12:11 PM,5/22/2018
+Titan-Intersection,O‑INT‑00082150,Completed,lmorgan,3:06:09 PM,5/14/2018
+Titan-Intersection,O‑INT‑00082148,Completed,lmorgan,10:02:16 AM,5/10/2018
+Titan-Intersection,O‑INT‑00082146,Completed,lmorgan,12:59:15 PM,5/8/2018
+Titan-Intersection,O‑INT‑00082144,Completed,lmorgan,11:50:02 AM,5/7/2018
+Titan-Intersection,O‑INT‑00082142,Completed,lmorgan,12:39:36 PM,5/2/2018
+Titan-Intersection,O‑INT‑00082140,Completed,lmorgan,5:40:31 PM,5/1/2018
+Titan-Intersection,O‑INT‑00082138,Completed,lmorgan,10:14:03 AM,4/25/2018
+Titan-Intersection,O‑INT‑00082136,Completed,lmorgan,6:51:47 PM,4/23/2018
+Titan-Intersection,O‑INT‑00082133,Completed,lmorgan,1:51:44 PM,4/23/2018
+Titan-Intersection,O‑INT‑00082129,Completed,lmorgan,9:22:15 AM,4/19/2018
+Titan-Intersection,O‑INT‑00082125,Completed,lmorgan,4:12:06 PM,4/18/2018
+Titan-Intersection,O‑INT‑00082123,Completed,lmorgan,4:51:32 PM,4/17/2018
+Titan-Intersection,O‑INT‑00082121,Completed,lmorgan,9:30:17 AM,4/17/2018
+Titan-Intersection,O‑INT‑00082119,Completed,lmorgan,5:35:47 PM,4/11/2018
+Titan-Intersection,O‑INT‑00082117,Completed,lmorgan,5:24:30 PM,4/11/2018
+Titan-Intersection,O‑INT‑00082115,Completed,lmorgan,2:03:17 PM,4/11/2018
+Titan-Intersection,O‑INT‑00082113,Completed,lmorgan,6:13:20 PM,4/9/2018
+Titan-Intersection,O‑INT‑00082111,Completed,lmorgan,4:19:42 PM,4/9/2018
+Titan-Intersection,O‑INT‑00082109,Completed,lmorgan,1:55:32 PM,4/9/2018
+Titan-Intersection,O‑INT‑00082101,Completed,lmorgan,12:08:07 PM,4/5/2018
+Titan-Intersection,O‑INT‑00082099,Completed,lmorgan,2:34:34 PM,4/4/2018
+Titan-Intersection,O‑INT‑00082095,Completed,lmorgan,10:18:41 AM,4/4/2018
+Titan-Intersection,O‑INT‑00082093,Completed,lmorgan,6:18:19 PM,3/29/2018
+Titan-Intersection,O‑INT‑00082091,Completed,lmorgan,11:23:46 AM,3/22/2018
+Titan-Intersection,O‑INT‑00082089,Completed,lmorgan,11:22:58 AM,3/22/2018
+Titan-Intersection,O‑INT‑00072089,Completed,lmorgan,3:30:12 PM,3/21/2018
+Titan-Intersection,O‑INT‑00072085,Completed,lmorgan,5:44:55 PM,3/20/2018
+Titan-Intersection,O‑INT‑00072083,Completed,lmorgan,5:36:18 PM,3/19/2018
+Titan-Intersection,O‑INT‑00072081,Completed,lmorgan,4:53:10 PM,3/15/2018
+Titan-Intersection,O‑INT‑00072079,Completed,lmorgan,4:11:03 PM,3/15/2018
+Titan-Intersection,O‑INT‑00072075,Completed,lmorgan,6:03:59 PM,3/14/2018
+Titan-Intersection,O‑INT‑00072073,Completed,lmorgan,2:49:03 PM,3/12/2018
+Titan-Intersection,O‑INT‑00072071,Completed,lmorgan,7:39:57 PM,3/9/2018
+Titan-Intersection,O‑INT‑00072069,Completed,ktorres,3:53:22 PM,3/7/2018
+Titan-Intersection,O‑INT‑00072067,Completed,ktorres,3:47:34 PM,3/7/2018
+Titan-Intersection,O‑INT‑00072065,Completed,lmorgan,1:27:00 PM,3/2/2018
+Titan-Intersection,O‑INT‑00072063,Completed,lmorgan,4:42:37 PM,3/1/2018
+Titan-Intersection,O‑INT‑00072061,Completed,lmorgan,2:17:38 PM,2/28/2018
+Titan-Intersection,O‑INT‑00072059,Completed,lmorgan,1:54:00 PM,2/28/2018
+Titan-Intersection,O‑INT‑00072057,Completed,lmorgan,2:44:33 PM,2/27/2018
+Titan-Intersection,O‑INT‑00072055,Completed,lmorgan,9:31:52 AM,2/21/2018
+Titan-Intersection,O‑INT‑00072053,Completed,lmorgan,5:58:10 PM,2/20/2018
+Titan-Intersection,O‑INT‑00072051,Completed,lmorgan,2:47:23 PM,2/20/2018
+Titan-Intersection,O‑INT‑00072049,In Process,lmorgan,11:28:38 AM,2/16/2018
+Titan-Intersection,O‑INT‑00072047,Completed,lmorgan,5:46:04 PM,2/15/2018
+Titan-Intersection,O‑INT‑00072045,Completed,lmorgan,6:19:10 PM,2/14/2018
+Titan-Intersection,O‑INT‑00072043,Completed,lmorgan,6:14:44 PM,2/14/2018
+Titan-Intersection,O‑INT‑00072041,Completed,ksmith,2:43:15 PM,2/13/2018
+Titan-Intersection,O‑INT‑00072035,Completed,lmorgan,10:17:09 AM,2/9/2018
+Titan-Intersection,O‑INT‑00072033,Completed,lmorgan,10:10:03 AM,2/9/2018
+Titan-Intersection,O‑INT‑00072030,Completed,lmorgan,3:45:44 PM,2/7/2018
+Titan-Intersection,O‑INT‑00072028,Completed,lmorgan,5:54:39 PM,2/2/2018
+Titan-Intersection,O‑INT‑00072026,Completed,lmorgan,2:55:01 PM,2/1/2018
+Titan-Intersection,O‑INT‑00072024,Completed,lmorgan,12:44:09 PM,1/29/2018
+Titan-Intersection,O‑INT‑00072022,Completed,lmorgan,4:52:31 PM,1/26/2018
+Titan-Intersection,O‑INT‑00072020,Completed,lmorgan,3:49:40 PM,1/26/2018
+Titan-Intersection,O‑INT‑00072018,Completed,lmorgan,11:45:59 AM,1/26/2018
+Titan-Intersection,O‑INT‑00072016,Completed,lmorgan,6:25:47 PM,1/24/2018
+Titan-Intersection,O‑INT‑00072014,Completed,lmorgan,3:07:22 PM,1/24/2018
+Titan-Intersection,O‑INT‑00072012,Completed,lmorgan,11:31:58 AM,1/22/2018
+Titan-Intersection,O‑INT‑00072010,Completed,lmorgan,8:03:29 PM,1/18/2018
+Titan-Intersection,O‑INT‑00072008,Completed,lmorgan,10:54:24 AM,1/16/2018
+Titan-Intersection,O‑INT‑00072006,Completed,lmorgan,1:42:37 PM,1/9/2018
+Titan-Intersection,O‑INT‑00072004,Completed,lmorgan,10:30:41 AM,1/9/2018
+Titan-Intersection,O‑INT‑00072002,Completed,lmorgan,3:25:48 PM,1/5/2018
+Titan-Intersection,O‑INT‑00072000,Completed,lmorgan,11:06:07 AM,1/4/2018
+Titan-Intersection,O‑INT‑00071998,Completed,lmorgan,5:28:17 PM,1/3/2018
+Titan-Intersection,O‑INT‑00071996,Completed,lmorgan,2:01:47 PM,1/3/2018
+Titan-Intersection,O‑INT‑00071994,Completed,lmorgan,2:17:58 PM,1/2/2018
+Titan-Intersection,O‑INT‑00071992,Completed,lmorgan,3:19:56 PM,12/20/2017
+Titan-Intersection,O‑INT‑00071990,Completed,lmorgan,2:17:55 PM,12/20/2017
+Titan-Intersection,O‑INT‑00071988,Completed,lmorgan,11:23:07 AM,12/20/2017
+Titan-Intersection,O‑INT‑00071985,Completed,lmorgan,12:26:16 PM,12/18/2017
+Titan-Intersection,O‑INT‑00071983,Completed,lmorgan,7:03:46 PM,12/15/2017
+Titan-Intersection,O‑INT‑00071981,Completed,lmorgan,3:01:59 PM,12/14/2017
+Titan-Intersection,O‑INT‑00071979,Completed,NewYorkDowntown,12:24:56 PM,12/14/2017
+Titan-Intersection,O‑INT‑00071977,Completed,lmorgan,2:17:34 PM,12/13/2017
+Titan-Intersection,O‑INT‑00071975,Completed,lmorgan,1:28:40 PM,12/13/2017
+Titan-Intersection,O‑INT‑00071973,Completed,NewYorkDowntown,11:56:38 AM,12/13/2017
+Titan-Intersection,O‑INT‑00071968,Completed,lmorgan,3:02:06 PM,12/11/2017
+Titan-Intersection,O‑INT‑00071966,Completed,lmorgan,2:41:40 PM,12/11/2017
+Titan-Intersection,O‑INT‑00071960,Completed,lmorgan,1:36:44 PM,12/4/2017
+Titan-Intersection,O‑INT‑00071957,Completed,lmorgan,3:42:19 PM,12/1/2017
+Titan-Intersection,O‑INT‑00071955,Completed,lmorgan,2:24:12 PM,12/1/2017
+Titan-Intersection,O‑INT‑00071953,Completed,lmorgan,1:13:45 PM,12/1/2017
+Titan-Intersection,O‑INT‑00071951,Completed,lmorgan,1:09:40 PM,12/1/2017
+Titan-Intersection,O‑INT‑00071949,Completed,lmorgan,5:26:12 PM,11/30/2017
+Titan-Intersection,O‑INT‑00071946,Completed,lmorgan,12:39:43 PM,11/28/2017
+Titan-Intersection,O‑INT‑00071944,Completed,lmorgan,11:09:16 AM,11/28/2017
+Titan-Intersection,O‑INT‑00071942,Completed,lmorgan,1:02:52 PM,11/27/2017
+Titan-Intersection,O‑INT‑00071940,Completed,lmorgan,5:32:38 PM,11/21/2017
+Titan-Intersection,O‑INT‑00071938,Completed,lmorgan,4:43:31 PM,11/21/2017
+Titan-Intersection,O‑INT‑00071936,Completed,lmorgan,12:11:36 PM,11/21/2017
+Titan-Intersection,O‑INT‑00071934,Completed,lmorgan,3:47:06 PM,11/17/2017
+Titan-Intersection,O‑INT‑00071931,Completed,lmorgan,11:49:59 AM,11/17/2017
+Titan-Intersection,O‑INT‑00071929,Completed,lmorgan,4:09:27 PM,11/15/2017
+Titan-Intersection,O‑INT‑00071927,Completed,lmorgan,12:38:56 PM,11/15/2017
+Titan-Intersection,O‑INT‑00071925,Completed,lmorgan,12:37:14 PM,11/15/2017
+Titan-Intersection,O‑INT‑00071923,Completed,lmorgan,5:52:57 PM,11/14/2017
+Titan-Intersection,O‑INT‑00071921,Completed,lmorgan,5:27:36 PM,11/14/2017
+Titan-Intersection,O‑INT‑00071919,Completed,lmorgan,12:35:55 PM,11/10/2017
+Titan-Intersection,O‑INT‑00071916,Completed,lmorgan,4:38:42 PM,11/8/2017
+Titan-Intersection,O‑INT‑00071914,Completed,lmorgan,3:45:00 PM,11/8/2017
+Titan-Intersection,O‑INT‑00071912,Completed,NewYorkDowntown,11:43:18 AM,11/8/2017
+Titan-Intersection,O‑INT‑00071907,Completed,lmorgan,12:52:20 PM,10/31/2017
+Titan-Intersection,O‑INT‑00071903,Completed,lmorgan,5:16:04 PM,10/30/2017
+Titan-Intersection,O‑INT‑00071887,Completed,NewYorkDowntown,11:35:24 AM,10/25/2017
+Titan-Intersection,O‑INT‑00071885,Completed,NewYorkDowntown,11:29:10 AM,10/25/2017
+Titan-Intersection,O‑INT‑00071883,Completed,lmorgan,10:26:30 AM,10/16/2017
+Titan-Intersection,O‑INT‑00071881,Completed,lmorgan,3:35:54 PM,10/13/2017
+Titan-Intersection,O‑INT‑00071879,Completed,lmorgan,2:57:45 PM,10/13/2017
+Titan-Intersection,O‑INT‑00071877,Completed,lmorgan,9:49:54 AM,10/11/2017
+Titan-Intersection,O‑INT‑00071865,Completed,lmorgan,11:34:34 AM,10/6/2017
+Titan-Intersection,O‑INT‑00071863,Completed,lmorgan,11:23:48 AM,10/6/2017
+Titan-Intersection,O‑INT‑00071860,Completed,lmorgan,3:09:29 PM,10/3/2017
+Titan-Intersection,O‑INT‑00071858,Completed,lmorgan,6:29:37 PM,9/29/2017
+Titan-Intersection,O‑INT‑00071856,Completed,lmorgan,3:17:25 PM,9/29/2017
+Titan-Intersection,O‑INT‑00071852,Completed,lmorgan,11:52:20 AM,9/27/2017
+Titan-Intersection,O‑INT‑00071849,Completed,lmorgan,3:56:57 PM,9/26/2017
+Titan-Intersection,O‑INT‑00071846,Completed,lmorgan,2:32:01 PM,9/26/2017
+Titan-Intersection,O‑INT‑00071842,Completed,lmorgan,3:45:06 PM,9/22/2017
+Titan-Intersection,O‑INT‑00071840,Completed,lmorgan,2:09:46 PM,9/21/2017
+Titan-Intersection,O‑INT‑00071837,Completed,lmorgan,8:51:11 AM,9/21/2017
+Titan-Intersection,O‑INT‑00071835,Completed,lmorgan,6:01:59 PM,9/20/2017
+Titan-Intersection,O‑INT‑00071832,Completed,lmorgan,5:44:49 PM,9/20/2017
+Titan-Intersection,O‑INT‑00071828,Completed,lmorgan,12:50:19 PM,9/15/2017
+Titan-Intersection,O‑INT‑00071826,Completed,lmorgan,6:46:16 PM,9/14/2017
+Titan-Intersection,O‑INT‑00071824,Completed,lmorgan,5:35:01 PM,9/14/2017
+Titan-Intersection,O‑INT‑00071822,Completed,lmorgan,5:25:29 PM,9/12/2017
+Titan-Intersection,O‑INT‑00071820,Completed,NewYorkDowntown,4:12:42 PM,9/12/2017
+Titan-Intersection,O‑INT‑00071818,Completed,NewYorkDowntown,4:08:20 PM,9/12/2017
+Titan-Intersection,O‑INT‑00071816,Completed,NewYorkDowntown,3:46:08 PM,9/12/2017
+Titan-Intersection,O‑INT‑00071814,Completed,lmorgan,3:26:33 PM,9/12/2017
+Titan-Intersection,O‑INT‑00071805,Completed,lmorgan,3:03:46 PM,9/11/2017
+Titan-Intersection,O‑INT‑00071803,Completed,lmorgan,4:17:03 PM,9/1/2017
+Titan-Intersection,O‑INT‑00071801,Completed,lmorgan,3:06:24 PM,9/1/2017
+Titan-Intersection,O‑INT‑00071788,Completed,lmorgan,1:02:28 PM,8/28/2017
+Titan-Intersection,O‑INT‑00071782,Completed,lmorgan,11:54:37 AM,8/22/2017
+Titan-Intersection,O‑INT‑00071780,Completed,lmorgan,6:57:55 PM,8/17/2017
+Titan-Intersection,O‑INT‑00071778,Completed,lmorgan,1:55:22 PM,8/17/2017
+Titan-Intersection,O‑INT‑00071776,Completed,lmorgan,6:09:39 PM,8/16/2017
+Titan-Intersection,O‑INT‑00071770,Completed,lmorgan,6:02:53 PM,8/15/2017
+Titan-Intersection,O‑INT‑00071768,Completed,lmorgan,4:28:37 PM,8/15/2017
+Titan-Intersection,O‑INT‑00071766,Completed,lmorgan,12:12:14 PM,8/11/2017
+Titan-Intersection,O‑INT‑00071764,Completed,lmorgan,5:54:55 PM,8/8/2017
+Titan-Intersection,O‑INT‑00071762,Completed,lmorgan,4:38:42 PM,8/1/2017
+Titan-Intersection,O‑INT‑00071756,Completed,lmorgan,12:35:14 PM,7/27/2017
+Titan-Intersection,O‑INT‑00061756,Completed,lmorgan,4:11:17 PM,7/26/2017
+Titan-Intersection,O‑INT‑00061754,Completed,lmorgan,11:28:38 AM,7/25/2017
+Titan-Intersection,O‑INT‑00061752,Completed,lmorgan,10:28:27 AM,7/24/2017
+Titan-Intersection,O‑INT‑00061750,Completed,lmorgan,1:33:55 PM,7/19/2017
+Titan-Intersection,O‑INT‑00061746,Completed,lmorgan,12:35:03 PM,7/14/2017
+Titan-Intersection,O‑INT‑00061744,Completed,lmorgan,2:26:30 PM,7/11/2017
+Titan-Intersection,O‑INT‑00061742,Completed,lmorgan,1:44:20 PM,7/10/2017
+Titan-Intersection,O‑INT‑00061740,Completed,lmorgan,3:49:54 PM,7/6/2017
+Titan-Intersection,O‑INT‑00061738,Completed,lmorgan,5:54:17 PM,6/30/2017
+Titan-Intersection,O‑INT‑00061736,Completed,lmorgan,3:14:04 PM,6/30/2017
+Titan-Intersection,O‑INT‑00061734,Completed,lmorgan,3:12:10 PM,6/30/2017
+Titan-Intersection,O‑INT‑00061730,Completed,lmorgan,2:12:45 PM,6/29/2017
+Titan-Intersection,O‑INT‑00061728,Completed,lmorgan,2:34:41 PM,6/26/2017
+Titan-Intersection,O‑INT‑00061726,Completed,lmorgan,12:21:03 AM,6/24/2017
+Titan-Intersection,O‑INT‑00061724,Completed,lmorgan,11:59:25 PM,6/23/2017
+Titan-Intersection,O‑INT‑00051724,Completed,lmorgan,10:04:44 AM,6/23/2017
+Titan-Intersection,O‑INT‑00051722,Completed,lmorgan,1:43:47 PM,6/22/2017
+Titan-Intersection,O‑INT‑00051720,Completed,Secaucus,5:25:14 PM,6/15/2017
+Titan-Intersection,O‑INT‑00051718,Completed,Seattle2,5:04:12 PM,6/7/2017
+Titan-Intersection,O‑INT‑00051716,Completed,lmorgan,12:10:15 PM,6/7/2017
+Titan-Intersection,O‑INT‑00051714,Completed,lmorgan,5:11:53 PM,5/31/2017
+Titan-Intersection,O‑INT‑00051712,Completed,lmorgan,12:09:47 PM,5/31/2017
+Titan-Intersection,O‑INT‑00051710,Completed,lmorgan,4:18:57 PM,5/30/2017
+Titan-Intersection,O‑INT‑00051708,Completed,lmorgan,12:43:05 PM,5/26/2017
+Titan-Intersection,O‑INT‑00051706,Completed,lmorgan,4:23:05 PM,5/24/2017
+Titan-Intersection,O‑INT‑00051704,Completed,lmorgan,11:54:05 AM,5/23/2017
+Titan-Intersection,O‑INT‑00051702,Completed,lmorgan,4:13:43 PM,5/19/2017
+Titan-Intersection,O‑INT‑00051698,Completed,lmorgan,8:30:34 AM,5/17/2017
+Titan-Intersection,O‑INT‑00051696,Completed,lmorgan,11:30:31 AM,5/16/2017
+Titan-Intersection,O‑INT‑00051694,Completed,lmorgan,5:15:25 PM,5/11/2017
+Titan-Intersection,O‑INT‑00051692,Completed,Secaucus,2:34:43 PM,5/11/2017
+Titan-Intersection,O‑INT‑00051689,Completed,lmorgan,1:14:07 PM,5/11/2017
+Titan-Intersection,O‑INT‑00051687,Completed,NewYorkDowntown,11:18:40 AM,5/10/2017
+Titan-Intersection,O‑INT‑00051685,Completed,lmorgan,4:45:29 PM,5/9/2017
+Titan-Intersection,O‑INT‑00051683,Completed,lmorgan,2:19:23 PM,5/9/2017
+Titan-Intersection,O‑INT‑00051681,Completed,lmorgan,4:53:15 PM,5/4/2017
+Titan-Intersection,O‑INT‑00051679,Completed,lmorgan,8:04:58 AM,5/4/2017
+Titan-Intersection,O‑INT‑00051677,Completed,lmorgan,7:50:39 AM,5/4/2017
+Titan-Intersection,O‑INT‑00051675,Completed,lmorgan,11:53:38 AM,5/3/2017
+Titan-Intersection,O‑INT‑00051672,Completed,lmorgan,6:07:55 PM,5/1/2017
+Titan-Intersection,O‑INT‑00051670,Completed,lmorgan,9:39:55 AM,4/26/2017
+Titan-Intersection,O‑INT‑00051667,Completed,lmorgan,3:51:50 PM,4/25/2017
+Titan-Intersection,O‑INT‑00051665,Completed,lmorgan,6:47:21 PM,4/21/2017
+Titan-Intersection,O‑INT‑00051663,Completed,lmorgan,6:41:28 PM,4/21/2017
+Titan-Intersection,O‑INT‑00051661,Completed,lmorgan,5:02:30 PM,4/19/2017
+Titan-Intersection,O‑INT‑00051659,Completed,lmorgan,4:59:26 PM,4/19/2017
+Titan-Intersection,O‑INT‑00051655,Completed,lmorgan,6:45:30 PM,4/14/2017
+Titan-Intersection,O‑INT‑00051653,Completed,lmorgan,8:55:32 AM,4/13/2017
+Titan-Intersection,O‑INT‑00051651,Completed,lmorgan,1:39:46 PM,4/12/2017
+Titan-Intersection,O‑INT‑00051649,Completed,lmorgan,11:50:17 AM,4/11/2017
+Titan-Intersection,O‑INT‑00051647,Completed,lmorgan,11:33:13 AM,4/11/2017
+Titan-Intersection,O‑INT‑00051645,Completed,lmorgan,6:25:24 PM,4/10/2017
+Titan-Intersection,O‑INT‑00051643,Completed,lmorgan,6:10:54 PM,4/10/2017
+Titan-Intersection,O‑INT‑00051638,Completed,lmorgan,3:11:37 PM,4/7/2017
+Titan-Intersection,O‑INT‑00051636,Completed,lmorgan,3:19:23 PM,4/4/2017
+Titan-Intersection,O‑INT‑00051634,Completed,lmorgan,6:11:32 PM,3/31/2017
+Titan-Intersection,O‑INT‑00051632,Completed,lmorgan,3:42:22 PM,3/31/2017
+Titan-Intersection,O‑INT‑00051630,Completed,lmorgan,4:18:43 PM,3/28/2017
+Titan-Intersection,O‑INT‑00051627,Completed,lmorgan,4:09:30 PM,3/28/2017
+Titan-Intersection,O‑INT‑00051625,Completed,lmorgan,3:59:54 PM,3/28/2017
+Titan-Intersection,O‑INT‑00051623,Completed,lmorgan,11:33:13 AM,3/22/2017
+Titan-Intersection,O‑INT‑00051621,Completed,lmorgan,5:16:45 PM,3/21/2017
+Titan-Intersection,O‑INT‑00051619,Completed,lmorgan,3:17:31 PM,3/21/2017
+Titan-Intersection,O‑INT‑00051617,Completed,lmorgan,12:43:56 PM,3/21/2017
+Titan-Intersection,O‑INT‑00041617,Completed,lmorgan,10:52:11 AM,3/17/2017
+Titan-Intersection,O‑INT‑00041615,Completed,lmorgan,6:25:04 PM,3/15/2017
+Titan-Intersection,O‑INT‑00041612,Completed,lmorgan,3:01:13 PM,3/15/2017
+Titan-Intersection,O‑INT‑00041610,Completed,lmorgan,2:10:43 PM,3/10/2017
+Titan-Intersection,O‑INT‑00041608,Completed,lmorgan,12:34:14 PM,3/10/2017
+Titan-Intersection,O‑INT‑00041606,Completed,lmorgan,5:05:05 PM,3/8/2017
+Titan-Intersection,O‑INT‑00041604,Completed,lmorgan,2:30:17 PM,3/7/2017
+Titan-Intersection,O‑INT‑00031604,Completed,lmorgan,11:56:11 AM,3/6/2017
+Titan-Intersection,O‑INT‑00031602,Completed,lmorgan,4:45:41 PM,3/3/2017
+Titan-Intersection,O‑INT‑00031600,Completed,lmorgan,11:28:49 AM,3/3/2017
+Titan-Intersection,O‑INT‑00031597,Completed,Chicago,1:01:01 PM,3/2/2017
+Titan-Intersection,O‑INT‑00031594,Completed,lmorgan,11:17:07 AM,3/2/2017
+Titan-Intersection,O‑INT‑00031592,Completed,lmorgan,7:56:34 AM,3/2/2017
+Titan-Intersection,O‑INT‑00031590,Completed,lmorgan,6:18:06 PM,3/1/2017
+Titan-Intersection,O‑INT‑00031588,Completed,lmorgan,1:55:33 PM,3/1/2017
+Titan-Intersection,O‑INT‑00031585,Completed,lmorgan,12:46:59 PM,2/28/2017
+Titan-Intersection,O‑INT‑00031583,Completed,lmorgan,3:07:53 PM,2/23/2017
+Titan-Intersection,O‑INT‑00031581,Completed,lmorgan,10:09:49 AM,2/23/2017
+Titan-Intersection,O‑INT‑00031579,Completed,lmorgan,5:23:33 PM,2/22/2017
+Titan-Intersection,O‑INT‑00031577,Completed,lmorgan,2:12:05 PM,2/22/2017
+Titan-Intersection,O‑INT‑00031575,Completed,lmorgan,7:22:18 PM,2/17/2017
+Titan-Intersection,O‑INT‑00031573,Completed,lmorgan,4:57:03 PM,2/16/2017
+Titan-Intersection,O‑INT‑00031571,Completed,lmorgan,1:52:21 PM,2/16/2017
+Titan-Intersection,O‑INT‑00031569,Completed,lmorgan,2:15:11 PM,2/15/2017
+Titan-Intersection,O‑INT‑00031567,Completed,Seattle2,12:54:57 PM,2/15/2017
+Titan-Intersection,O‑INT‑00031565,Completed,lmorgan,11:09:42 AM,2/15/2017
+Titan-Intersection,O‑INT‑00031563,Completed,lmorgan,2:27:21 PM,2/14/2017
+Titan-Intersection,O‑INT‑00031559,Completed,NewYorkDowntown,12:27:33 PM,2/10/2017
+Titan-Intersection,O‑INT‑00031557,Completed,lmorgan,7:07:48 PM,2/9/2017
+Titan-Intersection,O‑INT‑00031555,Completed,lmorgan,2:29:44 PM,2/8/2017
+Titan-Intersection,O‑INT‑00031553,Completed,lmorgan,2:26:08 PM,2/8/2017
+Titan-Intersection,O‑INT‑00031551,Completed,lmorgan,10:30:54 AM,2/8/2017
+Titan-Intersection,O‑INT‑00031549,Completed,lmorgan,2:07:37 PM,1/28/2017
+Titan-Intersection,O‑INT‑00031547,Completed,lmorgan,1:22:26 PM,1/27/2017
+Titan-Intersection,O‑INT‑00031545,Completed,lmorgan,1:14:21 PM,1/27/2017
+Titan-Intersection,O‑INT‑00031543,Completed,lmorgan,4:07:34 PM,1/25/2017
+Titan-Intersection,O‑INT‑00031540,Completed,Seattle2,12:37:34 PM,1/25/2017
+Titan-Intersection,O‑INT‑00031538,Completed,lmorgan,4:48:27 PM,1/24/2017
+Titan-Intersection,O‑INT‑00031536,Completed,lmorgan,5:43:07 PM,1/20/2017
+Titan-Intersection,O‑INT‑00031533,Completed,lmorgan,12:17:26 PM,1/19/2017
+Titan-Intersection,O‑INT‑00031531,Completed,lmorgan,5:09:39 PM,1/12/2017
+Titan-Intersection,O‑INT‑00031525,Completed,lmorgan,6:04:13 PM,1/6/2017
+Titan-Intersection,O‑INT‑00031523,Completed,lmorgan,5:13:02 PM,1/6/2017
+Titan-Intersection,O‑INT‑00031521,Completed,lmorgan,11:19:13 AM,1/6/2017
+Titan-Intersection,O‑INT‑00031519,In Process,NewYorkDowntown,12:19:52 PM,1/4/2017
+Titan-Intersection,O‑INT‑00031517,Completed,Philadelphia2,11:26:43 AM,1/4/2017
+Titan-Intersection,O‑INT‑00031515,Completed,lmorgan,6:08:54 PM,1/3/2017
+Titan-Intersection,O‑INT‑00031511,Completed,lmorgan,12:26:55 PM,1/3/2017
+Titan-Intersection,O‑INT‑00031509,Completed,lmorgan,11:05:54 AM,1/3/2017
+Titan-Intersection,O‑INT‑00031507,Completed,lmorgan,3:44:45 PM,12/29/2016
+Titan-Intersection,O‑INT‑00031505,In Process,lmorgan,3:27:13 PM,12/29/2016
+Titan-Intersection,O‑INT‑00031500,Completed,lmorgan,3:14:33 PM,12/16/2016
+Titan-Intersection,O‑INT‑00031498,Completed,lmorgan,11:03:59 AM,12/15/2016
+Titan-Intersection,O‑INT‑00031496,Completed,lmorgan,10:04:45 AM,12/13/2016
+Titan-Intersection,O‑INT‑00031494,Completed,lmorgan,9:47:52 AM,12/13/2016
+Titan-Intersection,O‑INT‑00031492,Completed,lmorgan,9:43:24 AM,12/13/2016
+Titan-Intersection,O‑INT‑00031488,Completed,lmorgan,5:25:19 PM,12/6/2016
+Titan-Intersection,O‑INT‑00031486,Completed,lmorgan,5:24:59 PM,12/5/2016
+Titan-Intersection,O‑INT‑00031484,Completed,lmorgan,7:26:26 PM,12/2/2016
+Titan-Intersection,O‑INT‑00031482,Completed,lmorgan,5:52:12 PM,12/2/2016
+Titan-Intersection,O‑INT‑00031480,Completed,lmorgan,5:01:30 PM,12/2/2016
+Titan-Intersection,O‑INT‑00031478,Completed,lmorgan,4:25:15 PM,12/2/2016
+Titan-Intersection,O‑INT‑00031476,Completed,lmorgan,2:03:09 PM,11/30/2016
+Titan-Intersection,O‑INT‑00031472,Completed,lmorgan,12:36:54 PM,11/29/2016
+Titan-Intersection,O‑INT‑00031470,Completed,Secaucus,8:40:40 AM,11/23/2016
+Titan-Intersection,O‑INT‑00021470,Completed,lmorgan,12:06:28 PM,11/19/2016
+Titan-Intersection,O‑INT‑00021468,Completed,lmorgan,6:20:05 PM,11/17/2016
+Titan-Intersection,O‑INT‑00021466,Completed,lmorgan,10:27:29 AM,11/14/2016
+Titan-Intersection,O‑INT‑00021464,Completed,lmorgan,1:25:43 PM,11/7/2016
+Titan-Intersection,O‑INT‑00021462,Completed,lmorgan,3:24:41 PM,11/5/2016
+Titan-Intersection,O‑INT‑00021460,Completed,lmorgan,6:04:20 PM,11/4/2016
+Titan-Intersection,O‑INT‑00021458,Completed,lmorgan,12:30:09 PM,11/4/2016
+Titan-Intersection,O‑INT‑00021456,Completed,lmorgan,1:41:33 AM,10/29/2016
+Titan-Intersection,O‑INT‑00021453,Completed,lmorgan,4:30:31 PM,10/28/2016
+Titan-Intersection,O‑INT‑00021451,Completed,lmorgan,4:29:35 PM,10/28/2016
+Titan-Intersection,O‑INT‑00021448,Completed,lmorgan,4:22:39 PM,10/28/2016
+Titan-Intersection,O‑INT‑00021445,Completed,lmorgan,1:55:27 PM,10/28/2016
+Titan-Intersection,O‑INT‑00021442,Completed,lmorgan,12:52:02 PM,10/28/2016
+Titan-Intersection,O‑INT‑00021440,Completed,lmorgan,12:49:06 PM,10/28/2016
+Titan-Intersection,O‑INT‑00021437,Completed,lmorgan,3:30:20 PM,10/26/2016
+Titan-Intersection,O‑INT‑00021434,Completed,Philadelphia2,8:56:22 AM,10/18/2016
+Titan-Intersection,O‑INT‑00021431,Completed,lmorgan,4:26:42 PM,10/13/2016
+Titan-Intersection,O‑INT‑00021428,Completed,Dallas,3:51:16 PM,9/12/2016
+Titan-Intersection,O‑INT‑00021418,Completed,Chicago,11:01:39 AM,8/25/2016
+Titan-Intersection,O‑INT‑00021413,Completed,NewYorkDowntown,1:14:13 PM,8/19/2016
+Titan-Intersection,O‑INT‑00021408,Completed,Seattle2,2:32:54 PM,8/11/2016
+Titan-Intersection,O‑INT‑00021404,Completed,Secaucus,8:55:58 AM,8/10/2016
+Titan-Intersection,O‑INT‑00021400,Completed,ktorres,5:01:30 PM,8/2/2016
+Titan-Intersection,O‑INT‑00011400,Completed,lmorgan,5:58:40 PM,7/30/2016
+Titan-Intersection,O‑INT‑00011368,Completed,lmorgan,4:12:00 PM,7/27/2016
+Titan-Intersection,O‑INT‑00011361,Completed,lmorgan,1:07:59 PM,7/25/2016
+Titan-Intersection,O‑INT‑00011358,Completed,lmorgan,11:57:32 AM,7/25/2016
+Titan-Intersection,O‑INT‑00011353,Completed,lmorgan,12:33:22 PM,7/23/2016
+Titan-Intersection,O‑INT‑00011351,Completed,lmorgan,11:43:29 AM,7/23/2016
+Titan-Intersection,O‑INT‑00011348,Completed,lmorgan,4:46:06 PM,7/22/2016
+Titan-Intersection,O‑INT‑00011343,Completed,Seattle2,4:27:36 PM,7/20/2016
+Titan-Intersection,O‑INT‑00011341,Completed,lmorgan,4:10:12 PM,7/20/2016
+Titan-Intersection,O‑INT‑00011338,Completed,lmorgan,3:36:48 PM,7/18/2016
+Titan-Intersection,O‑INT‑00011334,Completed,lmorgan,10:14:42 AM,7/15/2016
+Titan-Intersection,O‑INT‑00011330,Completed,ktorres,3:20:47 PM,7/14/2016
+Titan-Intersection,O‑INT‑00011323,Completed,Chicago,1:10:30 PM,7/14/2016
+Titan-Intersection,O‑INT‑00011319,Completed,ktorres,10:05:19 AM,7/13/2016
+Titan-Intersection,O‑INT‑00011317,Completed,NewYorkDowntown,7:20:30 PM,7/7/2016
+Titan-Intersection,O‑INT‑00011313,Completed,ktorres,3:09:17 PM,7/6/2016
+Titan-Intersection,O‑INT‑00011311,Completed,ktorres,11:52:04 AM,7/1/2016
+Titan-Intersection,O‑INT‑00011308,Completed,ktorres,12:00:39 PM,6/30/2016
+Titan-Intersection,O‑INT‑00011306,Completed,ktorres,11:48:30 AM,6/30/2016
+Titan-Intersection,O‑INT‑00011304,Completed,ktorres,11:36:32 AM,6/30/2016
+Titan-Intersection,O‑INT‑00011301,Completed,ktorres,11:29:55 AM,6/30/2016
+Titan-Intersection,O‑INT‑00011294,Completed,NewYorkDowntown,12:12:53 PM,6/22/2016
+Titan-Intersection,O‑INT‑00011291,Completed,ktorres,12:13:07 PM,6/21/2016
+Titan-Intersection,O‑INT‑00011289,Completed,ktorres,12:10:14 PM,6/21/2016
+Titan-Intersection,O‑INT‑00011287,Completed,ktorres,12:05:31 PM,6/21/2016
+Titan-Intersection,O‑INT‑00011284,Completed,ktorres,7:03:46 PM,6/16/2016
+Titan-Intersection,O‑INT‑00011282,Completed,ktorres,6:57:32 PM,6/16/2016
+Titan-Intersection,O‑INT‑00011277,Completed,NewYorkDowntown,2:16:34 PM,6/15/2016
+Titan-Intersection,O‑INT‑00011266,Completed,ktorres,6:20:08 PM,6/13/2016
+Titan-Intersection,O‑INT‑00011264,Completed,ktorres,6:05:42 PM,6/13/2016
+Titan-Intersection,O‑INT‑00011261,Completed,NewYorkDowntown,3:14:59 PM,6/9/2016
+Titan-Intersection,O‑INT‑00011256,Completed,NewYorkDowntown,3:00:32 PM,6/9/2016
+Titan-Intersection,O‑INT‑00011245,Completed,NewYorkDowntown,12:48:28 PM,6/9/2016
+Titan-Intersection,O‑INT‑00011243,Completed,NewYorkDowntown,12:29:42 PM,6/9/2016
+Titan-Intersection,O‑INT‑00011238,Completed,NewYorkMidtown,4:02:20 PM,6/8/2016
+Titan-Intersection,O‑INT‑00011236,Completed,NewYorkDowntown,3:01:35 PM,6/8/2016
+Titan-Intersection,O‑INT‑00011234,Completed,NewYorkDowntown,10:15:33 AM,6/8/2016
+Titan-Intersection,O‑INT‑00011228,Completed,NewYorkDowntown,5:31:03 PM,6/3/2016
+Titan-Intersection,O‑INT‑00011226,Completed,NewYorkDowntown,10:45:33 AM,6/1/2016
+Titan-Intersection,O‑INT‑00011217,Completed,NewYorkDowntown,10:24:13 AM,5/31/2016
+Titan-Intersection,O‑INT‑00011214,Completed,NewYorkDowntown,4:20:06 PM,5/25/2016
+Titan-Intersection,O‑INT‑00011212,Completed,NewYorkDowntown,4:16:39 PM,5/25/2016
+Titan-Intersection,O‑INT‑00011209,Completed,NewYorkDowntown,10:27:25 AM,5/24/2016
+Titan-Intersection,O‑INT‑00011207,Completed,NewYorkDowntown,12:27:36 PM,5/23/2016
+Titan-Intersection,O‑INT‑00011205,Completed,NewYorkDowntown,12:20:07 PM,5/23/2016
+Titan-Intersection,O‑INT‑00011203,Completed,NewYorkDowntown,12:14:56 PM,5/23/2016
+Titan-Intersection,O‑INT‑00011198,Completed,NewYorkDowntown,11:05:35 AM,5/18/2016
+Titan-Intersection,O‑INT‑00011192,Completed,NewYorkDowntown,6:45:56 PM,5/6/2016
+Titan-Intersection,O‑INT‑00011190,Completed,NewYorkDowntown,6:36:09 PM,5/6/2016
+Titan-Intersection,O‑INT‑00011188,Completed,Philadelphia2,12:37:41 PM,4/29/2016
+Titan-Intersection,O‑INT‑00011184,Completed,NewYorkMidtown,12:10:57 PM,4/28/2016
+Titan-Intersection,O‑INT‑00011181,Completed,Philadelphia2,3:56:42 PM,4/26/2016
+Titan-Intersection,O‑INT‑00011179,Completed,NewYorkDowntown,2:21:56 PM,4/26/2016
+Titan-Intersection,O‑INT‑00011177,Completed,Dallas,3:19:46 PM,4/22/2016
+Titan-Intersection,O‑INT‑00011175,Completed,Dallas,2:04:41 PM,4/22/2016
+Titan-Intersection,O‑INT‑00011172,Completed,NewYorkDowntown,11:30:23 AM,4/21/2016
+Titan-Intersection,O‑INT‑00011169,Completed,NewYorkDowntown,10:54:20 AM,4/20/2016
+Titan-Intersection,O‑INT‑00011167,Completed,NewYorkDowntown,10:53:26 AM,4/20/2016
+Titan-Intersection,O‑INT‑00011164,Completed,NewYorkDowntown,10:42:45 AM,4/15/2016
+Titan-Intersection,O‑INT‑00011162,Completed,NewYorkDowntown,10:08:09 AM,4/15/2016
+Titan-Intersection,O‑INT‑00011158,Completed,NewYorkDowntown,10:40:43 AM,4/7/2016
+Titan-Intersection,O‑INT‑00011153,Completed,NewYorkDowntown,5:13:54 PM,3/31/2016
+Titan-Intersection,O‑INT‑00011151,Completed,NewYorkDowntown,6:44:52 PM,3/22/2016
+Titan-Intersection,O‑INT‑00011149,Completed,NewYorkDowntown,9:51:42 AM,3/22/2016
+Titan-Intersection,O‑INT‑00011144,Completed,Seattle2,5:24:38 PM,3/10/2016
+Titan-Intersection,O‑INT‑00011142,Completed,NewYorkDowntown,11:00:38 AM,2/29/2016
+Titan-Intersection,O‑INT‑00011139,Completed,NewYorkDowntown,10:45:08 AM,2/25/2016
+Titan-Intersection,O‑INT‑00011137,Completed,NewYorkDowntown,2:49:52 PM,2/24/2016
+Titan-Intersection,O‑INT‑00011135,Completed,tkay,5:10:31 PM,2/22/2016
+Titan-Intersection,O‑INT‑00011133,Completed,Boston2,9:21:55 AM,2/22/2016
+Titan-Intersection,O‑INT‑00011131,Completed,tkay,3:06:31 PM,2/19/2016
+Titan-Intersection,O‑INT‑00011125,Completed,SanFrancisco,5:00:04 PM,2/16/2016
+Titan-Intersection,O‑INT‑00011122,Completed,tkay,12:26:58 PM,2/16/2016
+Titan-Intersection,O‑INT‑00011116,Completed,tkay,4:38:21 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011114,Completed,tkay,4:36:42 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011112,Completed,tkay,4:34:48 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011110,Completed,tkay,4:32:55 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011108,Completed,tkay,4:30:49 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011106,Completed,tkay,4:29:29 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011104,Completed,tkay,4:27:31 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011102,Completed,tkay,4:24:55 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011100,Completed,tkay,4:22:44 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011098,Completed,tkay,4:21:09 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011096,Completed,tkay,4:18:24 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011094,Completed,tkay,4:16:25 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011092,Completed,tkay,4:12:19 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011090,Completed,tkay,4:10:25 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011088,Completed,tkay,4:08:12 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011086,Completed,tkay,4:03:20 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011084,Completed,tkay,3:48:58 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011082,Completed,tkay,3:45:10 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011080,Completed,tkay,3:40:37 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011078,Completed,tkay,3:36:40 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011076,Completed,tkay,3:24:56 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011074,Completed,tkay,3:22:50 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011072,Completed,tkay,3:03:33 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011070,Completed,tkay,2:56:45 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011068,Completed,tkay,2:53:33 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011066,Completed,tkay,2:46:20 PM,2/3/2016
+Titan-Intersection,O‑INT‑00011063,Completed,tkay,2:32:14 PM,1/12/2016
+Titan-Intersection,O‑INT‑00011059,Completed,tkay,2:22:14 PM,1/6/2016
+Titan-Intersection,O‑INT‑00001055,Completed,tkay,12:36:22 PM,12/28/2015
+Titan-Intersection,O‑INT‑00001047,Completed,tkay,2:10:14 PM,12/23/2015
+Titan-Intersection,O‑INT‑00001034,In Process,Clayton,11:53:30 AM,11/9/2015
+Titan-Intersection,O‑INT‑00001032,In Process,Clayton,11:09:15 AM,11/9/2015
+Titan-Intersection,O‑INT‑00001029,In Process,Clayton,10:30:25 PM,11/5/2015
+Titan-Intersection,O‑INT‑00001027,In Process,Clayton,11:07:25 AM,11/5/2015
+Titan-Intersection,O‑INT‑00001022,In Process,Clayton,10:41:56 AM,11/5/2015
+Titan-Intersection,O‑INT‑00001020,In Process,Clayton,10:29:04 AM,11/5/2015
+Titan-Intersection,O‑INT‑00001018,In Process,Clayton,10:16:56 AM,11/5/2015

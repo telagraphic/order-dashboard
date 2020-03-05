@@ -1,29 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require("fs");
-const mongoose = require('mongoose');
-const Job = require("./models/job");
-const accounts = require('./scripts/account.js');
-const sites = require('./scripts/sites.js');
+const accounts = require('../config/accounts.js');
+const visionService = require('../services/visionService');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-// const shadowDom = require('query-selector-shadow-dom');
-
-function upsertJob(job) {
-
-	const DB_URL = 'mongodb://127.0.0.1:27017/print-vision-jobs';
-
-	if (mongoose.connection.readyState == 0) {
-		mongoose.connect(DB_URL, { useNewUrlParser: true, useFindAndModify: false });
-	}
-
-	// if this email exists, update the entry, don't insert
-	const conditions = { id: order.id };
-	const options = { upsert: true, new: true, setDefaultsOnInsert: true };
-
-	Job.findOneAndUpdate(conditions, order, options, (err, result) => {
-		if (err) throw err;
-	});
-}
-
 
 (async () => {
 
@@ -57,14 +36,15 @@ function upsertJob(job) {
 
   await page.waitForNavigation({ waitUntil: 'networkidle2' });
 
-	// await page.waitFor(3000);
-
 	await page.waitFor(2000);
 
-	const pendingDocumentsButton = 'div[name="menuitem_3"] > span.quick-access-item-text';
+	// const pendingDocumentsButton = 'div[name="menuitem_3"] > span.quick-access-item-text';
+	const pendingDocumentsButton = '#menuUL li.menuLI';
 	await page.click(pendingDocumentsButton);
+	await page.waitFor(2000);
 
-	// await page.waitForNavigation({ waitUntil: 'domcontentloaded' });
+	const pendingDocumentsInvoiceLink = '.pending-list-header .pending-list-group-invoice';
+	await page.click(pendingDocumentsInvoiceLink);
 	await page.waitFor(2000);
 
 	const dropdownList = '[name="due_date_filter"]';
@@ -75,14 +55,23 @@ function upsertJob(job) {
 
 	await page.waitFor(2000);
 
-	const jobs = await page.evaluate(() => {
+	// const showRecordsSelect = '.ui-paginator-bottom .ui-dropdown-trigger-icon';
+	// await page.click(showRecordsSelect);
+	//
+	// await page.waitFor(2000);
+	//
+	// const showRecordsOption = '.ui-dropdown-items-wrapper .ui-dropdown-items p-dropdownitem:last-child';
+	// await page.click(showRecordsOption);
+	//
+	// await page.waitFor(5000);
 
-		// let table = document.querySelector('body.ng-tns-0-65 app-root div.dot-rightpane .dot-form__horizontal');
-		let currentInvoices = document.querySelectorAll('body.ng-tns-0-65 app-root tbody.ui-datatable-data tr');
+	const visionInvoices = await page.evaluate(() => {
 
-		let invoices = [];
+		let webInvoices = document.querySelectorAll('body table tbody.ui-datatable-data tr');
 
-		currentInvoices.forEach(invoice => {
+		let invoicesToSave = [];
+
+		webInvoices.forEach(invoice => {
 			let job = {};
 
 			job.account = invoice.querySelector('td:nth-child(2)').innerText;
@@ -93,20 +82,37 @@ function upsertJob(job) {
 			job.takenBy = invoice.querySelector('td:nth-child(12)').innerText;
 			job.salesRep = invoice.querySelector('td:nth-child(13)').innerText;
 
-			invoices.push(job)
+			invoicesToSave.push(job)
 		})
 
-		return invoices;
+		return invoicesToSave;
 
 	});
 
-	console.log(jobs);
+	console.log("invoices:", visionInvoices);
 
-	fs.writeFileSync('./jobs/jobs.json', JSON.stringify(jobs));
+	visionInvoices.forEach(invoice => {
+		visionService.upsertOrder({
+			account: invoice.account || '',
+			jobNumber: invoice.jobNumber || '',
+			jobTitle: invoice.jobTitle || '',
+			// wantedDate: invoice.wantedDate,
+	    // proofDate: invoice.proofDate,
+	    takenBy: invoice.takenBy || '',
+	    salesRep: invoice.salesRep || '',
+			dashboardUpdatedAt: new Date()
+		})
+	});
 
 
-  // await browser.close();
+	try {
+		fs.writeFileSync('./feeds/vision/visionJob.json', JSON.stringify(visionInvoices));
+	} catch (error) {
+		console.log(error);
+	}
 
-	// process.exit(0);
+
+  await browser.close();
+	process.exit(0);
 
 })();

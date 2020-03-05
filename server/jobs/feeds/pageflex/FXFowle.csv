@@ -1,4 +1,12 @@
 Client,ID,Order Status,User,Time,Date
+FXFowle,O‑FXF‑00021456,In Process,pivan,12:15:00 PM,2/13/2020
+FXFowle,O‑FXF‑00021451,In Process,pivan,3:57:16 PM,12/6/2019
+FXFowle,O‑FXF‑00021448,In Process,pivan,8:48:10 AM,10/2/2019
+FXFowle,O‑FXF‑00021445,In Process,pivan,2:02:32 PM,10/1/2019
+FXFowle,O‑FXF‑00021443,In Process,pivan,9:32:57 AM,10/1/2019
+FXFowle,O‑FXF‑00021441,In Process,pivan,3:50:32 PM,9/19/2019
+FXFowle,O‑FXF‑00021437,In Process,pivan,8:48:54 AM,8/27/2019
+FXFowle,O‑FXF‑00021434,In Process,pivan,3:10:43 PM,8/20/2019
 FXFowle,O‑FXF‑00021425,In Process,pivan,3:10:14 PM,7/8/2019
 FXFowle,O‑FXF‑00021422,In Process,pivan,10:04:28 AM,7/3/2019
 FXFowle,O‑FXF‑00021419,In Process,Clayton,9:27:50 AM,5/19/2019
@@ -72,3 +80,9 @@ FXFowle,O‑FXF‑00001093,In Process,pivan,9:27:40 AM,3/28/2014
 FXFowle,O‑FXF‑00001091,In Process,pivan,4:55:53 PM,3/27/2014
 FXFowle,O‑FXF‑00001086,In Process,pivan,12:14:58 PM,3/17/2014
 FXFowle,O‑FXF‑00001082,In Process,pivan,4:54:26 PM,2/10/2014
+FXFowle,O‑FXF‑00001079,Completed,pivan,5:29:33 PM,1/30/2014
+FXFowle,O‑FXF‑00001073,Completed,pivan,4:22:15 PM,1/7/2014
+FXFowle,O‑FXF‑00001054,Completed,pivan,5:02:20 PM,11/26/2013
+FXFowle,O‑FXF‑00001044,Completed,pivan,12:55:20 PM,11/22/2013
+FXFowle,O‑FXF‑00001041,Completed,pivan,11:36:34 AM,11/22/2013
+FXFowle,O‑FXF‑00001039,Completed,pivan,11:14:01 AM,11/22/2013

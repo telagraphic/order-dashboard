@@ -2,6 +2,7 @@ Client,ID,Order Status,User,Time,Date
 Moelis,O‑MCO‑00114707,In Process,Clayton,3:49:45 PM,9/26/2018
 Moelis,O‑MCO‑00114705,In Process,eburgos,8:54:44 AM,8/1/2018
 Moelis,O‑MCO‑00114700,In Process,Clayton,12:27:27 PM,7/26/2018
+Moelis,O‑MCO‑00114695,Completed,eburgos,2:00:23 PM,7/23/2018
 Moelis,O‑MCO‑00114693,In Process,eburgos,1:43:51 PM,7/23/2018
 Moelis,O‑MCO‑00114691,In Process,eburgos,3:33:42 PM,7/20/2018
 Moelis,O‑MCO‑00114686,In Process,eburgos,10:30:44 AM,7/16/2018
@@ -14,6 +15,7 @@ Moelis,O‑MCO‑00114667,In Process,eburgos,5:06:01 PM,6/20/2018
 Moelis,O‑MCO‑00114665,In Process,eburgos,10:14:57 AM,6/20/2018
 Moelis,O‑MCO‑00114660,In Process,Clayton,8:23:02 AM,6/5/2018
 Moelis,O‑MCO‑00114656,In Process,eburgos,12:42:14 PM,6/4/2018
+Moelis,O‑MCO‑00114653,Completed,Clayton,7:36:56 AM,6/1/2018
 Moelis,O‑MCO‑00114648,In Process,Clayton,8:37:42 AM,5/25/2018
 Moelis,O‑MCO‑00114644,In Process,eburgos,9:50:44 AM,5/21/2018
 Moelis,O‑MCO‑00114642,In Process,eburgos,9:44:31 AM,5/21/2018
@@ -23,11 +25,15 @@ Moelis,O‑MCO‑00114622,In Process,eburgos,5:13:34 PM,5/3/2018
 Moelis,O‑MCO‑00114616,In Process,eburgos,5:21:49 PM,4/27/2018
 Moelis,O‑MCO‑00114610,In Process,eburgos,12:53:27 PM,4/24/2018
 Moelis,O‑MCO‑00114607,In Process,eburgos,9:50:59 AM,4/18/2018
+Moelis,O‑MCO‑00114603,Completed,eburgos,12:57:25 PM,4/16/2018
 Moelis,O‑MCO‑00114601,In Process,eburgos,5:18:46 PM,4/12/2018
 Moelis,O‑MCO‑00114599,In Process,eburgos,3:59:02 PM,4/11/2018
+Moelis,O‑MCO‑00114597,Completed,eburgos,11:42:54 AM,4/4/2018
+Moelis,O‑MCO‑00114595,Completed,eburgos,9:10:04 AM,4/4/2018
 Moelis,O‑MCO‑00114593,In Process,eburgos,4:26:42 PM,4/3/2018
 Moelis,O‑MCO‑00114591,In Process,eburgos,2:49:55 PM,3/26/2018
 Moelis,O‑MCO‑00114588,In Process,eburgos,11:12:20 AM,3/20/2018
+Moelis,O‑MCO‑00114586,Completed,eburgos,10:20:26 AM,3/20/2018
 Moelis,O‑MCO‑00114583,In Process,eburgos,9:04:56 AM,3/14/2018
 Moelis,O‑MCO‑00114579,In Process,eburgos,11:44:46 AM,3/13/2018
 Moelis,O‑MCO‑00114577,In Process,eburgos,1:58:34 PM,3/12/2018
@@ -38,15 +44,20 @@ Moelis,O‑MCO‑00114564,In Process,eburgos,4:24:56 PM,3/1/2018
 Moelis,O‑MCO‑00114562,In Process,eburgos,3:23:55 PM,3/1/2018
 Moelis,O‑MCO‑00114556,In Process,eburgos,4:50:24 PM,2/22/2018
 Moelis,O‑MCO‑00114552,In Process,eburgos,4:57:49 PM,2/21/2018
+Moelis,O‑MCO‑00114550,Completed,eburgos,12:24:18 PM,2/20/2018
 Moelis,O‑MCO‑00114546,In Process,eburgos,10:53:18 AM,2/15/2018
 Moelis,O‑MCO‑00114543,In Process,eburgos,5:15:30 PM,2/13/2018
+Moelis,O‑MCO‑00114541,Completed,eburgos,5:02:38 PM,2/13/2018
 Moelis,O‑MCO‑00114539,In Process,eburgos,3:30:57 PM,2/12/2018
+Moelis,O‑MCO‑00114537,Completed,eburgos,3:46:11 PM,2/9/2018
 Moelis,O‑MCO‑00114535,In Process,Clayton,3:28:03 PM,2/7/2018
 Moelis,O‑MCO‑00114533,In Process,Clayton,7:29:33 AM,2/7/2018
+Moelis,O‑MCO‑00114531,Completed,eburgos,10:10:46 AM,2/2/2018
 Moelis,O‑MCO‑00114528,In Process,eburgos,10:16:54 AM,1/29/2018
 Moelis,O‑MCO‑00114526,In Process,Clayton,5:08:33 PM,1/25/2018
 Moelis,O‑MCO‑00114524,In Process,eburgos,8:33:07 AM,1/23/2018
 Moelis,O‑MCO‑00114522,In Process,eburgos,5:13:31 PM,1/22/2018
+Moelis,O‑MCO‑00114519,Completed,eburgos,9:56:04 AM,1/18/2018
 Moelis,O‑MCO‑00114517,In Process,eburgos,12:35:46 PM,1/10/2018
 Moelis,O‑MCO‑00114513,In Process,eburgos,4:43:36 PM,1/9/2018
 Moelis,O‑MCO‑00114510,In Process,eburgos,1:58:11 PM,1/8/2018
@@ -67,6 +78,7 @@ Moelis,O‑MCO‑00114477,In Process,Clayton,7:32:00 AM,12/14/2017
 Moelis,O‑MCO‑00114475,In Process,Clayton,4:02:45 PM,12/13/2017
 Moelis,O‑MCO‑00114473,In Process,Clayton,10:20:27 AM,12/12/2017
 Moelis,O‑MCO‑00114471,In Process,eburgos,6:16:53 PM,12/7/2017
+Moelis,O‑MCO‑00114469,Completed,eburgos,9:37:23 AM,12/5/2017
 Moelis,O‑MCO‑00114467,In Process,eburgos,4:26:19 PM,12/4/2017
 Moelis,O‑MCO‑00114464,In Process,eburgos,9:58:20 AM,12/1/2017
 Moelis,O‑MCO‑00114462,In Process,eburgos,9:35:24 AM,12/1/2017
@@ -75,6 +87,8 @@ Moelis,O‑MCO‑00114458,In Process,eburgos,5:51:07 PM,11/29/2017
 Moelis,O‑MCO‑00114453,In Process,eburgos,11:01:38 AM,11/22/2017
 Moelis,O‑MCO‑00114451,In Process,eburgos,4:36:49 PM,11/15/2017
 Moelis,O‑MCO‑00114448,In Process,eburgos,6:28:02 PM,11/14/2017
+Moelis,O‑MCO‑00114444,Completed,eburgos,11:44:20 AM,11/14/2017
+Moelis,O‑MCO‑00114442,Completed,eburgos,9:24:13 AM,11/14/2017
 Moelis,O‑MCO‑00114439,In Process,eburgos,10:25:32 AM,11/10/2017
 Moelis,O‑MCO‑00114437,In Process,eburgos,4:20:24 PM,11/9/2017
 Moelis,O‑MCO‑00114435,In Process,eburgos,2:58:27 PM,11/8/2017
@@ -106,6 +120,7 @@ Moelis,O‑MCO‑00114374,In Process,eburgos,12:30:05 PM,10/3/2017
 Moelis,O‑MCO‑00114372,In Process,Clayton,8:08:38 AM,10/3/2017
 Moelis,O‑MCO‑00114370,In Process,eburgos,2:16:03 PM,10/2/2017
 Moelis,O‑MCO‑00114365,In Process,eburgos,4:11:58 PM,9/26/2017
+Moelis,O‑MCO‑00114363,Completed,eburgos,10:54:41 AM,9/26/2017
 Moelis,O‑MCO‑00114361,In Process,eburgos,5:10:39 PM,9/25/2017
 Moelis,O‑MCO‑00114359,In Process,eburgos,3:22:17 PM,9/25/2017
 Moelis,O‑MCO‑00114357,In Process,eburgos,2:03:33 PM,9/25/2017
@@ -113,30 +128,40 @@ Moelis,O‑MCO‑00114354,In Process,eburgos,3:23:38 PM,9/21/2017
 Moelis,O‑MCO‑00114351,In Process,eburgos,10:04:32 AM,9/20/2017
 Moelis,O‑MCO‑00114349,In Process,eburgos,2:02:54 PM,9/19/2017
 Moelis,O‑MCO‑00114347,In Process,eburgos,11:46:41 AM,9/15/2017
+Moelis,O‑MCO‑00114345,Completed,eburgos,10:06:50 AM,9/15/2017
 Moelis,O‑MCO‑00114343,In Process,eburgos,3:04:14 PM,9/14/2017
 Moelis,O‑MCO‑00114341,In Process,eburgos,5:41:16 PM,9/13/2017
 Moelis,O‑MCO‑00114338,In Process,eburgos,5:41:18 PM,9/12/2017
 Moelis,O‑MCO‑00114332,In Process,eburgos,5:38:10 PM,9/7/2017
+Moelis,O‑MCO‑00114329,Completed,eburgos,9:45:16 AM,8/30/2017
 Moelis,O‑MCO‑00114327,In Process,eburgos,9:07:02 AM,8/30/2017
 Moelis,O‑MCO‑00114323,In Process,eburgos,12:33:12 PM,8/29/2017
+Moelis,O‑MCO‑00114320,Completed,eburgos,11:33:06 AM,8/23/2017
 Moelis,O‑MCO‑00114318,In Process,eburgos,10:31:02 AM,8/23/2017
 Moelis,O‑MCO‑00114315,In Process,eburgos,4:31:58 PM,8/22/2017
+Moelis,O‑MCO‑00114312,Completed,eburgos,11:24:13 AM,8/17/2017
 Moelis,O‑MCO‑00114310,In Process,eburgos,12:16:42 PM,8/14/2017
 Moelis,O‑MCO‑00114306,In Process,eburgos,4:54:46 PM,8/10/2017
 Moelis,O‑MCO‑00114304,In Process,eburgos,11:13:36 AM,8/4/2017
+Moelis,O‑MCO‑00114301,Completed,eburgos,2:45:53 PM,8/3/2017
 Moelis,O‑MCO‑00114299,In Process,eburgos,4:54:14 PM,8/2/2017
 Moelis,O‑MCO‑00114294,In Process,eburgos,2:38:09 PM,7/19/2017
+Moelis,O‑MCO‑00114292,Completed,eburgos,8:52:41 AM,7/19/2017
 Moelis,O‑MCO‑00114290,In Process,eburgos,6:28:38 PM,7/18/2017
 Moelis,O‑MCO‑00114286,In Process,eburgos,4:49:40 PM,7/13/2017
 Moelis,O‑MCO‑00114284,In Process,eburgos,10:04:09 PM,7/11/2017
 Moelis,O‑MCO‑00114282,In Process,eburgos,10:21:54 AM,7/4/2017
+Moelis,O‑MCO‑00114280,Completed,Clayton,9:39:13 AM,6/27/2017
 Moelis,O‑MCO‑00114278,In Process,eburgos,5:50:03 PM,6/26/2017
 Moelis,O‑MCO‑00114274,In Process,eburgos,9:27:12 AM,6/26/2017
 Moelis,O‑MCO‑00114270,In Process,eburgos,5:49:08 PM,6/21/2017
 Moelis,O‑MCO‑00114268,In Process,eburgos,11:52:37 AM,6/21/2017
 Moelis,O‑MCO‑00114266,In Process,eburgos,6:32:56 PM,6/20/2017
 Moelis,O‑MCO‑00114264,In Process,eburgos,9:09:49 AM,6/14/2017
+Moelis,O‑MCO‑00114262,Completed,eburgos,10:29:56 AM,6/9/2017
 Moelis,O‑MCO‑00114260,In Process,eburgos,8:57:05 AM,6/9/2017
+Moelis,O‑MCO‑00114257,Completed,eburgos,4:02:24 PM,6/8/2017
+Moelis,O‑MCO‑00114254,Completed,eburgos,9:27:53 AM,6/7/2017
 Moelis,O‑MCO‑00114252,In Process,eburgos,5:45:53 PM,6/6/2017
 Moelis,O‑MCO‑00114249,In Process,eburgos,9:35:31 AM,5/30/2017
 Moelis,O‑MCO‑00114244,In Process,eburgos,5:27:56 PM,5/24/2017
@@ -144,6 +169,7 @@ Moelis,O‑MCO‑00114242,In Process,eburgos,2:54:56 PM,5/24/2017
 Moelis,O‑MCO‑00114239,In Process,eburgos,5:22:07 PM,5/19/2017
 Moelis,O‑MCO‑00114237,In Process,eburgos,4:52:40 PM,5/19/2017
 Moelis,O‑MCO‑00114234,In Process,eburgos,4:09:53 PM,5/17/2017
+Moelis,O‑MCO‑00114232,Completed,eburgos,4:49:06 PM,5/15/2017
 Moelis,O‑MCO‑00114228,In Process,eburgos,6:06:26 PM,5/10/2017
 Moelis,O‑MCO‑00114226,In Process,Clayton,9:05:17 AM,5/10/2017
 Moelis,O‑MCO‑00114224,In Process,eburgos,4:33:30 PM,5/3/2017
@@ -158,6 +184,7 @@ Moelis,O‑MCO‑00114200,In Process,eburgos,9:16:03 AM,4/7/2017
 Moelis,O‑MCO‑00114196,In Process,eburgos,1:39:20 PM,4/4/2017
 Moelis,O‑MCO‑00114194,In Process,eburgos,9:26:09 AM,4/4/2017
 Moelis,O‑MCO‑00114192,In Process,eburgos,9:10:11 AM,4/4/2017
+Moelis,O‑MCO‑00114190,Completed,eburgos,1:30:41 PM,3/28/2017
 Moelis,O‑MCO‑00114188,In Process,eburgos,11:53:46 AM,3/28/2017
 Moelis,O‑MCO‑00114185,In Process,eburgos,4:21:48 PM,3/22/2017
 Moelis,O‑MCO‑00114182,In Process,eburgos,12:09:56 PM,3/20/2017
@@ -165,10 +192,12 @@ Moelis,O‑MCO‑00114180,In Process,eburgos,6:09:42 PM,3/16/2017
 Moelis,O‑MCO‑00114178,In Process,eburgos,1:37:25 PM,3/9/2017
 Moelis,O‑MCO‑00114175,In Process,eburgos,9:45:25 AM,3/7/2017
 Moelis,O‑MCO‑00114173,In Process,eburgos,5:08:19 PM,3/6/2017
+Moelis,O‑MCO‑00114171,Completed,eburgos,5:57:02 PM,3/2/2017
 Moelis,O‑MCO‑00114168,In Process,eburgos,5:33:34 AM,2/23/2017
 Moelis,O‑MCO‑00114165,In Process,eburgos,4:40:50 AM,2/23/2017
 Moelis,O‑MCO‑00114163,In Process,eburgos,11:38:11 AM,2/21/2017
 Moelis,O‑MCO‑00114159,In Process,eburgos,3:06:21 PM,2/15/2017
+Moelis,O‑MCO‑00114157,Completed,eburgos,12:40:11 PM,2/15/2017
 Moelis,O‑MCO‑00114155,In Process,eburgos,6:10:46 PM,2/13/2017
 Moelis,O‑MCO‑00114152,In Process,eburgos,11:00:21 AM,2/13/2017
 Moelis,O‑MCO‑00114150,In Process,Clayton,10:30:13 AM,2/9/2017
@@ -181,10 +210,12 @@ Moelis,O‑MCO‑00114135,In Process,eburgos,4:59:54 PM,1/27/2017
 Moelis,O‑MCO‑00114132,In Process,eburgos,12:03:17 PM,1/26/2017
 Moelis,O‑MCO‑00114128,In Process,eburgos,3:34:15 PM,1/12/2017
 Moelis,O‑MCO‑00114126,In Process,eburgos,11:22:57 AM,1/12/2017
+Moelis,O‑MCO‑00114124,Completed,eburgos,10:50:56 AM,1/12/2017
 Moelis,O‑MCO‑00114122,In Process,eburgos,6:07:33 PM,1/11/2017
 Moelis,O‑MCO‑00114119,In Process,eburgos,1:36:39 PM,1/10/2017
 Moelis,O‑MCO‑00114117,In Process,eburgos,4:56:26 PM,1/9/2017
 Moelis,O‑MCO‑00114112,In Process,eburgos,4:23:52 PM,12/19/2016
+Moelis,O‑MCO‑00114110,Completed,eburgos,5:11:02 PM,12/15/2016
 Moelis,O‑MCO‑00114108,In Process,eburgos,4:25:59 PM,12/15/2016
 Moelis,O‑MCO‑00114087,In Process,eburgos,2:30:53 PM,12/14/2016
 Moelis,O‑MCO‑00114085,In Process,eburgos,1:42:54 PM,12/14/2016
@@ -212,6 +243,7 @@ Moelis,O‑MCO‑00114035,In Process,eburgos,2:01:18 PM,10/27/2016
 Moelis,O‑MCO‑00114033,In Process,eburgos,12:03:10 PM,10/24/2016
 Moelis,O‑MCO‑00114030,In Process,eburgos,12:24:23 PM,10/19/2016
 Moelis,O‑MCO‑00114028,In Process,eburgos,10:55:33 AM,10/18/2016
+Moelis,O‑MCO‑00114025,Completed,eburgos,12:39:47 PM,10/6/2016
 Moelis,O‑MCO‑00114023,In Process,eburgos,12:26:54 PM,10/6/2016
 Moelis,O‑MCO‑00114021,In Process,eburgos,5:36:51 PM,10/5/2016
 Moelis,O‑MCO‑00104020,In Process,eburgos,12:01:33 PM,9/29/2016
@@ -219,28 +251,36 @@ Moelis,O‑MCO‑00104018,In Process,eburgos,5:36:15 PM,9/28/2016
 Moelis,O‑MCO‑00104016,In Process,eburgos,9:53:25 AM,9/28/2016
 Moelis,O‑MCO‑00104014,In Process,eburgos,10:21:18 AM,9/27/2016
 Moelis,O‑MCO‑00104012,In Process,eburgos,3:28:36 PM,9/26/2016
+Moelis,O‑MCO‑00104010,Completed,eburgos,9:33:23 AM,9/26/2016
 Moelis,O‑MCO‑00104008,In Process,eburgos,12:33:32 PM,9/20/2016
 Moelis,O‑MCO‑00104005,In Process,eburgos,5:04:05 PM,9/16/2016
 Moelis,O‑MCO‑00103994,In Process,eburgos,1:01:58 PM,9/16/2016
+Moelis,O‑MCO‑00103990,Completed,eburgos,6:01:06 PM,9/15/2016
+Moelis,O‑MCO‑00103988,Completed,eburgos,5:51:08 PM,9/15/2016
 Moelis,O‑MCO‑00103986,In Process,eburgos,5:31:59 PM,9/15/2016
 Moelis,O‑MCO‑00103984,In Process,eburgos,5:46:22 PM,9/13/2016
+Moelis,O‑MCO‑00103982,Completed,eburgos,3:32:39 PM,9/13/2016
 Moelis,O‑MCO‑00103978,In Process,eburgos,10:58:28 AM,9/13/2016
 Moelis,O‑MCO‑00103976,In Process,eburgos,9:58:15 PM,9/12/2016
 Moelis,O‑MCO‑00103973,In Process,eburgos,5:43:16 PM,9/12/2016
 Moelis,O‑MCO‑00103965,In Process,eburgos,3:29:35 PM,9/12/2016
 Moelis,O‑MCO‑00103927,In Process,eburgos,3:06:09 PM,8/17/2016
 Moelis,O‑MCO‑00103923,In Process,eburgos,4:24:00 PM,8/10/2016
+Moelis,O‑MCO‑00103921,Completed,eburgos,11:32:30 AM,8/9/2016
 Moelis,O‑MCO‑00103918,In Process,eburgos,12:05:13 PM,8/5/2016
 Moelis,O‑MCO‑00103914,In Process,eburgos,5:44:39 PM,8/3/2016
 Moelis,O‑MCO‑00103908,In Process,eburgos,10:46:25 AM,7/28/2016
+Moelis,O‑MCO‑00103898,Completed,eburgos,4:00:13 PM,7/18/2016
 Moelis,O‑MCO‑00103896,In Process,eburgos,5:59:06 PM,7/15/2016
 Moelis,O‑MCO‑00103894,In Process,eburgos,5:39:42 PM,7/14/2016
 Moelis,O‑MCO‑00103888,In Process,eburgos,4:51:49 PM,7/7/2016
 Moelis,O‑MCO‑00103886,In Process,eburgos,10:56:56 AM,7/7/2016
 Moelis,O‑MCO‑00103883,In Process,eburgos,12:56:06 PM,7/6/2016
 Moelis,O‑MCO‑00103879,In Process,eburgos,2:51:05 PM,6/30/2016
+Moelis,O‑MCO‑00103875,Completed,eburgos,11:41:18 PM,6/28/2016
 Moelis,O‑MCO‑00103873,In Process,eburgos,9:11:43 AM,6/27/2016
 Moelis,O‑MCO‑00103871,In Process,eburgos,8:58:16 AM,6/27/2016
+Moelis,O‑MCO‑00103868,Completed,eburgos,11:44:40 AM,6/23/2016
 Moelis,O‑MCO‑00103866,In Process,eburgos,5:34:02 PM,6/16/2016
 Moelis,O‑MCO‑00103864,In Process,eburgos,4:23:21 PM,6/15/2016
 Moelis,O‑MCO‑00103862,In Process,eburgos,1:32:50 PM,6/15/2016
@@ -251,6 +291,7 @@ Moelis,O‑MCO‑00093832,In Process,eburgos,10:09:34 PM,5/18/2016
 Moelis,O‑MCO‑00093829,In Process,eburgos,11:47:25 AM,5/17/2016
 Moelis,O‑MCO‑00093826,In Process,eburgos,2:56:23 PM,5/12/2016
 Moelis,O‑MCO‑00093824,In Process,eburgos,5:23:02 PM,5/11/2016
+Moelis,O‑MCO‑00093822,Completed,eburgos,4:22:20 PM,5/9/2016
 Moelis,O‑MCO‑00093820,In Process,eburgos,6:06:36 PM,5/5/2016
 Moelis,O‑MCO‑00093818,In Process,eburgos,3:36:22 PM,5/5/2016
 Moelis,O‑MCO‑00093806,In Process,eburgos,5:05:09 PM,4/26/2016
@@ -258,6 +299,7 @@ Moelis,O‑MCO‑00093804,In Process,eburgos,4:27:18 PM,4/22/2016
 Moelis,O‑MCO‑00093802,In Process,eburgos,10:55:32 AM,4/21/2016
 Moelis,O‑MCO‑00093800,In Process,eburgos,9:08:28 AM,4/21/2016
 Moelis,O‑MCO‑00093798,In Process,eburgos,1:28:02 PM,4/20/2016
+Moelis,O‑MCO‑00093796,Completed,eburgos,5:13:26 PM,4/12/2016
 Moelis,O‑MCO‑00093794,In Process,eburgos,5:13:16 PM,4/7/2016
 Moelis,O‑MCO‑00093792,In Process,eburgos,5:16:09 PM,4/6/2016
 Moelis,O‑MCO‑00093790,In Process,eburgos,2:43:41 PM,4/6/2016
