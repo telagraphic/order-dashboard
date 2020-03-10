@@ -5,36 +5,35 @@ const accounts = require('../config/accounts.js');
 const presseroService = require('../services/presseroService');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-(async () => {
+async function getOrders() {
 
-	const start = new Date();
-  const browser = await puppeteer.launch({
-    headless: false,
-    defaultViewport : {
-      width: 4000,
-      height: 2000,
+	const browser = await puppeteer.launch({
+		headless: true,
+		defaultViewport : {
+			width: 4000,
+			height: 2000,
 			timeout: 0
-    }
-  });
+		}
+	});
 
-  const page = await browser.newPage();
+	const page = await browser.newPage();
 	await page.goto('https://admin.chi.v6.pressero.com/authentication/Login');
 	await page.waitForSelector('.login-form');
 
 
-  const username = 'input[id="username"]';
-  const password = 'input[id="password"]';
-  const loginButton = 'input[id="btnLogin"]';
+	const username = 'input[id="username"]';
+	const password = 'input[id="password"]';
+	const loginButton = 'input[id="btnLogin"]';
 
-  await page.click(username);
-  await page.keyboard.type(accounts.PRESSERO.username);
+	await page.click(username);
+	await page.keyboard.type(accounts.PRESSERO.username);
 
-  await page.click(password);
-  await page.keyboard.type(accounts.PRESSERO.password);
+	await page.click(password);
+	await page.keyboard.type(accounts.PRESSERO.password);
 
-  await page.click(loginButton);
+	await page.click(loginButton);
 
-  // await page.waitForNavigation({ waitUntil: 'networkidle2' });
+	// await page.waitForNavigation({ waitUntil: 'networkidle2' });
 
 	await page.waitFor(2000);
 
@@ -130,7 +129,18 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 	await page.waitFor(1000);
 
-  await browser.close();
+	await browser.close();
 	process.exit(0);
 
-})();
+}
+
+// getOrders();
+
+module.exports = {
+	getOrders: getOrders
+}
+
+//
+// (async () => {
+//
+// })();

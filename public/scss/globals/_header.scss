@@ -1,0 +1,87 @@
+@import '../config/variables';
+
+
+// <header class="header">
+//   <section class="header__service-and-status">
+//     <h1 class="header__service-name">Service Name</h1>
+//     <span class="header__update-time">updated 5 mins ago</span>
+//   </section>
+//   <ul class="header__status">
+//     <li class="header__status-key">
+//       Overdue
+//     </li>
+//     <li class="header__status-key">
+//       WIP
+//     </li>
+//     <li class="header__status-key">
+//       Complete
+//     </li>
+//   </ul>
+//   <nav class="header__navigation-button">
+//     ---
+//   </nav>
+
+
+.header {
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+
+  align-items: baseline;
+
+  padding: 0 2rem;
+
+  background-color: $chillGrey;
+  // color: $white;
+
+
+  &__service-and-status {
+    display: flex;
+    align-items: baseline;
+
+    color: $lightGrey;
+    color: $whiteGray;
+  }
+
+  &__service-name {
+    padding: 0 1rem 0 0;
+
+  }
+  &__update-time {
+    font-size: 2em;
+    font-weight: 300;
+
+  }
+
+  &__status {
+
+    display: flex;
+
+    list-style: none;
+  }
+  &__status-key {
+    padding: 0 1rem;
+
+    &:nth-child(1) {
+      color: $red;
+    }
+
+    &:nth-child(2) {
+      color: $lightRed;
+    }
+
+    &:nth-child(3) {
+      color: $green;
+    }
+  }
+  &__navigation-button {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+}

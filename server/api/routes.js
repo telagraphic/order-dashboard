@@ -5,8 +5,7 @@ const pageflexService = require('../services/pageflexService');
 const visionService = require('../services/visionService');
 const Agenda = require('agenda');
 const Agendash = require('agendash');
-
-let agenda = new Agenda({ db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}});
+const agenda = new Agenda({ db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}});
 
 router.use('/orders', async (req, res) => {
 
