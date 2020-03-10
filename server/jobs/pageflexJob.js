@@ -124,14 +124,14 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 			.writeRecords(ordersProduced)
 			.then(()=> console.log(client + " orders saved..."));
 
+
+		const logoutButton = '.siteTopNav #AdminMaster_AnchorLogout';
+		await page.click(logoutButton);
+		await page.waitFor(500);
+
   }
 
   await browser.close();
-	const end = new Date();
-
-	const totalTime = end - start;
-	console.log("totalTime: ", totalTime);
-
 	process.exit(0);
 
 })();

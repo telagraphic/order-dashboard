@@ -125,6 +125,11 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 		console.log(error);
 	}
 
+	const signout = '.navbar-right a[href="/authentication/logout"]';
+	await page.click(signout);
+
+	await page.waitFor(1000);
+
   await browser.close();
 	process.exit(0);
 

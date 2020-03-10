@@ -1,1 +1,177 @@
-[{"account":"Duxiana","jobNumber":"973851","jobTitle":"Invoice","takenBy":"ajc","salesRep":"SDS"},{"account":"QUARTET HEALTH INC 50/50 Client","jobNumber":"973723","jobTitle":"Invoice","takenBy":"srosati","salesRep":"G.Zuniss"},{"account":"OMA","jobNumber":"973291","jobTitle":"Invoice","takenBy":"mcuccia","salesRep":"mcuccia"},{"account":"Co/Efficient","jobNumber":"973908","jobTitle":"Invoice","takenBy":"Sweiss","salesRep":"S.Weiss"},{"account":"Inkwell Management(Witherspoon)","jobNumber":"973569","jobTitle":"Invoice","takenBy":"J.Gooley","salesRep":"JG"},{"account":"Herrick Feinstein LLP","jobNumber":"973845","jobTitle":"Invoice","takenBy":"cfoster","salesRep":"G.Zuniss"},{"account":"High Resolution","jobNumber":"973498","jobTitle":"Invoice","takenBy":"P.Lake","salesRep":""},{"account":"Redeemer Presbyterian Church","jobNumber":"973846","jobTitle":"Invoice","takenBy":"ajc","salesRep":"SDS"},{"account":"Artis LLC - N30","jobNumber":"970824","jobTitle":"Invoice","takenBy":"T.On","salesRep":"T.On"},{"account":"Imperial Network Group Inc.","jobNumber":"972987","jobTitle":"Invoice","takenBy":"mcuccia","salesRep":"mcuccia"},{"account":"West Point Home, Donna Burkard","jobNumber":"973757","jobTitle":"Invoice","takenBy":"mcuccia","salesRep":"mcuccia"},{"account":"Cravath Swaine & Moore LLP (GZ)","jobNumber":"973281","jobTitle":"Invoice","takenBy":"cfoster","salesRep":"G.Zuniss"},{"account":"Co/Efficient","jobNumber":"973848","jobTitle":"Invoice","takenBy":"Sweiss","salesRep":"S.Weiss"},{"account":"Legistics, Inc.","jobNumber":"973989","jobTitle":"Invoice","takenBy":"ajc","salesRep":"SDS"},{"account":"Williams Lea c/o Morgan Stanley","jobNumber":"974009","jobTitle":"Invoice","takenBy":"P.Lake","salesRep":"DB"},{"account":"UNFPA","jobNumber":"974017","jobTitle":"Invoice","takenBy":"Stephan","salesRep":"SDS"},{"account":"UNICEF - for use with LTA - Contract Required!","jobNumber":"973691","jobTitle":"Invoice","takenBy":"ajc","salesRep":"SDS"},{"account":"UNICEF - for use with LTA - Contract Required!","jobNumber":"973850","jobTitle":"Invoice","takenBy":"ajc","salesRep":"SDS"},{"account":"K+ Design Collective, LLC","jobNumber":"973373","jobTitle":"Invoice","takenBy":"Sweiss","salesRep":"S.Weiss"},{"account":"Factory Lessor LLC.","jobNumber":"973602","jobTitle":"Invoice","takenBy":"mcuccia","salesRep":"mcuccia"},{"account":"RFP NYC","jobNumber":"973578","jobTitle":"Invoice","takenBy":"ajc","salesRep":"SDS"},{"account":"Cushman and Wakefield Inc @ NY Life","jobNumber":"973705","jobTitle":"Invoice","takenBy":"mcuccia","salesRep":"SDS"},{"account":"UNICEF - not under LTA / Contract required over $10K","jobNumber":"973736","jobTitle":"Invoice","takenBy":"J.Gooley","salesRep":"SDS"},{"account":"Redeemer Presbyterian Church","jobNumber":"973926","jobTitle":"Invoice","takenBy":"ajc","salesRep":"SDS"}]
+[
+  {
+    "account": "Cushman and Wakefield Inc @ NY Life",
+    "jobNumber": "973705",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "SDS"
+  },
+  {
+    "account": "Imperial Network Group Inc.",
+    "jobNumber": "972987",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "mcuccia"
+  },
+  {
+    "account": "K+ Design Collective, LLC",
+    "jobNumber": "973373",
+    "jobTitle": "Invoice",
+    "takenBy": "Sweiss",
+    "salesRep": "S.Weiss"
+  },
+  {
+    "account": "UNICEF - not under LTA / Contract required over $10K",
+    "jobNumber": "973736",
+    "jobTitle": "Invoice",
+    "takenBy": "J.Gooley",
+    "salesRep": "SDS"
+  },
+  {
+    "account": "Duxiana",
+    "jobNumber": "973851",
+    "jobTitle": "Invoice",
+    "takenBy": "ajc",
+    "salesRep": "SDS"
+  },
+  {
+    "account": "Artis LLC - N30",
+    "jobNumber": "970824",
+    "jobTitle": "Invoice",
+    "takenBy": "T.On",
+    "salesRep": "T.On"
+  },
+  {
+    "account": "West Point Home, Donna Burkard",
+    "jobNumber": "973757",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "mcuccia"
+  },
+  {
+    "account": "OMA",
+    "jobNumber": "973291",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "mcuccia"
+  },
+  {
+    "account": "RFP NYC",
+    "jobNumber": "973578",
+    "jobTitle": "Invoice",
+    "takenBy": "ajc",
+    "salesRep": "SDS"
+  },
+  {
+    "account": "Co/Efficient",
+    "jobNumber": "973908",
+    "jobTitle": "Invoice",
+    "takenBy": "Sweiss",
+    "salesRep": "S.Weiss"
+  },
+  {
+    "account": "Production Resources Unlimited",
+    "jobNumber": "968884",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "mcuccia"
+  },
+  {
+    "account": "<<< Walk-In Clients Handled by S.Steiner >>>",
+    "jobNumber": "969956",
+    "jobTitle": "Invoice",
+    "takenBy": "Stephan",
+    "salesRep": "SDS"
+  },
+  {
+    "account": "<<< Walk-In Clients Handled by M.Cuccia >>>",
+    "jobNumber": "972372",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "mcuccia"
+  },
+  {
+    "account": "<<< Walk-In Clients Handled by M.Cuccia >>>",
+    "jobNumber": "973513",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "mcuccia"
+  },
+  {
+    "account": "Sol de Janeiro USA, Inc.",
+    "jobNumber": "973646",
+    "jobTitle": "Invoice",
+    "takenBy": "Sweiss",
+    "salesRep": "S.Weiss"
+  },
+  {
+    "account": "Phillips Nizer LLP",
+    "jobNumber": "973711",
+    "jobTitle": "Invoice",
+    "takenBy": "srosati",
+    "salesRep": "G.Zuniss"
+  },
+  {
+    "account": "Goodwill Church",
+    "jobNumber": "974060",
+    "jobTitle": "Invoice",
+    "takenBy": "KCatterson",
+    "salesRep": "TES"
+  },
+  {
+    "account": "MOELIS & COMPANY",
+    "jobNumber": "974155",
+    "jobTitle": "Invoice",
+    "takenBy": "srosati",
+    "salesRep": "G.Zuniss"
+  },
+  {
+    "account": "ROBINS KAPLAN LLP",
+    "jobNumber": "974183",
+    "jobTitle": "Invoice",
+    "takenBy": "jtamayo",
+    "salesRep": "G.Zuniss"
+  },
+  {
+    "account": "Co/Efficient",
+    "jobNumber": "973690",
+    "jobTitle": "Invoice",
+    "takenBy": "Sweiss",
+    "salesRep": "S.Weiss"
+  },
+  {
+    "account": "Donnelley Financial Solutions- New York Service Ctr",
+    "jobNumber": "974124",
+    "jobTitle": "Invoice",
+    "takenBy": "Tony Cheung",
+    "salesRep": "TES"
+  },
+  {
+    "account": "American Medical Alert Corp.",
+    "jobNumber": "973916",
+    "jobTitle": "Invoice",
+    "takenBy": "mcuccia",
+    "salesRep": "mcuccia"
+  },
+  {
+    "account": "Rainbow Room - see notes for sending invoices",
+    "jobNumber": "974107",
+    "jobTitle": "Invoice",
+    "takenBy": "ajc",
+    "salesRep": "SDS"
+  },
+  {
+    "account": "Co/Efficient",
+    "jobNumber": "973848",
+    "jobTitle": "Invoice",
+    "takenBy": "Sweiss",
+    "salesRep": "S.Weiss"
+  },
+  {
+    "account": "Co/Efficient",
+    "jobNumber": "973912",
+    "jobTitle": "Invoice",
+    "takenBy": "Sweiss",
+    "salesRep": "S.Weiss"
+  }
+]
