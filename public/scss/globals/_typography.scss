@@ -1,0 +1,44 @@
+// https://www.modularscale.com/?1,1.5&em&1.2
+//
+// 4.3em
+// 3.732em
+// 3.583em
+// 3.11em
+// 2.986em
+// 2.592em
+// 2.488em
+// 2.16em
+// 2.074em
+// 1.8em
+// 1.728em
+// 1.5em
+// 1.44em
+// 1.25em
+// 1.2em
+// 1.042em
+// 1em
+
+
+body {
+  font-size: 100%;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+}
+
+
+$h1: 2.16rem;
+$h2: 2.074rem;
+$h3: 1.8rem;
+$h4: 1.728rem;
+
+$p: 1rem;
+
+$max-screen: 3000;
+$min-screen: 320;
+
+// font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+
+@mixin font-size($max, $min) {
+  font-size: calc(#{$min + 'px'}  + (#{$max} - #{$min}) * ((100vw - #{$min-screen + 'px'}) / (#{$max-screen} - #{$min-screen})));
+}

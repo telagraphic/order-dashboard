@@ -1,4 +1,5 @@
 @import '../config/variables';
+@import '../globals/typography';
 
 
 // <header class="header">
@@ -44,11 +45,12 @@
   }
 
   &__service-name {
+    @include font-size(34, 22);
     padding: 0 1rem 0 0;
 
   }
   &__update-time {
-    font-size: 2em;
+    @include font-size(34, 22);
     font-weight: 300;
 
   }
@@ -61,6 +63,8 @@
   }
   &__status-key {
     padding: 0 1rem;
+
+    @include font-size(34, 22);
 
     &:nth-child(1) {
       color: $red;

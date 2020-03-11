@@ -1,4 +1,5 @@
 @import '../config/variables';
+@import '../globals/typography';
 
 
 // <table class="orders">
@@ -35,5 +36,5 @@
   &__body {}
   &__body-row {}
   &__body-cell {}
-  
+
 }
