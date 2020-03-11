@@ -74,12 +74,6 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 	await page.waitFor(5000);
 
-	const invoiceWantedByDates = (await page.waitForFunction(() => {
-			const wantedByDates = querySelectorShadowDom.querySelectorAllDeep('#placeholder', document.querySelector('body table tbody.ui-datatable-data tr td:nth-child(10) .ui-calendar input.ui-inputtext'));
-			return wantedByDates;
-	})).asElement();
-	console.log(invoiceWantedByDates);
-
 	const visionInvoices = await page.evaluate(() => {
 
 		let webInvoices = document.querySelectorAll('body table tbody.ui-datatable-data tr');
@@ -93,19 +87,6 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 			job.jobNumber = invoice.querySelector('td:nth-child(3)').innerText;
 			job.jobTitle = invoice.querySelector('td:nth-child(4)').innerText;
 			// job.location = invoice.querySelector('td:nth-child(7) .k-input').innerText;
-
-			let wantedDate = querySelectorShadowDom.querySelectorDeep('#placeholder', document.querySelector('body table tbody.ui-datatable-data tr td:nth-child(10) .ui-calendar input.ui-inputtext'));
-			job.wantedDate = wantedDate.innerText;
-
-
-
-			// job.wantedDate = wantedDate.
-			// let wantedDate = invoice.querySelector('td:nth-child(10) .ui-calendar input.ui-inputtext').innerHTML;
-			// let wantedDateShadowRoot = wantedDate.shadowRoot;
-
-			// if (wantedDateShadowRoot) {
-			// 	job.wantedDate = wantedDateShadowRoot.querySelector('div:last-child').innerText;
-			// }
 
 			job.takenBy = invoice.querySelector('td:nth-child(12)').innerText;
 			job.salesRep = invoice.querySelector('td:nth-child(13)').innerText;
@@ -124,7 +105,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 			account: invoice.account || '',
 			jobNumber: invoice.jobNumber || '',
 			jobTitle: invoice.jobTitle || '',
-			wantedDate: invoice.wantedDate,
+			// wantedDate: invoice.wantedDate,
 			// location: invoice.location,
 	    takenBy: invoice.takenBy || '',
 	    salesRep: invoice.salesRep || '',
