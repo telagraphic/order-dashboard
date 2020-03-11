@@ -5,6 +5,7 @@ const presseroOrderSchema = new mongoose.Schema({
   orderNumber: String,
   itemNumber: String,
   productName: String,
+  status: String,
   site: String,
   requestedShipDate: String,
   quantity: String,

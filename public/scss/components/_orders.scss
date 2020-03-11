@@ -27,14 +27,70 @@
 
 
 .orders {
+  width: 100%;
+
+  border-collapse: collapse;
 
 
-  &__header {}
-  &__header-row {}
-  &__header-col {}
+  &__header {
+    display: flex;
 
-  &__body {}
-  &__body-row {}
-  &__body-cell {}
+    width: 100%;
+  }
+
+  &__header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    border-bottom: 1px solid $chillGrey;
+
+    text-align: left;
+
+  }
+
+  &__header-col {
+    flex: 1 0 5rem;
+
+    // border-right: 1px solid $chillGrey;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    h3 {
+      padding: 0 0 0 2rem;
+
+      font-weight: 600;
+    }
+
+  }
+
+  &__body {
+
+  }
+  &__body-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 3rem;
+
+    padding: 1rem 0;
+
+    border-bottom: 1px solid $chillGrey;
+
+    text-align: left;
+
+  }
+  &__body-cell {
+    flex: 1 0 5rem;
+    padding: 0 0 0 2rem;
+
+    font-weight: 500;
+  }
 
 }

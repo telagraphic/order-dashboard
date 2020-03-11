@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GSB Order Board</title>
+  <meta name="description" content="GSB Order Dashboard">
+  <meta name="author" content="Nick Lyons">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" href="fonts/HelveticaNeueThin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style type="text/css">
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url('fonts/HelveticaNeueThin.woff2') format('woff2'), url('fonts/HelveticaNeueThin.woff') format('woff');
+      font-display: swap;
+      font-weight: 300;
+    }
+
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url('fonts/HelveticaNeueMedium.woff2') format('woff2'), url('fonts/HelveticaNeueMedium.woff') format('woff');
+      font-display: swap;
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url('fonts/HelveticaNeueBold.woff2') format('woff2'), url('fonts/HelveticaNeueBold.woff') format('woff');
+      font-display: swap;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <section class="header__service-and-status">
+      <h1 class="header__service-name">Vision</h1>
+      <span class="header__update-time">updated 10 mins ago</span>
+    </section>
+    <ul class="header__status">
+      <li class="header__status-key">
+        <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
+          <title>status-circle</title>
+          <circle cx="6" cy="6" r="6" style="fill: #e06c75"/>
+        </svg>
+        <span class="header__status-key-description">Overdue</span>
+      </li>
+      <li class="header__status-key">
+        <svg class="header__status-key-icon" id="#" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
+          <title>status-circle</title>
+          <circle cx="6" cy="6" r="6" style="fill: #E89042"/>
+        </svg>
+        <span class="header__status-key-description" style="color: #E89042;">WIP</span>
+      </li>
+      <li class="header__status-key">
+        <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
+          <title>status-circle</title>
+          <circle cx="6" cy="6" r="6" style="fill: #98c379"/>
+        </svg>
+        <span class="header__status-key-description">Ready for Pickup</span>
+      </li>
+    </ul>
+    <nav class="header__navigation-button">
+      <a href="#">---</a>
+    </nav>
+  </header>
+  <main>
+    <table class="orders">
+      <thead class="orders__header">
+        <tr class="orders__header-row">
+          <th class="orders__header-col">
+            <h3>Account</h3>
+          </th>
+          <th class="orders__header-col">
+            <h3>Job Title</h3>
+          </th>
+          <th class="orders__header-col">
+            <h3>Job #</h3>
+          </th>
+          <th class="orders__header-col">
+            <h3>Sales Rep</h3>
+          </th>
+          <th class="orders__header-col">
+            <h3>Taken By</h3>
+          </th>
+          <th class="orders__header-col">
+            <h3>Wanted Date</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="orders__body">
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">K+ Design Collective, LLC</td>
+          <td class="orders__body-cell">Invoice</td>
+          <td class="orders__body-cell">973373</td>
+          <td class="orders__body-cell">S.Weiss</td>
+          <td class="orders__body-cell">Sweiss</td>
+          <td class="orders__body-cell">3/12/2020</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
