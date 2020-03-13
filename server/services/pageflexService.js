@@ -20,7 +20,12 @@ async function findOrders(options) {
 	return pageflexModel.find({date: { $gte: today }}, function(error, data) {
 		if (error) console.log(error);
 		return data;
-	});
+	}).lean();
+
+	// return pageflexModel.find(function(error, data) {
+	// 	if (error) console.log(error);
+	// 	return data;
+	// }).lean();
 
 }
 

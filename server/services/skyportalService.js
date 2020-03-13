@@ -1,9 +1,9 @@
-const presseroModel = require('../models/presseroModel');
+const skyportalModel = require('../models/skyportalModel');
 
 function upsertOrder(presseroOrder) {
 	const conditions = { orderNumber: presseroOrder.orderNumber, itemNumber: presseroOrder.itemNumber };
 	const options = { upsert: true, new: true, setDefaultsOnInsert: true };
-	presseroModel.findOneAndUpdate(conditions, presseroOrder, options, (err, result) => {
+	skyportalModel.findOneAndUpdate(conditions, presseroOrder, options, (err, result) => {
 		if (err) throw err;
 	});
 
@@ -11,10 +11,10 @@ function upsertOrder(presseroOrder) {
 
 async function findOrders(options) {
 
-	return presseroModel.find(function(error, data) {
+	return skyportalModel.find(function(error, data) {
 		if (error) console.log(error);
 		return data;
-	});
+	}).lean();
 
 }
 

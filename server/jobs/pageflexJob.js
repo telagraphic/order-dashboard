@@ -14,12 +14,15 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
     defaultViewport : {
       width: 1000,
       height: 10000,
-			timeout: 3000000
+			timeout: 0
     }
   });
 
   const page = await browser.newPage();
+	// await page.setCacheEnabled(false)
   await page.setViewport({width: 1000, height: 1000});
+	await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36');
+	await page.setDefaultNavigationTimeout(0);
 
   for (let i = 0; i < sites.sites.list.length; i++) {
     const url = sites.sites.list[i].url;

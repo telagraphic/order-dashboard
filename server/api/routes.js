@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const presseroService = require('../services/presseroService');
+const skyportalService = require('../services/skyportalService');
 const pageflexService = require('../services/pageflexService');
 const visionService = require('../services/visionService');
 const Agenda = require('agenda');
@@ -10,14 +10,14 @@ const agenda = new Agenda({ db: {address: 'mongodb://127.0.0.1:27017/gsb-order-d
 router.use('/orders', async (req, res) => {
 
   try {
-    const presseroOrders = await presseroService.findOrders();
+    const skyportalOrders = await skyportalService.findOrders();
     const pageflexOrders = await pageflexService.findOrders();
     const visionOrders = await visionService.findOrders();
 
     res
       .status(200)
       .json({
-        pressero: presseroOrders,
+        pressero: skyportalOrders,
         pageflex: pageflexOrders,
         vision: visionOrders
       })
@@ -42,7 +42,7 @@ router.use('/orders', async (req, res) => {
 //       reject(new Error("Whoops!"));
 //     });
 //
-//     res.send(presseroOrders);
+//     res.send(skyportalOrders);
 //
 //
 //   } catch (error) {

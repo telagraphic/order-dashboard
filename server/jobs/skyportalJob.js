@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require("fs");
 const mongoose = require('mongoose');
 const accounts = require('../config/accounts.js');
-const presseroService = require('../services/presseroService');
+const skyportalService = require('../services/skyportalService');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 // async function getOrders() {
@@ -101,7 +101,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 //
 // 	orders.forEach(order => {
 //
-// 		presseroService.upsertOrder({
+// 		skyportalService.upsertOrder({
 // 			requestDate: order.requestDate,
 // 			orderNumber: order.orderNumber,
 // 			itemNumber: order.itemNumber,
@@ -237,7 +237,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 	orders.forEach(order => {
 
-		presseroService.upsertOrder({
+		skyportalService.upsertOrder({
 			requestDate: order.requestDate,
 			orderNumber: order.orderNumber,
 			itemNumber: order.itemNumber,
@@ -256,7 +256,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 	})
 
 	try {
-		fs.writeFileSync('./feeds/pressero/presseroJob.json', JSON.stringify(orders));
+		fs.writeFileSync('./feeds/skyportal/skyportalJob.json', JSON.stringify(orders));
 	} catch (error) {
 		console.log(error);
 	}

@@ -19,3 +19,8 @@ Handling errors
 # EXPRESS
 
 - [Express Router](https://scotch.io/tutorials/learn-to-use-the-new-router-in-expressjs-4)
+
+
+# PUPPETEER
+
+[Headless Timeout Errors?](https://github.com/puppeteer/puppeteer/issues/2963)
