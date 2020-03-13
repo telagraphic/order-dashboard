@@ -29,7 +29,6 @@ async function findOrders(options) {
 
 }
 
-
 module.exports = {
   upsertOrder: upsertOrder,
 	findOrders: findOrders

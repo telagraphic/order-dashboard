@@ -1,11 +1,30 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
+const exphbs = require('express-handlebars');
+
 const skyportalService = require('../services/skyportalService');
 const pageflexService = require('../services/pageflexService');
 const visionService = require('../services/visionService');
 const Agenda = require('agenda');
 const Agendash = require('agendash');
 const agenda = new Agenda({ db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}});
+
+
+router.get('/', async (req, res) => {
+  const visionOrders = await visionService.findOrders();
+  res.render('vision', { visionOrders: visionOrders } );
+});
+
+router.get('/skyportal', async (req, res) => {
+  const skyportalOrders = await skyportalService.findOrders();
+  res.render('skyportal', { skyportalOrders: skyportalOrders });
+});
+
+router.get('/pageflex', async (req, res) => {
+  const pageflexOrders = await pageflexService.findOrders();
+  res.render('pageflex', { pageflexOrders: pageflexOrders });
+});
 
 router.use('/orders', async (req, res) => {
 
@@ -32,44 +51,6 @@ router.use('/orders', async (req, res) => {
       })
   }
 });
-
-//
-// router.use('/pressero', async (req, res) => {
-//
-//   try {
-//
-//     new Promise((resolve, reject) => {
-//       reject(new Error("Whoops!"));
-//     });
-//
-//     res.send(skyportalOrders);
-//
-//
-//   } catch (error) {
-//
-//     console.log(error);
-//
-//     res
-//       .status(200)
-//       .json({
-//         error: true,
-//         error: error.message,
-//         error: error.stack
-//       })
-//   }
-//
-//
-// });
-//
-// router.use('/pageflex', async (req, res) => {
-//   const pageflexOrders = await pageflexService.findOrders();
-//   res.send(pageflexOrders);
-// });
-//
-// router.use('/vision', async (req, res) => {
-//   const visionOrders = await visionService.findOrders();
-//   res.send(visionOrders);
-// });
 
 router.use('/dash', Agendash(agenda));
 
