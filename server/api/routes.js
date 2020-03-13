@@ -33,43 +33,43 @@ router.use('/orders', async (req, res) => {
   }
 });
 
-
-router.use('/pressero', async (req, res) => {
-
-  try {
-
-    new Promise((resolve, reject) => {
-      reject(new Error("Whoops!"));
-    });
-
-    res.send(presseroOrders);
-
-
-  } catch (error) {
-
-    console.log(error);
-
-    res
-      .status(200)
-      .json({
-        error: true,
-        error: error.message,
-        error: error.stack
-      })
-  }
-
-
-});
-
-router.use('/pageflex', async (req, res) => {
-  const pageflexOrders = await pageflexService.findOrders();
-  res.send(pageflexOrders);
-});
-
-router.use('/vision', async (req, res) => {
-  const visionOrders = await visionService.findOrders();
-  res.send(visionOrders);
-});
+//
+// router.use('/pressero', async (req, res) => {
+//
+//   try {
+//
+//     new Promise((resolve, reject) => {
+//       reject(new Error("Whoops!"));
+//     });
+//
+//     res.send(presseroOrders);
+//
+//
+//   } catch (error) {
+//
+//     console.log(error);
+//
+//     res
+//       .status(200)
+//       .json({
+//         error: true,
+//         error: error.message,
+//         error: error.stack
+//       })
+//   }
+//
+//
+// });
+//
+// router.use('/pageflex', async (req, res) => {
+//   const pageflexOrders = await pageflexService.findOrders();
+//   res.send(pageflexOrders);
+// });
+//
+// router.use('/vision', async (req, res) => {
+//   const visionOrders = await visionService.findOrders();
+//   res.send(visionOrders);
+// });
 
 router.use('/dash', Agendash(agenda));
 

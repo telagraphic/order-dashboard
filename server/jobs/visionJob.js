@@ -41,7 +41,6 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 	await page.waitFor(2000);
 
-	// const pendingDocumentsButton = 'div[name="menuitem_3"] > span.quick-access-item-text';
 	const pendingDocumentsButton = '#menuUL li.menuLI';
 	await page.click(pendingDocumentsButton);
 	await page.waitFor(2000);
@@ -57,12 +56,6 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 	await page.click(dueTodayOption);
 
 	await page.waitFor(2000);
-
-	await page
-					.addScriptTag({
-    				path: path.join(__dirname, '../../node_modules/query-selector-shadow-dom/dist/querySelectorShadowDom.js')
-  				});
-
 
 	const showRecordsSelect = '.ui-paginator-bottom .ui-dropdown-trigger-icon';
 	await page.click(showRecordsSelect);

@@ -16,7 +16,7 @@ async function findOrders() {
 	return visionModel.find(function(error, data) {
 		if (error) console.log(error);
 		return data;
-	});
+	}).lean();
 }
 
 module.exports = {
