@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
+    "dev:start": "run-p public:watch:scss dev",
     "public:scss": "node-sass --output-style compressed -o public/css public/scss/styles.scss",
     "public:watch:scss": "onchange 'public/scss' -- npm run public:scss",
-    "public:serve": "browser-sync start --server --ss 'public' --files 'public/scss/**/*.scss, public/*.html'",
+    "public:serve": "browser-sync start --server --ss 'public/pages' --files 'public/css/*.css, public/pages/*.html'",
     "public:start": "run-p public:watch:scss public:serve"
   },
   "author": "",
@@ -21,8 +22,7 @@
     "express-handlebars": "^3.1.0",
     "mongoose": "^5.9.3",
     "node-dir": "^0.1.17",
-    "nodeenv": "^3.0.0",
-    "query-selector-shadow-dom": "^0.4.2"
+    "nodeenv": "^3.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

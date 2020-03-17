@@ -13,19 +13,23 @@ function upsertOrder(pageflexOrder) {
 
 async function findOrders(options) {
 
-	let today = new Date();
-	let twoWeeksAgo = today.getDate() - 14;
-	today.setDate(twoWeeksAgo)
-
-	return pageflexModel.find({date: { $gte: today }}, function(error, data) {
-		if (error) console.log(error);
-		return data;
-	}).lean();
-
-	// return pageflexModel.find(function(error, data) {
+	// let today = new Date();
+	// let twoWeeksAgo = today.getDate() - 14;
+	// today.setDate(twoWeeksAgo)
+	//
+	// return pageflexModel.find({date: { $gte: today }}, function(error, data) {
 	// 	if (error) console.log(error);
 	// 	return data;
 	// }).lean();
+
+	return pageflexModel.find(function(error, data) {
+		if (error) console.log(error);
+		return data;
+	})
+		.sort({'date': 'desc'})
+		.lean();
+
+
 
 }
 

@@ -33,9 +33,12 @@
   </nav>
 </header>
 <main>
-  <table id="orders" class="orders">
+  <table id="orders" class="orders pageflex-orders">
     <thead class="orders__header">
       <tr class="orders__header-row">
+        <th class="orders__header-col">
+          <h3>Status</h3>
+        </th>
         <th class="orders__header-col">
           <h3>Client</h3>
         </th>
@@ -62,13 +65,19 @@
     <tbody class="orders__body">
       {{#each pageflexOrders}}
       <tr class="orders__body-row">
+        <td class="orders__body-cell">
+          <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
+            <title>status-circle</title>
+            <circle cx="6" cy="6" r="6" style="fill: #98c379"/>
+          </svg>
+        </td>
         <td class="orders__body-cell">{{this.client}}</td>
         <td class="orders__body-cell">{{this.id}}</td>
         <td class="orders__body-cell">{{this.orderStatus}}</td>
         <td class="orders__body-cell">{{this.itemStatus}}</td>
         <td class="orders__body-cell">{{this.user}}</td>
         <td class="orders__body-cell">{{this.time}}</td>
-        <td class="orders__body-cell">12/12/1212</td>
+        <td class="orders__body-cell">{{this.date}}</td>
       </tr>
       {{/each}}
     </tbody>

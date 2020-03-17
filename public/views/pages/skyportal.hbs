@@ -1,29 +1,36 @@
 <header class="header">
   <section class="header__service-and-status">
-    <h1 class="header__service-name">Pressero</h1>
+    <h1 class="header__service-name">Sky Portal</h1>
     <span class="header__update-time">updated 5 mins ago</span>
   </section>
   <ul class="header__status">
     <li class="header__status-key">
-      <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
+      <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <title>status-circle</title>
         <circle cx="6" cy="6" r="6" style="fill: #e06c75"/>
       </svg>
       <span class="header__status-key-description">Cancelled</span>
     </li>
     <li class="header__status-key">
-      <svg class="header__status-key-icon" id="#" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
+      <svg class="header__status-key-icon" id="#" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <title>status-circle</title>
         <circle cx="6" cy="6" r="6" style="fill: #FFFA72"/>
       </svg>
       <span class="header__status-key-description" style="color: #FFFA72;">Not Approved</span>
     </li>
     <li class="header__status-key">
-      <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
+      <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+        <title>status-circle</title>
+        <circle cx="6" cy="6" r="6" style="fill: #E89042"/>
+      </svg>
+      <span class="header__status-key-description" style="color:#E89042">Press</span>
+    </li>
+    <li class="header__status-key">
+      <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <title>status-circle</title>
         <circle cx="6" cy="6" r="6" style="fill: #98c379"/>
       </svg>
-      <span class="header__status-key-description">Ready for Production</span>
+      <span class="header__status-key-description" style="color:#98c379">Completed</span>
     </li>
   </ul>
   <nav class="header__navigation-button">
@@ -33,7 +40,7 @@
   </nav>
 </header>
 <main>
-  <table id="orders" class="orders">
+  <table id="orders" class="orders skyportal-orders">
     <thead class="orders__header">
       <tr class="orders__header-row">
         <th class="orders__header-col">
@@ -61,7 +68,10 @@
           <h3>Request Date</h3>
         </th>
         <th class="orders__header-col" data-sort-method="date">
-          <h3>Requested Ship Date</h3>
+          <h3>Req. Ship Date</h3>
+        </th>
+        <th class="orders__header-col">
+          <h3>Status</h3>
         </th>
       </tr>
     </thead>
@@ -77,6 +87,7 @@
         <td class="orders__body-cell">{{this.approved}}</td>
         <td class="orders__body-cell">{{this.requestDate}}</td>
         <td class="orders__body-cell">{{this.requestedShipDate}}</td>
+        <td class="orders__body-cell">{{this.status}}</td>
       </tr>
       {{/each}}
     </tbody>

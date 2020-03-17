@@ -8,7 +8,7 @@ const printSmith = {
   password: 'lic3030'
 };
 
-const pressero = {
+const skyportal = {
   username: 'nlyons',
   password: 'gsbskyportal'
 }
@@ -16,5 +16,5 @@ const pressero = {
 module.exports = {
     PAGEFLEX: pageflex,
     PRINTSMITH: printSmith,
-    PRESSERO: pressero
+    SKYPORTAL: skyportal
 }

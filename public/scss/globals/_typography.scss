@@ -1,32 +1,28 @@
-// https://www.modularscale.com/?1,1.5&em&1.2
+// https://www.modularscale.com/?16,24&px&1.2
 //
-// 4.3em
-// 3.732em
-// 3.583em
-// 3.11em
-// 2.986em
-// 2.592em
-// 2.488em
-// 2.16em
-// 2.074em
-// 1.8em
-// 1.728em
-// 1.5em
-// 1.44em
-// 1.25em
-// 1.2em
-// 1.042em
-// 1em
-
-
-
+// 68.797px  4.3em
+// 59.72px   3.732em
+// 57.331px  3.583em
+// 49.766px  3.11em
+// 47.776px  2.986em
+// 41.472px  2.592em
+// 39.813px  2.488em
+// 34.56px   2.16em
+// 33.178px  2.074em
+// 28.8px    1.8em
+// 27.648px  1.728em
+// 24px      1.5em
+// 23.04px   1.44em
+// 20px      1.25em
+// 19.2px    1.2em
+// 16.667px  1.042em
+// 16px      1em
 
 body {
   font-size: 100%;
   font-family: "Helvetica Neue";
   font-weight: 500;
 }
-
 
 $h1: 2.16rem;
 $h2: 2.074rem;
@@ -39,7 +35,6 @@ $max-screen: 3000;
 $min-screen: 320;
 
 // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-
 
 @mixin font-size($max, $min) {
   font-size: calc(#{$min + 'px'}  + (#{$max} - #{$min}) * ((100vw - #{$min-screen + 'px'}) / (#{$max-screen} - #{$min-screen})));

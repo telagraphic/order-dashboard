@@ -9,6 +9,26 @@ Handling errors
 (node:52368) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
 
 
+# Build Scripts
+
+This sets up a static file server:
+```
+  "public:serve": "browser-sync start --server --ss 'public' --files 'public/scss/**/*.scss, public/*.html'"
+```
+
+Static server from public:
+```
+  "public:serve": "browser-sync start --server --ss 'public/pages' --files 'public/scss/**/*.scss, public/pages/*.html'"
+```
+
+Nodemon & Browser-Sync:
+
+```
+  "public:serve": "browser-sync start --proxy 'localhost:3000' --files 'public/scss/**/*.scss, public/views/**/*.hbs'"
+```
+
+- [Express & Browser-Sync](https://www.npmjs.com/package/connect-browser-sync)
+- [Browser-Sync Options](https://browsersync.io/docs/command-line)
 
 # MONGODB
 

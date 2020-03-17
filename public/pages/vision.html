@@ -6,29 +6,29 @@
   <title>GSB Order Board</title>
   <meta name="description" content="GSB Order Dashboard">
   <meta name="author" content="Nick Lyons">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preload" href="fonts/HelveticaNeueThin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/HelveticaNeueMedium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/HelveticaNeueBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="preload" href="public/fonts/HelveticaNeueThin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="public/fonts/HelveticaNeueMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="public/fonts/HelveticaNeueBold.woff2" as="font" type="font/woff2" crossorigin>
 
   <style type="text/css">
     @font-face {
       font-family: "Helvetica Neue";
-      src: url('fonts/HelveticaNeueThin.woff2') format('woff2'), url('fonts/HelveticaNeueThin.woff') format('woff');
+      src: url('public/fonts/HelveticaNeueThin.woff2') format('woff2'), url('public/fonts/HelveticaNeueThin.woff') format('woff');
       font-display: swap;
       font-weight: 300;
     }
 
     @font-face {
       font-family: "Helvetica Neue";
-      src: url('fonts/HelveticaNeueMedium.woff2') format('woff2'), url('fonts/HelveticaNeueMedium.woff') format('woff');
+      src: url('public/fonts/HelveticaNeueMedium.woff2') format('woff2'), url('public/fonts/HelveticaNeueMedium.woff') format('woff');
       font-display: swap;
       font-weight: 500;
     }
 
     @font-face {
       font-family: "Helvetica Neue";
-      src: url('fonts/HelveticaNeueBold.woff2') format('woff2'), url('fonts/HelveticaNeueBold.woff') format('woff');
+      src: url('public/fonts/HelveticaNeueBold.woff2') format('woff2'), url('public/fonts/HelveticaNeueBold.woff') format('woff');
       font-display: swap;
       font-weight: 600;
     }
@@ -65,13 +65,13 @@
       </li>
     </ul>
     <nav class="header__navigation-button">
-      <a href="pressero.html">Sky Portal</a>
-      <a href="pageflex.html">Pageflex</a>
       <a href="vision.html">Vision</a>
+      <a href="skyportal.html">Sky Portal</a>
+      <a href="index.html">Pageflex</a>
     </nav>
   </header>
   <main>
-    <table id="orders" class="orders">
+    <table id="orders" class="orders vision-orders">
       <thead class="orders__header">
         <tr class="orders__header-row">
           <th class="orders__header-col">
@@ -453,9 +453,9 @@
   <footer>
 
   </footer>
-  <script src="js/tablesort.min.js"></script>
-  <script src="js/tablesort.number.min.js"></script>
-  <script src="js/tablesort.date.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="public/js/tablesort.min.js"></script>
+  <script src="public/js/tablesort.number.min.js"></script>
+  <script src="public/js/tablesort.date.min.js"></script>
+  <script src="public/js/app.js"></script>
 </body>
 </html>

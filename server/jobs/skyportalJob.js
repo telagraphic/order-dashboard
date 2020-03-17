@@ -26,10 +26,10 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 // 	const loginButton = 'input[id="btnLogin"]';
 //
 // 	await page.click(username);
-// 	await page.keyboard.type(accounts.PRESSERO.username);
+// 	await page.keyboard.type(accounts.SKYPORTAL.username);
 //
 // 	await page.click(password);
-// 	await page.keyboard.type(accounts.PRESSERO.password);
+// 	await page.keyboard.type(accounts.SKYPORTAL.password);
 //
 // 	await page.click(loginButton);
 //
@@ -164,10 +164,10 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 	const loginButton = 'input[id="btnLogin"]';
 
 	await page.click(username);
-	await page.keyboard.type(accounts.PRESSERO.username);
+	await page.keyboard.type(accounts.SKYPORTAL.username);
 
 	await page.click(password);
-	await page.keyboard.type(accounts.PRESSERO.password);
+	await page.keyboard.type(accounts.SKYPORTAL.password);
 
 	await page.click(loginButton);
 
