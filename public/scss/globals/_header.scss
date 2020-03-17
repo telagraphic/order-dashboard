@@ -1,7 +1,6 @@
 @import '../config/variables';
 @import '../globals/typography';
 
-
 // <header class="header">
 //   <section class="header__service-and-status">
 //     <h1 class="header__service-name">Pageflex</h1>
@@ -45,8 +44,6 @@
 
 
   background-color: $chillGrey;
-  // color: $white;
-
 
   &__service-and-status {
     display: flex;

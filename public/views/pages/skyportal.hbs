@@ -7,28 +7,28 @@
     <li class="header__status-key">
       <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <title>status-circle</title>
-        <circle cx="6" cy="6" r="6" style="fill: #e06c75"/>
+        <circle cx="6" cy="6" r="6" style="fill: #e06c75" />
       </svg>
       <span class="header__status-key-description">Cancelled</span>
     </li>
     <li class="header__status-key">
       <svg class="header__status-key-icon" id="#" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <title>status-circle</title>
-        <circle cx="6" cy="6" r="6" style="fill: #FFFA72"/>
+        <circle cx="6" cy="6" r="6" style="fill: #FFFA72" />
       </svg>
       <span class="header__status-key-description" style="color: #FFFA72;">Not Approved</span>
     </li>
     <li class="header__status-key">
       <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <title>status-circle</title>
-        <circle cx="6" cy="6" r="6" style="fill: #E89042"/>
+        <circle cx="6" cy="6" r="6" style="fill: #E89042" />
       </svg>
       <span class="header__status-key-description" style="color:#E89042">Press</span>
     </li>
     <li class="header__status-key">
       <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <title>status-circle</title>
-        <circle cx="6" cy="6" r="6" style="fill: #98c379"/>
+        <circle cx="6" cy="6" r="6" style="fill: #98c379" />
       </svg>
       <span class="header__status-key-description" style="color:#98c379">Completed</span>
     </li>
@@ -77,18 +77,18 @@
     </thead>
     <tbody class="orders__body">
       {{#each skyportalOrders}}
-      <tr class="orders__body-row">
-        <td class="orders__body-cell">{{this.site}}</td>
-        <td class="orders__body-cell">{{this.productName}}</td>
-        <td class="orders__body-cell">{{this.orderNumber}}</td>
-        <td class="orders__body-cell">{{this.itemNumber}}</td>
-        <td class="orders__body-cell">{{this.quantity}}</td>
-        <td class="orders__body-cell">{{this.paid}}</td>
-        <td class="orders__body-cell">{{this.approved}}</td>
-        <td class="orders__body-cell">{{this.requestDate}}</td>
-        <td class="orders__body-cell">{{this.requestedShipDate}}</td>
-        <td class="orders__body-cell">{{this.status}}</td>
-      </tr>
+        <tr class="orders__body-row">
+          <td class="orders__body-cell">{{this.site}}</td>
+          <td class="orders__body-cell">{{this.productName}}</td>
+          <td class="orders__body-cell">{{this.orderNumber}}</td>
+          <td class="orders__body-cell">{{this.itemNumber}}</td>
+          <td class="orders__body-cell">{{this.quantity}}</td>
+          <td class="orders__body-cell">{{this.paid}}</td>
+          <td class="orders__body-cell">{{this.approved}}</td>
+          <td class="orders__body-cell">{{this.requestDate}}</td>
+          <td class="orders__body-cell">{{this.requestedShipDate}}</td>
+          <td class="orders__body-cell">{{this.status}}</td>
+        </tr>
       {{/each}}
     </tbody>
   </table>
