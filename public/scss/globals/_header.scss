@@ -1,42 +1,9 @@
 @import '../config/variables';
 @import '../globals/typography';
 
-// <header class="header">
-//   <section class="header__service-and-status">
-//     <h1 class="header__service-name">Pageflex</h1>
-//     <span class="header__update-time">updated 5 mins ago</span>
-//   </section>
-//   <ul class="header__status">
-//     <li class="header__status-key">
-//       <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
-//         <title>status-circle</title>
-//         <circle cx="6" cy="6" r="6" style="fill: #e06c75"/>
-//       </svg>
-//       <span class="header__status-key-description">Overdue</span>
-//     </li>
-//     <li class="header__status-key">
-//       <svg class="header__status-key-icon" id="#" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
-//         <title>status-circle</title>
-//         <circle cx="6" cy="6" r="6" style="fill: #E89042"/>
-//       </svg>
-//       <span class="header__status-key-description">WIP</span>
-//     </li>
-//     <li class="header__status-key">
-//       <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
-//         <title>status-circle</title>
-//         <circle cx="6" cy="6" r="6" style="fill: #98c379"/>
-//       </svg>
-//       <span class="header__status-key-description">Complete</span>
-//     </li>
-//   </ul>
-//   <nav class="header__navigation-button">
-//     <a href="#">---</a>
-//   </nav>
-// </header>
-
 .header {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: baseline;
 
   width: 100%;
@@ -44,12 +11,13 @@
 
 
   background-color: $chillGrey;
+  background-color: #fdfdfd;
 
   &__service-and-status {
     display: flex;
     align-items: baseline;
 
-    color: $whiteGrey;
+    color: $chillGrey;
   }
 
   &__service-name {
@@ -115,6 +83,7 @@
       padding: 0 .5rem;
 
       color: $white;
+      color: $chillGrey;
       text-decoration: none;
 
       font-weight: 600;

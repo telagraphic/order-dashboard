@@ -7,7 +7,7 @@ let pageflexOrderSchema = new mongoose.Schema({
   itemStatus: String,
   user: String,
   time: String,
-  date: String,
+  date: Date,
   dashboardUpdatedAt: Date
 }, {
   collection: 'pageflex'

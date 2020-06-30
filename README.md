@@ -1,5 +1,25 @@
 # NODE
 
+
+## Pageflex
+
+- Item Status:Unreviewed || Pending Review && Date/Time Created > 5 Days from today
+
+## Skyportal
+
+- Unapproved  
+- Not Paid
+- Approved && Not Paid
+- Status: Order Received
+
+## Vision
+
+-
+
+
+
+
+
 # Build Scripts
 
 This sets up a static file server:

@@ -45,7 +45,9 @@
 
     width: 100%;
 
-    border-bottom: 1px solid $chillGrey;
+    // border-bottom: 1px solid $chillGrey;
+    border-bottom: 1px solid $whiteGrey;
+    background-color: #383d48;
 
     @include font-size(18,16);
     text-align: left;
@@ -54,6 +56,7 @@
 
   &__header-col {
     flex: 1 0 5rem;
+    // background-color: #383d48;
 
     // border-right: 1px solid $chillGrey;
 
@@ -65,11 +68,17 @@
       padding: 0 0 0 2rem;
 
       font-weight: 600;
+      color: white;
     }
 
   }
 
   &__body {
+    background-color: $blueGrey;
+    background-color: $chillGrey;
+    background-color: #383d48;
+
+    color: white;
 
   }
   &__body-row {
@@ -82,7 +91,7 @@
     height: 4rem;
     padding: 1rem 0;
 
-    border-bottom: 1px solid $chillGrey;
+    border-bottom: 1px solid $whiteGrey;
 
     @include font-size(18,16);
     text-align: left;
@@ -104,20 +113,37 @@
   }
 
   .orders__header-col:nth-child(2), .orders__body-cell:nth-child(2) {
+    flex: 2.5 0 5rem;
+  }
+
+  .orders__header-col:nth-child(3), .orders__body-cell:nth-child(3) {
     flex: 4 0 5rem;
+  }
+
+  .header__status-key-description {
+    @include font-size(18,16);
   }
 }
 
 .pageflex-orders {
 
   .orders__header-col:nth-child(1), .orders__body-cell:nth-child(1) {
-    flex: .5 0 2rem;
+    flex: 1 0 5rem;
   }
+
+  .header__status-key-description {
+    @include font-size(18,16);
+  }
+
 }
 
 .vision-orders {
 
   .orders__header-col:nth-child(1), .orders__body-cell:nth-child(1) {
     flex: 2 0 2rem;
+  }
+
+  .header__status-key-description {
+    @include font-size(18,16);
   }
 }

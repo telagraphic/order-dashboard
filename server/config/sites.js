@@ -11,11 +11,6 @@ const sites = {
       url: 'https://pflex.aldine.com/asb/AdminLogin.aspx'
     },
     {
-      client: 'Amster',
-      status: true,
-      url: 'https://pflex.aldine.com/amster/AdminLogin.aspx'
-    },
-    {
       client: 'BBDO',
       status: true,
       url: 'https://pflex.aldine.com/bbdo/AdminLogin.aspx'
@@ -26,19 +21,9 @@ const sites = {
       url: 'https://pflex.aldine.com/cadre/AdminLogin.aspx'
     },
     {
-      client: 'Cravath',
-      status: true,
-      url: 'https://pflex.aldine.com/cravath/AdminLogin.aspx'
-    },
-    {
       client: 'FXFowle',
       status: true,
       url: 'https://pflex.aldine.com/fxfowle/AdminLogin.aspx'
-    },
-    {
-      client: 'Fluid',
-      status: true,
-      url: 'https://pflex.aldine.com/Fluid/AdminLogin.aspx'
     },
     {
       client: 'GroupM',
@@ -84,16 +69,6 @@ const sites = {
       client: 'Moelis',
       status: true,
       url: 'https://pflex.aldine.com/moelis/AdminLogin.aspx'
-    },
-    {
-      client: 'Paul-Weiss',
-      status: true,
-      url: 'https://pflex.aldine.com/paulweiss/AdminLogin.aspx'
-    },
-    {
-      client: 'PMC',
-      status: true,
-      url: 'https://pflex.aldine.com/pmc/AdminLogin.aspx'
     },
     {
       client: 'Titan-Intersection',

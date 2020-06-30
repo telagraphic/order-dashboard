@@ -91,6 +91,8 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
     orders.forEach(function(order) {
       order.client = client;
 
+			let [day, month, year] = order.date.split("/")
+
       pageflexService.upsertOrder({
         client: order.client,
         id: order.id,
@@ -98,7 +100,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
         itemStatus: order.itemStatus,
         user: order.user,
         time: order.time,
-        date: order.date
+        date: new Date(year, month - 1, day) //order.date
       });
 
     });
