@@ -1,17 +1,5 @@
-<header class="header">
-  <section class="header__service-and-status">
-    <h1 class="header__service-name">Pageflex</h1>
-    <span class="header__update-time">updated 15 mins ago</span>
-  </section>
-  <nav class="header__navigation-button">
-    <a href="/">Vision</a>
-    <a href="/skyportal">Sky Portal</a>
-    <a href="/pageflex">Pageflex</a>
-    <a href="/pending" style="color: #e06c75">Pending</a>
-  </nav>
-</header>
-<main>
-  <table id="orders" class="orders pageflex-orders">
+<section data-barba="container" data-barba-namespace="pending" data-service-name="Pending Orders" data-service-update="5 minutes ago">
+  <table id="orders" class="orders pending-orders">
     <thead class="orders__header">
       <tr class="orders__header-row">
         <th class="orders__header-col">
@@ -22,9 +10,6 @@
         </th>
         <th class="orders__header-col">
           <h3>User</h3>
-        </th>
-        <th class="orders__header-col">
-          <h3>Order Status?</h3>
         </th>
         <th class="orders__header-col">
           <h3>Approved?</h3>
@@ -40,20 +25,14 @@
     <tbody class="orders__body">
       {{#each pendingOrders}}
       <tr class="orders__body-row">
-        <td class="orders__body-cell">
-          <svg class="header__status-key-icon" id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.25in" height="0.25in" viewBox="0 0 12 12">
-            <title>status-circle</title>
-            <circle cx="6" cy="6" r="6" style="fill: #e06c75"/>
-          </svg>
-        </td>
+        <td class="orders__body-cell">{{{checkStatus this.status}}}</td>
         <td class="orders__body-cell">{{this.client}}</td>
         <td class="orders__body-cell">{{this.user}}</td>
-        <td class="orders__body-cell">{{this.status}}</td>
         <td class="orders__body-cell">{{this.approved}}</td>
         <td class="orders__body-cell">{{this.paid}}</td>
-        <td class="orders__body-cell">{{this.orderDate}}</td>
+        <td class="orders__body-cell">{{formatDate this.orderDate}}</td>
       </tr>
       {{/each}}
     </tbody>
   </table>
-</main>
+</section>

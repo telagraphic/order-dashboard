@@ -1,23 +1,54 @@
-# NODE
+# Status Codes
 
 
 ## Pageflex
-
 - Item Status:Unreviewed || Pending Review && Date/Time Created > 5 Days from today
+
+RED
+- Declined
+- Rejected
+- Canceled
+
+YELLOW
+- Pending Review
+
+GREEN
+- In Process
+
+WHITE
+- Completed
 
 ## Skyportal
 
-- Unapproved  
+RED
+- Cancelled
+
+YELLOW
+- Unapproved
 - Not Paid
-- Approved && Not Paid
-- Status: Order Received
+
+ORANGE
+- Order Received
+
+GREEN
+- Press
+
+WHITE
+- Order Complete
 
 ## Vision
 
--
+- All Types
+- All Due (Late)
+- Due Today
+- Due Tomorrow
+- Due This Week
+- Due Next Week
 
-
-
+- Past Due
+- Pickup Ready
+- Hold
+- Firm Wanted By Date
 
 
 # Build Scripts

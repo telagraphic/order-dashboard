@@ -31,69 +31,30 @@
 
   }
 
-  &__status {
 
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-
-    justify-content: center;
-    align-items: center;
-
-    list-style: none;
-  }
-
-  &__status-key {
-    display: grid;
-    grid-template-columns: auto auto;
-
-    align-items: baseline;
-    justify-content: flex-start;
-    padding: 0 1rem;
-
-    &:nth-child(1) {
-      color: $red;
-    }
-
-    &:nth-child(2) {
-      color: $orange;
-    }
-
-    &:nth-child(3) {
-      color: $green;
-    }
-  }
-
-  &__status-key-icon {
-    display: inline-block;
-    height: 2vh;
-
-  }
-
-  &__status-key-description {
-    padding: 0 1rem;
-
-    @include font-size(28, 22);
-  }
-
-  &__navigation-button {
+  &__navigation {
     display: flex;
     justify-content: flex-end;
 
-    a {
+    &-link {
       padding: 0 .5rem;
 
-      color: $white;
-      color: $chillGrey;
+      color: $lightGrey-10;
       text-decoration: none;
-
       font-weight: 600;
+
+      transition: color .25s ease-in;
 
       &:hover,
       &:focus {
-        color: $lightGrey-10;
+        color: $chillGrey;
+      }
+
+      &--active {
+        color: $chillBlack;
       }
 
     }
-  }
 
+  }
 }

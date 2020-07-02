@@ -58,20 +58,8 @@ async function findPendingOrders() {
 
 	let pageflexOrders = await findPendingPageflexOrders();
 	let skyportalOrders = await findPendingSkyportalOrders();
-
 	let allOrders = [...pageflexOrders, ...skyportalOrders];
-
-	console.log(allOrders);
-
 	return allOrders;
-
-	//
-	// return pageflexModel.find({ orderStatus: ['Unreviewed', 'Pending Review'] }, function(error, data) {
-	// 	if (error) console.log(error);
-	// 	return data;
-	// })
-	// 	.sort({'date': 'desc'})
-	// 	.lean();
 
 }
 

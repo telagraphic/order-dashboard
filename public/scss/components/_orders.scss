@@ -2,39 +2,25 @@
 @import '../globals/typography';
 
 
-// <table class="orders">
-//   <thead class="orders__header">
-//     <tr class="orders__header-row">
-//       <th class="orders__header-col">Column 1</th>
-//       <th class="orders__header-col">Column 2</th>
-//       <th class="orders__header-col">Long Column 3</th>
-//       <th class="orders__header-col">Column 4</th>
-//       <th class="orders__header-col">Long Column 5</th>
-//       <th class="orders__header-col">Column 6</th>
-//     </tr>
-//   </thead>
-//   <tbody class="orders__body">
-//     <tr class="orders__body-row">
-//       <td class="orders__body-cell">Content</td>
-//       <td class="orders__body-cell">Content</td>
-//       <td class="orders__body-cell">Content</td>
-//       <td class="orders__body-cell">Content</td>
-//       <td class="orders__body-cell">Content</td>
-//       <td class="orders__body-cell">Content</td>
-//     </tr>
-//   </tbody>
-// </table>
+body {
+  background-color: #383d48;
+}
 
+.barba-container {
+
+}
+
+main {
+  background-color:#383d48;
+  min-height: 100vh;
+}
 
 .orders {
   width: 100%;
-
   border-collapse: collapse;
-
 
   &__header {
     display: flex;
-
     width: 100%;
   }
 
@@ -45,7 +31,6 @@
 
     width: 100%;
 
-    // border-bottom: 1px solid $chillGrey;
     border-bottom: 1px solid $whiteGrey;
     background-color: #383d48;
 
@@ -56,9 +41,6 @@
 
   &__header-col {
     flex: 1 0 5rem;
-    // background-color: #383d48;
-
-    // border-right: 1px solid $chillGrey;
 
     &:last-child {
       border-right: none;
@@ -74,8 +56,6 @@
   }
 
   &__body {
-    background-color: $blueGrey;
-    background-color: $chillGrey;
     background-color: #383d48;
 
     color: white;
@@ -96,7 +76,27 @@
     @include font-size(18,16);
     text-align: left;
 
+    &-in-process {
+      background-color: $green;
+      color: black;
+    }
+    &-cancelled {
+      background-color: #e06c75;
+    }
+    &-unapproved {
+      background-color: #FFFA72;
+      color: black;
+    }
+    &-new-order {
+      background-color: #E89042;
+      color: black;
+    }
+    &-completed {
+      background-color: #FFFFFF;
+      color: black;
+    }
   }
+
   &__body-cell {
     flex: 1 0 5rem;
     padding: 0 0 0 2rem;
@@ -142,6 +142,18 @@
   .orders__header-col:nth-child(1), .orders__body-cell:nth-child(1) {
     flex: 2 0 2rem;
   }
+
+  .header__status-key-description {
+    @include font-size(18,16);
+  }
+}
+
+
+.pending-orders {
+  .orders__header-col:nth-child(1), .orders__body-cell:nth-child(1) {
+    flex: 1.5 0 5rem;
+  }
+
 
   .header__status-key-description {
     @include font-size(18,16);

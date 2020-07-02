@@ -36,8 +36,24 @@
 </head>
 
 <body>
-  {{{body}}}
+  <header class="header">
+    <section class="header__service-and-status">
+      <h1 class="header__service-name"></h1>
+      <span class="header__update-time"></span>
+    </section>
+    <nav class="header__navigation">
+      <a class="header__navigation-link" href="/">Vision</a>
+      <a class="header__navigation-link" href="/skyportal">Sky Portal</a>
+      <a class="header__navigation-link" href="/pageflex">Pageflex</a>
+      <a class="header__navigation-link" href="/pending">Pending</a>
+    </nav>
+  </header>
+  <main data-barba="wrapper">
+    {{{body}}}
+  </main>
 </body>
+<script src="js/gsap.min.js"></script>
+<script src="js/barba.core.js"></script>
 <script src="js/tablesort.min.js"></script>
 <script src="js/tablesort.number.min.js"></script>
 <script src="js/tablesort.date.min.js"></script>

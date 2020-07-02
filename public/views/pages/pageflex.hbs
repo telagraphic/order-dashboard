@@ -1,16 +1,4 @@
-<header class="header">
-  <section class="header__service-and-status">
-    <h1 class="header__service-name">Pageflex</h1>
-    <span class="header__update-time">updated 15 mins ago</span>
-  </section>
-  <nav class="header__navigation-button">
-    <a href="/">Vision</a>
-    <a href="/skyportal">Sky Portal</a>
-    <a href="/pageflex">Pageflex</a>
-    <a href="/pending" style="color: #e06c75">Pending</a>
-  </nav>
-</header>
-<main>
+<section class="barba-container" data-barba="container" data-barba-namespace="pageflex" data-service-name="Pageflex" data-service-update="15 minutes ago">
   <table id="orders" class="orders pageflex-orders">
     <thead class="orders__header">
       <tr class="orders__header-row">
@@ -39,7 +27,7 @@
     </thead>
     <tbody class="orders__body">
       {{#each pageflexOrders}}
-      <tr class="orders__body-row">
+      <tr class="orders__body-row" >
         <td class="orders__body-cell">{{{checkStatus this.orderStatus}}}</td>
         <td class="orders__body-cell">{{this.client}}</td>
         <td class="orders__body-cell">{{this.id}}</td>
@@ -52,4 +40,4 @@
       {{/each}}
     </tbody>
   </table>
-</main>
+</section>
