@@ -24,8 +24,8 @@
     </thead>
     <tbody class="orders__body">
       {{#each pendingOrders}}
-      <tr class="orders__body-row">
-        <td class="orders__body-cell">{{{checkStatus this.status}}}</td>
+      <tr class="orders__body-row {{checkClass this.status}}">
+        <td class="orders__body-cell">{{{this.status}}}</td>
         <td class="orders__body-cell">{{this.client}}</td>
         <td class="orders__body-cell">{{this.user}}</td>
         <td class="orders__body-cell">{{this.approved}}</td>

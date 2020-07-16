@@ -4,7 +4,7 @@ const router = require('./server/api/routes')
 const path = require('path');
 const dayjs = require('dayjs');
 const exphbs = require('express-handlebars');
-
+const agenda = require('./server/jobs/agenda')
 
 app.use(express.static(__dirname + '/public'));
 
@@ -16,7 +16,6 @@ const hbs = exphbs.create({
   helpers: {
     formatDate: function(date) {
       return dayjs(date).format('MM/DD/YYYY')
-      //return dayjs(date).format('MM/DD/YYYY [@]h:mmA')
     },
     formatNumber: function(number) {
       return number.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
@@ -30,16 +29,11 @@ const hbs = exphbs.create({
         return `orders__body-row-unapproved`
       } else if (status === 'Order Received' ) {
         return `orders__body-row-new-order`
-      } else if (status === 'Order Completed' || status === 'Completed') {
+      } else if (status === 'Order Completed' || status === 'Completed' || status === 'Order Complete') {
         return `orders__body-row-completed`
       }
     },
     checkStatus: function(status) {
-
-      // pageflex: failed, not approved, new order, shipped
-      // skyportal: cancelled, not approved, press, completed
-      // vision: overdue, wip, ready for pickup
-
       if (status === 'Order Cancelled') {
         return `<span class="header__status-key-description" style="color:#e06c75">Order Cancelled</span>`;
       } else if (status === 'Failed') {
@@ -77,5 +71,6 @@ app.set('views', path.join(__dirname, "/public/views/pages"));
 app.engine( "hbs", hbs.engine);
 
 app.use('/', router);
+agenda.start();
 
 app.listen(3000, () => console.log('GSB Order Dashboard is running'));

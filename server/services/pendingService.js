@@ -31,7 +31,7 @@ async function findPendingPageflexOrders() {
 // approved status code?
 async function findPendingSkyportalOrders() {
 
-	let orders = await skyportalModel.find({paid: 'No', status: ['Order Received', 'Denied'] }, function(error, data) {
+	let orders = await skyportalModel.find({paid: 'No', status: ['Order Received', 'Denied'], approved:'Not Approved'}, function(error, data) {
 		if (error) console.log(error);
 		return data;
 	}).lean();

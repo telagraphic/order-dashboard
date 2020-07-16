@@ -4,6 +4,7 @@
 
 body {
   background-color: #383d48;
+  background-color: white;
 }
 
 .barba-container {
@@ -11,7 +12,7 @@ body {
 }
 
 main {
-  background-color:#383d48;
+  // background-color:#383d48;
   min-height: 100vh;
 }
 
@@ -56,9 +57,9 @@ main {
   }
 
   &__body {
-    background-color: #383d48;
+    // background-color: #383d48;
 
-    color: white;
+    color: $chillGrey;
 
   }
   &__body-row {
@@ -72,28 +73,32 @@ main {
     padding: 1rem 0;
 
     border-bottom: 1px solid $whiteGrey;
+    border-bottom: 1px solid $chillGrey;
+
+    color: $chillBlack;
 
     @include font-size(18,16);
     text-align: left;
 
     &-in-process {
       background-color: $green;
-      color: black;
+      background-color: $green-lite;
     }
     &-cancelled {
       background-color: #e06c75;
+      background-color: $red-lite;
     }
     &-unapproved {
       background-color: #FFFA72;
-      color: black;
+      background-color: $lightYellow-lite;
     }
     &-new-order {
       background-color: #E89042;
-      color: black;
+      background-color: $orange-lite;
     }
     &-completed {
       background-color: #FFFFFF;
-      color: black;
+      background-color: $whiteGrey;
     }
   }
 
@@ -110,6 +115,7 @@ main {
 
   .orders__header-col:nth-child(1), .orders__body-cell:nth-child(1) {
     flex: 1.5 0 5rem;
+    font-weight: bold;
   }
 
   .orders__header-col:nth-child(2), .orders__body-cell:nth-child(2) {
@@ -129,6 +135,7 @@ main {
 
   .orders__header-col:nth-child(1), .orders__body-cell:nth-child(1) {
     flex: 1 0 5rem;
+    font-weight: bold;
   }
 
   .header__status-key-description {
@@ -141,6 +148,7 @@ main {
 
   .orders__header-col:nth-child(1), .orders__body-cell:nth-child(1) {
     flex: 2 0 2rem;
+    font-weight: bold;
   }
 
   .header__status-key-description {

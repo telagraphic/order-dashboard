@@ -7,24 +7,28 @@ const skyportalService = require('../services/skyportalService');
 const pageflexService = require('../services/pageflexService');
 const visionService = require('../services/visionService');
 const pendingService = require('../services/pendingService');
+const jobsService = require('../services/jobsService');
+
 const Agenda = require('agenda');
 const Agendash = require('agendash');
 const agenda = new Agenda({ db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}});
 
-
 router.get('/', async (req, res) => {
   const visionOrders = await visionService.findOrders();
-  res.render('vision', { visionOrders: visionOrders } );
+  const jobLastRun = await jobsService.findJob('Vision Jobs');
+  res.render('vision', { visionOrders: visionOrders, jobLastRun:  jobLastRun });
 });
 
 router.get('/skyportal', async (req, res) => {
   const skyportalOrders = await skyportalService.findOrders();
-  res.render('skyportal', { skyportalOrders: skyportalOrders });
+  const jobLastRun = await jobsService.findJob('Skyportal Jobs');
+  res.render('skyportal', { skyportalOrders: skyportalOrders, jobLastRun:  jobLastRun});
 });
 
 router.get('/pageflex', async (req, res) => {
   const pageflexOrders = await pageflexService.findOrders();
-  res.render('pageflex', { pageflexOrders: pageflexOrders });
+  const jobLastRun = await jobsService.findJob('Pageflex Jobs');
+  res.render('pageflex', { pageflexOrders: pageflexOrders, jobLastRun:  jobLastRun });
 });
 
 router.use('/orders', async (req, res) => {

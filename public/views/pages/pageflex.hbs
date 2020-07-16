@@ -1,4 +1,4 @@
-<section class="barba-container" data-barba="container" data-barba-namespace="pageflex" data-service-name="Pageflex" data-service-update="15 minutes ago">
+<section class="barba-container" data-barba="container" data-barba-namespace="pageflex" data-service-name="Pageflex" data-service-update="{{jobLastRun}}">
   <table id="orders" class="orders pageflex-orders">
     <thead class="orders__header">
       <tr class="orders__header-row">
@@ -27,8 +27,8 @@
     </thead>
     <tbody class="orders__body">
       {{#each pageflexOrders}}
-      <tr class="orders__body-row" >
-        <td class="orders__body-cell">{{{checkStatus this.orderStatus}}}</td>
+      <tr class="orders__body-row {{checkClass this.orderStatus}}">
+        <td class="orders__body-cell">{{{this.orderStatus}}}</td>
         <td class="orders__body-cell">{{this.client}}</td>
         <td class="orders__body-cell">{{this.id}}</td>
         <!-- <td class="orders__body-cell">{{this.orderStatus}}</td> -->

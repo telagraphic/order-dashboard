@@ -1,25 +1,44 @@
 const mongoose = require("../database/database");
-const presseroJob = require("./presseroJob.js");
+const visionJob = require("./visionJob");
+const skyportalJob = require("./skyportalJob");
+const pageflexJob = require("./pageflexJob");
 const Agenda = require("agenda");
 
 
+async function start() {
 
-// set the collection where the jobs will be save
-// the collection can be name anything
-let agenda = new Agenda({ db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}});
+  console.log("starting agenda jobs");
 
-agenda
-  .processEvery('5 minutes')
-  .maxConcurrency(10);
+  // let agenda = new Agenda(
+  //   { db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}},
+  //   { processEvery: '5 minutes'}
+  // );
 
-agenda.define('get pressero jobs', async job => {
-  console.log("starting the job...");
-  presseroJob.getOrders();
-});
+  let agenda = new Agenda(
+    { db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}}
+  );
 
-(async function() { // IIFE to give access to async/await
+  agenda.define('Vision Jobs', (job, done) => {
+    visionJob.getOrders();
+    done();
+  });
+
+  agenda.define('Skyportal Jobs', (job, done) => {
+    skyportalJob.getOrders();
+    done();
+  });
+
+  agenda.define('Pageflex Jobs', (job, done) => {
+    pageflexJob.getOrders();
+    done();
+  });
+
   await agenda.start();
-  await agenda.every('10 seconds', 'get pressero jobs');
-})();
+  await agenda.every('15 minutes', 'Vision Jobs');
+  await agenda.every('15 minutes', 'Skyportal Jobs');
+  await agenda.every('15 minutes', 'Pageflex Jobs');
+}
 
-// module.exports = agenda;
+module.exports = {
+    start: start
+};

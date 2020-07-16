@@ -1,4 +1,4 @@
-<section class="barba-container" data-barba="container" data-barba-namespace="skyportal" data-service-name="Skyportal" data-service-update="10 minutes ago">
+<section class="barba-container" data-barba="container" data-barba-namespace="skyportal" data-service-name="Skyportal" data-service-update="{{jobLastRun}}">
   <table id="orders" class="orders skyportal-orders">
     <thead class="orders__header">
       <tr class="orders__header-row">
@@ -33,8 +33,8 @@
     </thead>
     <tbody class="orders__body">
       {{#each skyportalOrders}}
-        <tr class="orders__body-row">
-          <td class="orders__body-cell">{{{checkStatus this.status}}}</td>
+        <tr class="orders__body-row {{checkClass this.status}}">
+          <td class="orders__body-cell">{{{this.status}}}</td>
           <td class="orders__body-cell">{{this.site}}</td>
           <td class="orders__body-cell">{{this.productName}}</td>
           <td class="orders__body-cell">{{this.orderNumber}}</td>

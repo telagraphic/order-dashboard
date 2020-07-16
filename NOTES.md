@@ -69,6 +69,8 @@ Nodemon & Browser-Sync:
   "public:serve": "browser-sync start --proxy 'localhost:3000' --files 'public/scss/**/*.scss, public/views/**/*.hbs'"
 ```
 
+# BROWSER-SYNC
+
 - [Express & Browser-Sync](https://www.npmjs.com/package/connect-browser-sync)
 - [Browser-Sync Options](https://browsersync.io/docs/command-line)
 
@@ -77,11 +79,17 @@ Nodemon & Browser-Sync:
 - [Mongo & Homebrew](https://superuser.com/questions/1478156/error-mongodb-unknown-version-mountain-lion)
 - [How Find Works](http://thecodebarbarian.com/how-find-works-in-mongoose.html)
 
+# AGENDA
+
+- [Agenda Setup](https://techdai.info/agenda-and-agendash-for-scheduling-in-node-js-with-mongodb/)
+- [Agenda Async/Await](https://thecodebarbarian.com/node.js-task-scheduling-with-agenda-and-mongodb)
+
 
 # EXPRESS
 
 - [Express Router](https://scotch.io/tutorials/learn-to-use-the-new-router-in-expressjs-4)
-
+- [PM2](https://www.digitalocean.com/community/tutorials/nodejs-pm2)
+- [PM2 Commands](https://hackernoon.com/pm2-to-setup-a-nodejs-application-i3w32zg)
 
 # PUPPETEER
 
