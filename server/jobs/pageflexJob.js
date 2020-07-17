@@ -76,8 +76,7 @@ async function getOrders() {
 						itemStatus: itemStatus,
 						user: user,
 						time: time,
-						date: date,
-						link: sites.sites.list[i].url
+						date: date
 					});
 				};
 
@@ -85,7 +84,7 @@ async function getOrders() {
 
 			});
 
-			const client = sites.sites.list[i].client;
+			const client = sites.list[i].client;
 
 			orders.forEach(function(order) {
 				order.client = client;
@@ -100,7 +99,7 @@ async function getOrders() {
 					user: order.user,
 					time: order.time,
 					date: new Date(year, month - 1, day),
-					link: order.link
+					link: sites.sites.list[i].url
 				});
 
 			});
