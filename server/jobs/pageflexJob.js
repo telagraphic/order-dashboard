@@ -1,16 +1,17 @@
-const puppeteer = require('puppeteer');
 const fs = require("fs");
+const puppeteer = require('puppeteer');
 const pageflexService = require("../services/pageflexService");
 const accounts = require('../config/accounts.js');
 const sites = require('../config/sites.js');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 async function getOrders() {
+
 	(async () => {
 
 		const start = new Date();
 		const browser = await puppeteer.launch({
-			headless: false,
+			headless: true,
 			defaultViewport : {
 				width: 1000,
 				height: 10000,
@@ -49,13 +50,11 @@ async function getOrders() {
 			await page.goto(ordersURL);
 
 			await page.waitFor('.siteContent');
-			// await page.waitFor(3000);
 
 
 			const dropdownPromise = page.waitForNavigation({ waitUntil: 'domcontentloaded' });
 			await page.select('select[name="AdminMaster$ContentPlaceHolderBody$cvcGrid$Grid$ctl01$NumRowsToDisplay"]', '1000');
 			await dropdownPromise;
-			// await page.waitForNavigation({ waitUntil: 'networkidle2' });
 
 			const orders = await page.evaluate(client => {
 				let rows = document.querySelectorAll('table.EnhancedDataGrid tr[valign="top"]');
@@ -77,7 +76,8 @@ async function getOrders() {
 						itemStatus: itemStatus,
 						user: user,
 						time: time,
-						date: date
+						date: date,
+						link: sites.sites.list[i].url
 					});
 				};
 
@@ -90,7 +90,7 @@ async function getOrders() {
 			orders.forEach(function(order) {
 				order.client = client;
 
-				let [day, month, year] = order.date.split("/")
+				let [month, day, year] = order.date.split("/");
 
 				pageflexService.upsertOrder({
 					client: order.client,
@@ -99,7 +99,8 @@ async function getOrders() {
 					itemStatus: order.itemStatus,
 					user: order.user,
 					time: order.time,
-					date: new Date(year, month - 1, day) //order.date
+					date: new Date(year, month - 1, day),
+					link: order.link
 				});
 
 			});
@@ -140,6 +141,7 @@ async function getOrders() {
 
 	})();
 }
+
 
 module.exports = {
 	getOrders: getOrders

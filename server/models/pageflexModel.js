@@ -1,6 +1,6 @@
 const mongoose = require("../database/database");
 
-let pageflexOrderSchema = new mongoose.Schema({
+let pageflexOrderSchema = new mongoose.database.Schema({
   client: String,
   id: String,
   orderStatus: String,
@@ -8,9 +8,10 @@ let pageflexOrderSchema = new mongoose.Schema({
   user: String,
   time: String,
   date: Date,
+  link: String,
   dashboardUpdatedAt: Date
 }, {
   collection: 'pageflex'
 });
 
-module.exports = mongoose.model('pageflex', pageflexOrderSchema);
+module.exports = mongoose.database.model('pageflex', pageflexOrderSchema);

@@ -16,7 +16,7 @@ async function getOrders() {
 			}
 		});
 
-		console.log("opening skyportal for scraping");
+		console.log("opening skyportal for scraping...");
 
 		const page = await browser.newPage();
 		await page.goto('https://admin.chi.v6.pressero.com/authentication/Login', {waitUntil: 'load', timeout: 0});
@@ -98,12 +98,12 @@ async function getOrders() {
 
 		});
 
-		console.log("savings orders");
+		console.log("...savings orders");
 		orders.forEach(order => {
 
-			let [reqday, reqmonth, reqyear] = order.requestDate.split("/")
-			let [shipday, shipmonth, shipyear] = order.requestedShipDate.split("/")
-			let [projectedday, projectedmonth, projectedyear] = order.projectedShipDate.split("/")
+			let [reqmonth, reqday, reqyear] = order.requestDate.split("/");
+			let [shipmonth, shipday, shipyear] = order.requestedShipDate.split("/");
+			let [projectedmonth, projectedday, projectedyear] = order.projectedShipDate.split("/");
 
 			skyportalService.upsertOrder({
 				requestDate: new Date(reqyear, reqmonth - 1, reqday),
@@ -125,7 +125,7 @@ async function getOrders() {
 
 		const signout = '.navbar-right a[href="/authentication/logout"]';
 		await page.click(signout);
-		console.log("signing out");
+		console.log("..signing out");
 
 
 		await page.waitFor(1000);

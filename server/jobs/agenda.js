@@ -9,13 +9,8 @@ async function start() {
 
   console.log("starting agenda jobs");
 
-  // let agenda = new Agenda(
-  //   { db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}},
-  //   { processEvery: '5 minutes'}
-  // );
-
   let agenda = new Agenda(
-    { db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}}
+    { db: {address: mongoose.connectionString, collection: 'jobs'}}
   );
 
   agenda.define('Vision Jobs', (job, done) => {

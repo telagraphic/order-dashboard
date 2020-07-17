@@ -18,7 +18,7 @@ async function findPendingPageflexOrders() {
 				client: order.client,
 				orderDate: order.date,
 				user: order.user,
-				approved: '',
+				approved: 'Not Approved',
 				status: order.orderStatus,
 				paid: ''
 			}

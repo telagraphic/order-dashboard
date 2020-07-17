@@ -1,4 +1,5 @@
 const pageflexModel = require('../models/pageflexModel');
+const dayjs = require('dayjs');
 
 function upsertOrder(pageflexOrder) {
 
@@ -13,12 +14,18 @@ function upsertOrder(pageflexOrder) {
 
 async function findOrders(options) {
 
-	return pageflexModel.find(function(error, data) {
+	let allOrders = await pageflexModel.find(function(error, data) {
 		if (error) console.log(error);
 		return data;
 	})
 		.sort({'date': 'desc'})
 		.lean();
+
+	let lastThirtyDayOrders = allOrders.filter(order => {
+		return dayjs(order.date) >= dayjs().subtract(2, "month");
+	});
+
+	return lastThirtyDayOrders;
 }
 
 
@@ -35,7 +42,7 @@ async function findPendingOrders(options) {
 		.sort({'date': 'desc'})
 		.lean();
 
-		
+
 }
 
 module.exports = {

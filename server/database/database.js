@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const dbPath = 'mongodb://127.0.0.1:27017/gsb-order-dashboard';
+const path = 'mongodb://127.0.0.1:27017/gsb-order-dashboard';
 
-mongoose.connect(process.env.DB_PATH || dbPath, {
+mongoose.connect(process.env.DB_PATH || path, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true
@@ -18,3 +18,8 @@ db.once("open", () => {
 });
 
 module.exports = mongoose;
+
+module.exports = {
+  database: mongoose,
+  connectionString: path
+}

@@ -1,6 +1,6 @@
 const mongoose = require("../database/database");
 
-let visionInvoiceSchema = new mongoose.Schema({
+let visionInvoiceSchema = new mongoose.database.Schema({
   account: String,
   jobNumber: String,
   jobTitle: String,
@@ -9,9 +9,10 @@ let visionInvoiceSchema = new mongoose.Schema({
   proofDate: String,
   takenBy: String,
   salesRep: String,
+  link: String,
   dashboardUpdatedAt: Date
 }, {
   collection: 'vision'
 });
 
-module.exports = mongoose.model('vision', visionInvoiceSchema);
+module.exports = mongoose.database.model('vision', visionInvoiceSchema);

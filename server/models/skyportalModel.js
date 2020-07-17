@@ -1,6 +1,6 @@
 const mongoose = require("../database/database");
 
-const skyportalOrderSchema = new mongoose.Schema({
+const skyportalOrderSchema = new mongoose.database.Schema({
   requestDate: String,
   orderNumber: String,
   itemNumber: String,
@@ -19,7 +19,7 @@ const skyportalOrderSchema = new mongoose.Schema({
   collection: 'skyportal'
 });
 
-module.exports = mongoose.model('skyportal', skyportalOrderSchema);
+module.exports = mongoose.database.model('skyportal', skyportalOrderSchema);
 
 
 // module.exports = {

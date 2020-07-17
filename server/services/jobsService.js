@@ -15,7 +15,6 @@ async function findJob(jobName) {
 
 }
 
-
 module.exports = {
   findJob: findJob
 }

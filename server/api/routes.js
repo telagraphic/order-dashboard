@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const exphbs = require('express-handlebars');
+const mongoose = require('../database/database');
 
 const skyportalService = require('../services/skyportalService');
 const pageflexService = require('../services/pageflexService');
@@ -11,7 +12,7 @@ const jobsService = require('../services/jobsService');
 
 const Agenda = require('agenda');
 const Agendash = require('agendash');
-const agenda = new Agenda({ db: {address: 'mongodb://127.0.0.1:27017/gsb-order-dashboard', collection: 'jobs'}});
+const agenda = new Agenda({ db: {address: mongoose.connectionString, collection: 'jobs'}});
 
 router.get('/', async (req, res) => {
   const visionOrders = await visionService.findOrders();
@@ -59,7 +60,8 @@ router.use('/orders', async (req, res) => {
 
 router.get('/pending', async (req, res) => {
   const findPendingSkyportalOrders = await pendingService.findPendingOrders();
-  res.render('pending', {pendingOrders: findPendingSkyportalOrders})
+  const jobLastRun = await jobsService.findJob('Pageflex Jobs');
+  res.render('pending', {pendingOrders: findPendingSkyportalOrders, jobLastRun:  jobLastRun})
 });
 
 router.use('/dash', Agendash(agenda));

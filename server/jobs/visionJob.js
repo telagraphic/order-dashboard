@@ -10,7 +10,7 @@ async function getOrders() {
 
 		const start = new Date();
 	  const browser = await puppeteer.launch({
-	    headless: false,
+	    headless: true,
 	    defaultViewport : {
 	      width: 4000,
 	      height: 2000,
@@ -90,6 +90,8 @@ async function getOrders() {
 
 		});
 
+		const visionLink = 'https://vision.gsbdigital.com:8443/PrintSmith/nextgen/en_US/#/workin-progress';
+
 		visionInvoices.forEach(invoice => {
 			visionService.upsertOrder({
 				account: invoice.account || '',
@@ -99,6 +101,7 @@ async function getOrders() {
 				// location: invoice.location,
 		    takenBy: invoice.takenBy || '',
 		    salesRep: invoice.salesRep || '',
+				link: visionLink,
 				dashboardUpdatedAt: new Date()
 			})
 		});
