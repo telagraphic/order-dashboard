@@ -5,55 +5,64 @@ const accounts = require('../config/accounts.js');
 const skyportalService = require('../services/skyportalService');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-async function getOrders() {
-	(async () => {
-		const browser = await puppeteer.launch({
-			headless: false,
-			defaultViewport : {
-				width: 4000,
-				height: 2000,
-				timeout: 0
-			}
-		});
+const skyportal = {
+	browser: null,
+	page: null,
+	options: {
+		headless: false,
+		defaultViewport : {
+			width: 4000,
+			height: 2000,
+			timeout: 0
+		}
+	},
+	pageURL: 'https://admin.chi.v6.pressero.com/authentication/Login',
 
-		console.log("opening skyportal for scraping...");
+	initialize: async () => {
+		skyportal.browser = await puppeteer.launch(skyportal.options);
+		skyportal.page = await skyportal.browser.newPage();
 
-		const page = await browser.newPage();
-		await page.goto('https://admin.chi.v6.pressero.com/authentication/Login', {waitUntil: 'load', timeout: 0});
-		await page.waitForSelector('.login-form');
+		console.log("...logging in");
+		skyportal.page.goto(skyportal.pageURL, {waitUntil: 'load', timeout: 0});
+
+
+		await skyportal.page.waitForSelector('.login-form');
 
 
 		const username = 'input[id="username"]';
 		const password = 'input[id="password"]';
 		const loginButton = 'input[id="btnLogin"]';
 
-		await page.click(username);
-		await page.keyboard.type(accounts.SKYPORTAL.username);
+		await skyportal.page.click(username);
+		await skyportal.page.keyboard.type(accounts.SKYPORTAL.username);
 
-		await page.click(password);
-		await page.keyboard.type(accounts.SKYPORTAL.password);
+		await skyportal.page.click(password);
+		await skyportal.page.keyboard.type(accounts.SKYPORTAL.password);
 
-		await page.click(loginButton);
+		await skyportal.page.click(loginButton);
 
-		await page.waitFor(2000);
+		await skyportal.page.waitFor(2000);
 
 		const allOrdersButton = '#sidebar .panel-group .panel:first-child';
-		await page.click(allOrdersButton);
+		await skyportal.page.click(allOrdersButton);
 
-		await page.waitFor(2000);
+		await skyportal.page.waitFor(2000);
 
 		const itemPerPage = '.k-pager-sizes .k-select';
-		await page.click(itemPerPage);
+		await skyportal.page.click(itemPerPage);
 
-		await page.waitFor(1000);
+		await skyportal.page.waitFor(1000);
 
 		const itemShow100 = '.k-animation-container .k-list-scroller ul.k-list li:last-child';
-		await page.click(itemShow100);
+		await skyportal.page.click(itemShow100);
 
 
-		await page.waitFor(2000);
+		await skyportal.page.waitFor(2000);
+	},
 
-		const orders = await page.evaluate(() => {
+	getOrders: async () => {
+		console.log("...getting orders");
+		const orders = await skyportal.page.evaluate(() => {
 
 			let presseroOrders = document.querySelectorAll('.page .k-grid-content table tr');
 
@@ -95,9 +104,39 @@ async function getOrders() {
 			})
 
 			return allOrders;
-
 		});
 
+		return orders;
+
+	},
+
+	scrapePage: async () => {
+
+		let allOrders = [];
+
+		do {
+
+			let newOrders = await skyportal.getOrders();
+			allOrders = [...allOrders, ...newOrders];
+
+			if (allOrders.length <= 300) {
+				let nextPageButton = await skyportal.page.$('.k-pager-wrap a[title="Go to the next page"]');
+
+				if (nextPageButton) {
+					nextPageButton.click();
+					skyportal.page.waitForNavigation({waitUntil: 'networkidle0'})
+				} else {
+					break;
+				}
+			}
+
+		} while(allOrders.length <= 300);
+
+		return allOrders;
+
+	},
+
+	saveOrders: async (orders) => {
 		console.log("...savings orders");
 		orders.forEach(order => {
 
@@ -123,17 +162,27 @@ async function getOrders() {
 			})
 		});
 
+	},
+
+	signOut: async () => {
 		const signout = '.navbar-right a[href="/authentication/logout"]';
-		await page.click(signout);
+		await skyportal.page.click(signout);
 		console.log("..signing out");
 
 
-		await page.waitFor(1000);
+		await skyportal.page.waitFor(1000);
 
-		await browser.close();
+		await skyportal.browser.close();
 		process.exit(0);
+	}
+}
 
-	})();
+
+async function getOrders() {
+	await skyportal.initialize();
+	let orders = await skyportal.scrapePage();
+	await skyportal.saveOrders(orders);
+	await skyportal.signOut();
 }
 
 module.exports = {

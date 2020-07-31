@@ -42,7 +42,7 @@ router.use('/orders', async (req, res) => {
     res
       .status(200)
       .json({
-        pressero: skyportalOrders,
+        skyportal: skyportalOrders,
         pageflex: pageflexOrders,
         vision: visionOrders
       })
