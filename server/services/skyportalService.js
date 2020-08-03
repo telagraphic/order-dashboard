@@ -16,22 +16,28 @@ async function findOrders(options) {
 	// 	if (error) console.log(error);
 	// 	return data;
 	// }).lean();
+	let thirtyDaysAgo = dayjs().subtract(1, "month");
 
+	// console.log(thirtyDaysAgo.$d);
 
-	let allOrders = await skyportalModel.find(function(error, data) {
+	let allOrders = await skyportalModel.find({requestDate: {$gte: thirtyDaysAgo.$d }}, function(error, data) {
 		if (error) console.log(error);
 		return data;
-	}).lean();
+	})
+	.sort({'orderNumber': 'desc'})
+	.lean();
 
-	let oldDate = dayjs().subtract(1, "month");
-	console.log(oldDate);
+	return allOrders;
 
-	let lastThirtyDayOrders = allOrders.filter(order => {
-		console.log(dayjs(order.date));
-		return dayjs(order.date) >= dayjs().subtract(1, "month");
-	});
-
-	return lastThirtyDayOrders;
+	// let oldDate = dayjs().subtract(1, "month");
+	// console.log(oldDate);
+	//
+	// let lastThirtyDayOrders = allOrders.filter(order => {
+	// 	console.log(dayjs(order.date));
+	// 	return dayjs(order.date) >= dayjs().subtract(1, "month");
+	// });
+	//
+	// return lastThirtyDayOrders;
 
 }
 

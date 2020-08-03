@@ -28,10 +28,10 @@ async function start() {
     done();
   });
 
-  await agenda.start();
-  await agenda.every('15 minutes', 'Vision Jobs');
-  await agenda.every('15 minutes', 'Skyportal Jobs');
-  await agenda.every('15 minutes', 'Pageflex Jobs');
+  // await agenda.start();
+  // await agenda.every('15 minutes', 'Vision Jobs');
+  // await agenda.every('15 minutes', 'Skyportal Jobs');
+  // await agenda.every('15 minutes', 'Pageflex Jobs');
 }
 
 module.exports = {
