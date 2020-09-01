@@ -4,8 +4,9 @@ const pageflex = {
 };
 
 const printSmith = {
-  username: 'barcode',
-  password: 'lic3030'
+  username: 'SYuk',
+  password: 'samyuk2',
+  login: 'https://vision.gsbdigital.com:8443/PrintSmith/PrintSmithLogin.html'
 };
 
 const skyportal = {

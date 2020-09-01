@@ -10,11 +10,7 @@ const skyportal = {
 	page: null,
 	options: {
 		headless: true,
-		defaultViewport : {
-			width: 4000,
-			height: 2000,
-			timeout: 0
-		}
+		defaultViewport : null
 	},
 	pageURL: 'https://admin.chi.v6.pressero.com/authentication/Login',
 
@@ -25,7 +21,7 @@ const skyportal = {
 		console.log("...logging in");
 		skyportal.page.goto(skyportal.pageURL, {waitUntil: 'load', timeout: 0});
 		await skyportal.page.waitForSelector('.login-form');
-		
+
 		const username = 'input[id="username"]';
 		const password = 'input[id="password"]';
 		const loginButton = 'input[id="btnLogin"]';
@@ -56,7 +52,27 @@ const skyportal = {
 
 		await skyportal.page.waitFor(2000);
 	},
+	scrapePages: async () => {
 
+		let pageCount = await skyportal.page.evaluate(() => {
+      let pageNumbers = document.querySelectorAll('.k-pager-wrap .k-pager-numbers li:not(.k-current-page)');
+      return pageNumbers.length;
+    });
+
+    let allOrders = [];
+
+    for (let index = 0; index < pageCount; index++) {
+      await skyportal.page.waitFor(3000);
+      console.log(`scraping page ${index+1}`);
+      allOrders = allOrders.concat(await skyportal.getOrders());
+      if (index != pageCount - 1) {
+        await skyportal.page.click('.k-pager-wrap a[title="Go to the next page"]');
+        await skyportal.page.waitFor(3000);
+      }
+    }
+
+    return allOrders;
+	},
 	getOrders: async () => {
 		console.log("...getting orders");
 		const orders = await skyportal.page.evaluate(() => {
@@ -67,26 +83,18 @@ const skyportal = {
 
 			presseroOrders.forEach(presseroOrder => {
 				let order = {};
-
 				order.requestDate = presseroOrder.querySelector('td:nth-child(2)').innerText;
 				order.orderNumber = presseroOrder.querySelector('td:nth-child(3)').innerText;
 				order.itemNumber = presseroOrder.querySelector('td:nth-child(4)').innerText;
 				let orderStatus = presseroOrder.querySelector('td:nth-child(5) select');
 				order.status = orderStatus.selectedOptions[0].innerText;
-				// order.progress = presseroOrder.querySelector('td:nth-child(6)').innerText;
-				// order.reports = presseroOrder.querySelector('td:nth-child(7)').innerText;
 				order.productName = presseroOrder.querySelector('td:nth-child(8)').innerText;
-				// order.jobNumber = presseroOrder.querySelector('td:nth-child(9)').innerText;
-				// order.identifier = presseroOrder.querySelector('td:nth-child(10)').innerText;
 				order.site = presseroOrder.querySelector('td:nth-child(11)').innerText;
 				order.requestedShipDate = presseroOrder.querySelector('td:nth-child(12)').innerText;
 				order.quantity = presseroOrder.querySelector('td:nth-child(13)').innerText;
 				order.price = presseroOrder.querySelector('td:nth-child(14)').innerText;
 				order.requestedBy = presseroOrder.querySelector('td:nth-child(16)').innerText;
-
-				// might need to check for fa-check = approved, fa-square-o = not approved
-				order.approved = presseroOrder.querySelector('td:nth-child(20) i').getAttribute('alt');
-
+				order.approved = presseroOrder.querySelector('td:nth-child(20) i').getAttribute('alt'); // might need to check for fa-check = approved, fa-square-o = not approved
 				let paidColumn = presseroOrder.querySelector('td:nth-child(21) i');
 
 				if (paidColumn.classList.contains('fa-square-o')) {
@@ -106,33 +114,6 @@ const skyportal = {
 		return orders;
 
 	},
-
-	scrapePage: async () => {
-
-		let allOrders = [];
-
-		do {
-
-			let newOrders = await skyportal.getOrders();
-			allOrders = [...allOrders, ...newOrders];
-
-			if (allOrders.length <= 300) {
-				let nextPageButton = await skyportal.page.$('.k-pager-wrap a[title="Go to the next page"]');
-
-				if (nextPageButton) {
-					nextPageButton.click();
-					skyportal.page.waitForNavigation({waitUntil: 'networkidle0'})
-				} else {
-					break;
-				}
-			}
-
-		} while(allOrders.length <= 300);
-
-		return allOrders;
-
-	},
-
 	saveOrders: async (orders) => {
 		console.log("...savings orders");
 		orders.forEach(order => {
@@ -171,10 +152,9 @@ const skyportal = {
 	}
 }
 
-
 async function getOrders() {
 	await skyportal.initialize();
-	let orders = await skyportal.scrapePage();
+	let orders = await skyportal.scrapePages();
 	await skyportal.saveOrders(orders);
 	await skyportal.signOut();
 }
