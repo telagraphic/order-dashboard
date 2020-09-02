@@ -1,3 +1,5 @@
+const staggerDuration = .02;
+
 barba.init({
   transitions: [
     {
@@ -20,7 +22,9 @@ barba.init({
           timeline
             .set('.header', {opacity: 0, y: -100})
             .set('main', {opacity: 0})
+            .to('.orders__body-row', {opacity: 0})
             .to('.header', {opacity: 1, y: 0, duration: .25, ease: 'power4.out'}, 1)
+            .to('.orders__body-row', {stagger: staggerDuration, opacity: 1})
             .to('main', {opacity: 1, duration: .25}, 1);
 
         });
@@ -31,13 +35,12 @@ barba.init({
         links.forEach(link => {
 
           if (link.getAttribute('href') === window.location.pathname) {
-            console.log(link.getAttribute('href'));
             link.classList.add('header__navigation-link--active');
           } else {
             link.classList.remove('header__navigation-link--active');
           }
 
-        })
+        });
 
         let serviceName = document.querySelector('.header__service-name');
         let serviceUpdate = document.querySelector('.header__update-time');
@@ -45,8 +48,31 @@ barba.init({
         serviceName.textContent = next.container.getAttribute('data-service-name');
         serviceUpdate.textContent = next.container.getAttribute('data-service-update');
 
+        let newTableHeader = next.container.querySelector('.orders__header');
+        const tableHeader = document.querySelector('.orders__header');
+        tableHeader.innerHTML = newTableHeader.innerHTML;
       },
       enter({current, next, trigger}) {
+
+        return new Promise(resolve => {
+
+          const timeline = gsap.timeline({
+            onComplete() {
+              resolve();
+            }
+          });
+
+          timeline
+            .from(next.container, {opacity: 1}, 0)
+            .from('.orders__header-col', {opacity: 0}, 0)
+            .from('.orders__body-row', {opacity: 0}, 0)
+            .to('.orders__body-row', {stagger: staggerDuration, opacity: 1})
+            .to('.header__service-name', {opacity: 1, ease: 'power4.out', duration: .25})
+            .to('.header__update-time', {opacity: 1, ease: 'power4.out', duration: .25});
+        })
+
+      },
+      afterEnter({current, next, trigger}) {
         return new Promise(resolve => {
 
           const timeline = gsap.timeline({
@@ -56,12 +82,8 @@ barba.init({
           })
 
           timeline
-            .from(next.container, {opacity: 0})
-            .to(next.container, {opacity: 1, ease: 'power4.out', duration: .25})
-            .to('.header__service-name', {opacity: 1, ease: 'power4.out', duration: .25}, 0)
-            .to('.header__update-time', {opacity: 1, ease: 'power4.out', duration: .25}, 0);
+            .to('.orders__header-col', {opacity: 1, duration: .25}, 0)
         })
-
       },
       leave({current, next, trigger}) {
         return new Promise(resolve => {
@@ -74,12 +96,25 @@ barba.init({
           })
 
           timeline
-            .to(current.container, {opacity: 0})
-            .to('.header__service-name', {opacity: 0, ease: 'power4.out', duration: 1}, 0)
-            .to('.header__update-time', {opacity: 0, ease: 'power4.out', duration: 1}, 0);
-
+            .to('.orders__header-col', {opacity: 0, duration: .5}, 0)
+            .to('.orders__body-row', {stagger: staggerDuration, opacity: 0}, 0);
         })
       }
+      // afterLeave({current, next, trigger}) {
+      //   return new Promise(resolve => {
+      //
+      //     const timeline = gsap.timeline({
+      //       onComplete() {
+      //         resolve();
+      //         current.container.remove();
+      //       }
+      //     })
+      //
+      //     timeline
+      //       .to('.header__service-name', {opacity: 0, ease: 'power4.out', duration: .25})
+      //       .to('.header__update-time', {opacity: 0, ease: 'power4.out', duration: .25});
+      //   })
+      // }
     }
   ],
   debug: true

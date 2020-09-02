@@ -21,6 +21,15 @@ const hbs = exphbs.create({
     formatNumber: function(number) {
       return number.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     },
+    trimVisionJobTitle: function(title) {
+      if (title.length >= 80) {
+        let tempString = title.slice(0, 80);
+        let elipsis = `...`
+        return tempString.concat(elipsis);
+      } else {
+        return title;
+      }
+    },
     checkClass: function(status) {
       if (status === 'In Process' || status === 'Press') {
         return `orders__body-row-in-process`

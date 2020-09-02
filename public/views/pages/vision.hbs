@@ -26,7 +26,7 @@
       {{#each visionOrders}}
       <tr class="orders__body-row">
         <td class="orders__body-cell">{{this.account}}</td>
-        <td class="orders__body-cell">{{this.jobTitle}}</td>
+        <td class="orders__body-cell">{{trimVisionJobTitle this.jobTitle}}</td>
         <td class="orders__body-cell">{{this.jobNumber}}</td>
         <td class="orders__body-cell">{{this.salesRep}}</td>
         <td class="orders__body-cell">{{this.takenBy}}</td>
