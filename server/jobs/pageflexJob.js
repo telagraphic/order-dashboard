@@ -5,20 +5,16 @@ const accounts = require('../config/accounts.js');
 const sites = require('../config/sites.js');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-
 const pageflex = {
 	browser: null,
 	page: null,
 	options: {
 		headless: false,
-		defaultViewport : {
-			width: 4000,
-			height: 2000,
-			timeout: 0
-		}
+		defaultViewport : null
 	},
 
 	initialize: async () => {
+		console.log("opening browser...");
 		pageflex.browser = await puppeteer.launch(pageflex.options);
 		pageflex.page = await pageflex.browser.newPage();
 
@@ -29,27 +25,38 @@ const pageflex = {
 	},
 
 	scrapeDeploymentOrders: async () => {
+		console.log("looping thru deployments...");
 		for (let i = 0; i < sites.sites.list.length; i++) {
 			let url = sites.sites.list[i].url;
 			let clientName = sites.sites.list[i].client;
-			await pageflex.login(clientName, url);
+			await pageflex.scrapeDeloyment(clientName, url);
 		}
 	},
 
-	login: async (clientName, url) => {
-		const deploymentLoginPromise = pageflex.page.waitForNavigation({ waitUntil: 'domcontentloaded' });
+	scrapeDeloyment: async (clientName, url) => {
+		console.log(`logging into ${clientName}`);
 		await pageflex.page.goto(`${url}`);
-		await deploymentLoginPromise;
 
 		const adminUserName = 'input[name="Username"]';
 		const password = 'input[name="Password"]';
 		const loginButton = 'input[type="submit"]';
 
-		await pageflex.page.click(adminUserName);
-		await pageflex.page.keyboard.type(accounts.PAGEFLEX.username);
+		console.log(accounts.PAGEFLEX.username);
 
-		await pageflex.page.click(password);
-		await pageflex.page.keyboard.type(accounts.PAGEFLEX.password);
+		if (clientName === 'WhiteCase') {
+			await pageflex.page.click(adminUserName);
+			await pageflex.page.keyboard.type(accounts.WHITECASE.username);
+
+			await pageflex.page.click(password);
+			await pageflex.page.keyboard.type(accounts.WHITECASE.password);
+
+		} else {
+			await pageflex.page.click(adminUserName);
+			await pageflex.page.keyboard.type(accounts.PAGEFLEX.username);
+
+			await pageflex.page.click(password);
+			await pageflex.page.keyboard.type(accounts.PAGEFLEX.password);
+		}
 
 		await pageflex.page.click(loginButton);
 
@@ -68,7 +75,7 @@ const pageflex = {
 		await pageflex.scrapeOrders(clientName, url);
 	},
 	scrapeOrders: async (clientName, url) => {
-		console.log("...getting pageflex orders");
+		console.log("scraping orders...");
 		const orders = await pageflex.page.evaluate(url => {
 			let rows = document.querySelectorAll('table.EnhancedDataGrid tr[valign="top"]');
 
@@ -100,7 +107,7 @@ const pageflex = {
 	},
 
 	saveOrders: async (orders) => {
-		console.log("...saving orders");
+		console.log("saving orders...");
 		orders.forEach(function(order) {
 			let [month, day, year] = order.date.split("/");
 
@@ -116,41 +123,40 @@ const pageflex = {
 			});
 
 		});
-
-		// const ordersProduced = [];
-		// orders.forEach(function(order) {
-		// 	if (order.orderStatus.includes("In Process") || order.orderStatus.includes("Completed")) {
-		// 		ordersProduced.push(order);
-		// 		console.log(order.client);
-		// 	}
-		// });
-		//
-		// const csvWriter = createCsvWriter({
-		// 	path: `feeds/pageflex/${client}.csv`,
-		// 	header: [
-		// 		{id: 'client', title: 'Client'},
-		// 		{id: 'id', title: 'ID'},
-		// 		{id: 'orderStatus', title: 'Order Status'},
-		// 		{id: 'user', title: 'User'},
-		// 		{id: 'time', title: 'Time'},
-		// 		{id: 'date', title: 'Date'}
-		// 	]
-		// });
-		//
-		// csvWriter
-		// 	.writeRecords(ordersProduced)
-		// 	.then(()=> console.log(client + " orders saved..."));
-
 	},
+	writeFile: async () => {
+		const ordersProduced = [];
+		orders.forEach(function(order) {
+			if (order.orderStatus.includes("In Process") || order.orderStatus.includes("Completed")) {
+				ordersProduced.push(order);
+				console.log(order.client);
+			}
+		});
 
+		const csvWriter = createCsvWriter({
+			path: `feeds/pageflex/${client}.csv`,
+			header: [
+				{id: 'client', title: 'Client'},
+				{id: 'id', title: 'ID'},
+				{id: 'orderStatus', title: 'Order Status'},
+				{id: 'user', title: 'User'},
+				{id: 'time', title: 'Time'},
+				{id: 'date', title: 'Date'}
+			]
+		});
+
+		csvWriter
+			.writeRecords(ordersProduced)
+			.then(()=> console.log(client + " orders saved..."));
+	},
 	signOut: async () => {
+		console.log(`logging out!`);
 		const logoutButton = '.siteTopNav #AdminMaster_AnchorLogout';
 		await pageflex.page.click(logoutButton);
 		await pageflex.page.waitFor(500);
 	},
-
 	closeBrowser: async () => {
-		await browser.close();
+		await pageflex.browser.close();
 		process.exit(0);
 	}
 

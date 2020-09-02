@@ -149,10 +149,6 @@ async function getVisionJobs() {
 	await vision.signOut();
 }
 
-
-// getVisionJobs();
-
-
 module.exports = {
 	getOrders: getVisionJobs
 };
