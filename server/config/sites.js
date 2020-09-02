@@ -89,6 +89,11 @@ const sites = {
       client: 'YSL',
       status: true,
       url: 'https://pflex.aldine.com/ysl/AdminLogin.aspx'
+    },
+    {
+      client: 'WhiteCase',
+      status: true,
+      url: 'http://aldine.unifieddev.com/adminLogin.aspx'
     }
   ]
 }
