@@ -1,11 +1,11 @@
 const pageflex = {
-  username: process.env.PAGEFLEX_USERNAME || 'Clayton',
-  password: process.env.PAGEFLEX_PASSWORD || 'nickpass'
+  username: process.env.PAGEFLEX_USERNAME,
+  password: process.env.PAGEFLEX_PASSWORD
 };
 
 const whiteCase = {
-  username: process.env.WHITECASE_USERNAME || 'nlyons',
-  password: process.env.WHITECASE_PASSWORD || 'password'
+  username: process.env.WHITECASE_USERNAME,
+  password: process.env.WHITECASE_PASSWORD
 }
 
 const printSmith = {
