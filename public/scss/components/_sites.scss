@@ -1,0 +1,42 @@
+@import '../config/variables';
+@import '../globals/typography';
+
+
+
+.pageflex-sites {
+
+  .orders__header-row {padding: 0 25%;}
+  .orders__body-row {
+    padding: 0 25%;
+    background-color: #fdfbf3;
+
+    transition: background-color .5s ease;
+
+    &:hover,
+    &focus {
+      background-color: #e8e6dd;
+    }
+  }
+
+  .orders__header-col:nth-child(1), .orders__body-row .orders__body-cell:nth-child(1) {
+    flex: 3 0 5rem;
+  }
+
+  .orders__header-col, .orders__body-row .orders__body-cell {
+    flex: .5 0 5rem;
+  }
+
+  a {
+    color: $chillBlack;
+    text-decoration: none;
+    transition: color .25s ease;
+
+    &:focus,
+    &:hover {
+      color: $red;
+    }
+  }
+
+
+
+}

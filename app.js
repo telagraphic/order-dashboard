@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const router = require('./server/api/routes')
+const router = require('./server/api/routes');
 const path = require('path');
 const dayjs = require('dayjs');
 const exphbs = require('express-handlebars');

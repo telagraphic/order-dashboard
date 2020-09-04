@@ -2,20 +2,6 @@
 @import '../globals/typography';
 
 
-body {
-  background-color: #383d48;
-  background-color: white;
-}
-
-.barba-container {
-
-}
-
-main {
-  // background-color:#383d48;
-  min-height: 100vh;
-}
-
 .orders {
   width: 100%;
   border-collapse: collapse;
@@ -32,7 +18,7 @@ main {
 
     width: 100%;
 
-    border-bottom: 1px solid $whiteGrey;
+    border-bottom: 1px solid black;
     background-color: #383d48;
 
     @include font-size(18,16);
@@ -57,11 +43,7 @@ main {
   }
 
   &__body {
-    // background-color: #383d48;
-
     color: $chillGrey;
-
-
   }
   &__body-row {
     display: flex;
@@ -77,6 +59,7 @@ main {
     border-bottom: 1px solid $chillGrey;
 
     color: $chillBlack;
+    opacity: 0;
 
     @include font-size(18,16);
     text-align: left;

@@ -32,6 +32,10 @@ router.get('/pageflex', async (req, res) => {
   res.render('pageflex', { pageflexOrders: pageflexOrders, jobLastRun:  jobLastRun });
 });
 
+router.get('/pageflex-sites', async (req, res) => {
+  res.render('pageflex-sites');
+});
+
 router.use('/orders', async (req, res) => {
 
   try {

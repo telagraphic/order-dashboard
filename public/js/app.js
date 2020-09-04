@@ -1,5 +1,7 @@
 const staggerDuration = .02;
 
+barba.use({preFetch: true});
+
 barba.init({
   transitions: [
     {
@@ -51,6 +53,7 @@ barba.init({
         let newTableHeader = next.container.querySelector('.orders__header');
         const tableHeader = document.querySelector('.orders__header');
         tableHeader.innerHTML = newTableHeader.innerHTML;
+
       },
       enter({current, next, trigger}) {
 
@@ -66,7 +69,7 @@ barba.init({
             .from(next.container, {opacity: 1}, 0)
             .from('.orders__header-col', {opacity: 0}, 0)
             .from('.orders__body-row', {opacity: 0}, 0)
-            .to('.orders__body-row', {stagger: staggerDuration, opacity: 1})
+            .to('.orders__body-row', {stagger: staggerDuration, opacity: 1}, 0)
             .to('.header__service-name', {opacity: 1, ease: 'power4.out', duration: .25})
             .to('.header__update-time', {opacity: 1, ease: 'power4.out', duration: .25});
         })
@@ -96,25 +99,10 @@ barba.init({
           })
 
           timeline
-            .to('.orders__header-col', {opacity: 0, duration: .5}, 0)
+            .to('.orders__header-col', {opacity: 0, duration: 1}, 0)
             .to('.orders__body-row', {stagger: staggerDuration, opacity: 0}, 0);
         })
       }
-      // afterLeave({current, next, trigger}) {
-      //   return new Promise(resolve => {
-      //
-      //     const timeline = gsap.timeline({
-      //       onComplete() {
-      //         resolve();
-      //         current.container.remove();
-      //       }
-      //     })
-      //
-      //     timeline
-      //       .to('.header__service-name', {opacity: 0, ease: 'power4.out', duration: .25})
-      //       .to('.header__update-time', {opacity: 0, ease: 'power4.out', duration: .25});
-      //   })
-      // }
     }
   ],
   debug: true
