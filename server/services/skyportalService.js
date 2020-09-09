@@ -12,32 +12,18 @@ function upsertOrder(presseroOrder) {
 
 async function findOrders(options) {
 
-	// return skyportalModel.find(function(error, data) {
-	// 	if (error) console.log(error);
-	// 	return data;
-	// }).lean();
-	let thirtyDaysAgo = dayjs().subtract(1, "month");
-
-	// console.log(thirtyDaysAgo.$d);
-
-	let allOrders = await skyportalModel.find({requestDate: {$gte: thirtyDaysAgo.$d }}, function(error, data) {
+	let allOrders = await skyportalModel.find(function(error, data) {
 		if (error) console.log(error);
 		return data;
 	})
-	.sort({'orderNumber': 'desc'})
-	.lean();
+		.sort({'date': 'desc'})
+		.lean();
 
-	return allOrders;
+	let lastThirtyDayOrders = allOrders.filter(order => {
+		return dayjs(order.date) >= dayjs().subtract(2, "month");
+	});
 
-	// let oldDate = dayjs().subtract(1, "month");
-	// console.log(oldDate);
-	//
-	// let lastThirtyDayOrders = allOrders.filter(order => {
-	// 	console.log(dayjs(order.date));
-	// 	return dayjs(order.date) >= dayjs().subtract(1, "month");
-	// });
-	//
-	// return lastThirtyDayOrders;
+	return lastThirtyDayOrders;
 
 }
 

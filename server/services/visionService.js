@@ -1,8 +1,7 @@
 const visionModel = require('../models/visionModel');
+const dayjs = require('dayjs');
 
 function upsertOrder(visionOrder) {
-
-	// if this order exists, update the entry, don't insert
 	const conditions = { jobNumber: visionOrder.jobNumber };
 	const options = { upsert: true, new: true, setDefaultsOnInsert: true };
 
@@ -12,11 +11,18 @@ function upsertOrder(visionOrder) {
 }
 
 async function findOrders() {
-
-	return visionModel.find(function(error, data) {
+	let allOrders = await visionModel.find(function(error, data) {
 		if (error) console.log(error);
 		return data;
-	}).lean();
+	})
+		.sort({'date': 'desc'})
+		.lean();
+
+	let lastThirtyDayOrders = allOrders.filter(order => {
+		return dayjs(order.date) >= dayjs().subtract(2, "month");
+	});
+
+	return lastThirtyDayOrders;
 }
 
 module.exports = {

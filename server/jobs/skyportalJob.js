@@ -9,7 +9,7 @@ const skyportal = {
 	browser: null,
 	page: null,
 	options: {
-		headless: true,
+		headless: false,
 		defaultViewport : null
 	},
 	pageURL: 'https://admin.chi.v6.pressero.com/authentication/Login',
@@ -34,7 +34,7 @@ const skyportal = {
 
 		await skyportal.page.click(loginButton);
 
-		await skyportal.page.waitFor(2000);
+		await skyportal.page.waitForNavigation({waitUntil:'networkidle0'});
 
 		const allOrdersButton = '#sidebar .panel-group .panel:first-child';
 		await skyportal.page.click(allOrdersButton);
@@ -129,7 +129,6 @@ const skyportal = {
 				productName: order.productName,
 				status: order.status,
 				site: order.site,
-				requestedShipDate: new Date(shipyear, shipmonth - 1, shipday),
 				quantity: order.quantity,
 				price: order.price,
 				customerName: order.customerName,

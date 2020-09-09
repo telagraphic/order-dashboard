@@ -25,7 +25,6 @@ const vision = {
 		console.log("logging in...");
 
 		await vision.page.goto(vision.loginPage, {waitUntil: 'load', timeout: 0});
-		// await vision.page.waitForNavigation({ waitUntil: 'domcontentloaded' });
 
 		const adminUserName = 'input[id="userName"]';
 		const password = 'input[id="password"]';
@@ -47,10 +46,6 @@ const vision = {
 		const pendingDocumentsButton = '#menuUL li.menuLI:nth-child(3)';
 		await vision.page.click(pendingDocumentsButton);
 		await vision.page.waitFor(2000);
-
-		// const pendingDocumentsInvoiceLink = '.pending-list-header .pending-list-group-invoice';
-		// await vision.page.click(pendingDocumentsInvoiceLink);
-		// await vision.page.waitFor(2000);
 	},
 	viewJobsForToday: async () => {
 		console.log("filtering for today...");
@@ -103,11 +98,14 @@ const vision = {
 		const visionLink = 'https://vision.gsbdigital.com:8443/PrintSmith/nextgen/en_US/#/workin-progress';
 
 		visionInvoices.forEach(invoice => {
+
+			let [reqmonth, reqday, reqyear] = invoice.wantedDate.split("/");
+
 			visionService.upsertOrder({
 				account: invoice.account || '',
 				jobNumber: invoice.jobNumber || '',
 				jobTitle: invoice.jobTitle || '',
-				wantedDate: invoice.wantedDate,
+				wantedDate: new Date(reqyear, reqmonth - 1, reqday),
 				takenBy: invoice.takenBy || '',
 				salesRep: invoice.salesRep || '',
 				link: visionLink,
@@ -148,6 +146,8 @@ async function getVisionJobs() {
 	await vision.saveJobs(visionJobs);
 	await vision.signOut();
 }
+
+getVisionJobs();
 
 module.exports = {
 	getOrders: getVisionJobs
